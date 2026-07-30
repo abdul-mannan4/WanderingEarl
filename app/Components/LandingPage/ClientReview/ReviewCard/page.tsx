@@ -1,4 +1,4 @@
-import Icon from "./icon";
+import Icon from "./ReviewIcon";
 import LocationLogo from "../../TourSection/TourCard/LocationSvg";
 
 interface ReviewProps {

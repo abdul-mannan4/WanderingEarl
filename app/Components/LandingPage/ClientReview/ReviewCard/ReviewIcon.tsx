@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Icon() {
+export default function ReviewIcon() {
   return (
     <div>
         <svg width="51" height="32" viewBox="0 0 51 32" fill="none" xmlns="http://www.w3.org/2000/svg">

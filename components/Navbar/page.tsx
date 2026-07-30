@@ -113,7 +113,7 @@ export default function Navbar({
             className="h-[36px] w-[36px] flex items-center justify-center text-white focus:outline-none cursor-pointer "
             aria-label="Toggle Navigation ">
             <svg
-              className="w-8 h-8"
+              className="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24">

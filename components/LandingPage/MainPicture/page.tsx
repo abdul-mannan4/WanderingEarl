@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Navbar from "../../Navbar/page";
 
-import StorySection from "../StorySection.tsx/page";
+import StorySection from "../StorySection/page";
 import Overlay from "./Overlay/page";
 import TourSection from "../TourSection/page";
 export default function PageMain() {
@@ -17,6 +17,7 @@ export default function PageMain() {
           src="/images/backgroundPic.png"
           alt="Background"
           fill
+          sizes="100vw"
           className="object-cover object-top"
           priority
         />

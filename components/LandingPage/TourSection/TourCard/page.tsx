@@ -44,6 +44,7 @@ export default function TourCard({
             src={image}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover absolute inset-0"
           />
           {badge && <TourBadge type={badge} text={badgeText} />}

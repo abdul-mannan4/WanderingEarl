@@ -3,7 +3,7 @@
 import { Tour } from "./type";
 export const tours24:Tour[]= [
   {
-    image: "/images/card1.png",
+    image: "/images/Card1.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -17,7 +17,7 @@ export const tours24:Tour[]= [
     buttonType: "details" as const,
   },
   {
-    image: "/images/card2.png",
+    image: "/images/Card2.png",
     title: "Wander to Vietnam",
     description:
       "Join our unique journey into the heart of Vietnam! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -31,7 +31,7 @@ export const tours24:Tour[]= [
     buttonType: "waitlist" as const,
   },
   {
-    image: "/images/card3.png",
+    image: "/images/Card3.png",
     title: "Wander Across Romania",
     description:
       "Join our unique journey into the heart of ROMANIA! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",

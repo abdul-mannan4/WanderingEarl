@@ -1,5 +1,5 @@
 import PageMain from "./MainPicture/page";
-import StorySection from "./StorySection.tsx/page";
+import StorySection from "./StorySection/page";
 import TourSection from "./TourSection/page";
 import { tours24 } from "./TourSection/TourCard/tour24";
 import { tours25 } from "./TourSection/TourCard/tour25";

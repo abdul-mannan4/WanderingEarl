@@ -33,16 +33,15 @@ export default function Navbar({
        w-full box-border">
         {/* 1. Logo Container (Nest Hub par chota, XL par full size) */}
         <div className="">
-          <img
-            src="/images/logo.png"
-            alt="Wandering Earl Tours Logo"
-            className="object-contain  md:h-12
-            xl:h-auto lg:max-w-[200px] 
-            xl:max-w-[200px]
-            2xl:max-w-none lg:-ml-[1px]
-            md:w-[180px]
-            "
-          />
+<img
+  src="/images/logo.png"
+  alt="Wandering Earl Tours Logo"
+  className="object-contain 
+  md:w-[180px] md:h-12
+  lg:max-w-[200px] lg:-ml-[1px]
+  xl:max-w-[200px] xl:h-auto
+  2xl:w-auto 2xl:max-w-none"
+/>
         </div>
 
         <div className="flex items-center gap-1 md:gap-1.5 2xl:gap-[30px] lg:gap-2 font-sans font-medium text-[11px] lg:text-[14px] md:text-[10px] 2xl:text-[18px] text-white/90 antialiased whitespace-nowrap lg:-ml-[1.5px]">

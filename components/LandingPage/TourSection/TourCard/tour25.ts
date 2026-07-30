@@ -2,7 +2,7 @@
 import { Tour } from "./type";
 export const tours25: Tour[] = [
   {
-    image: "/images/Card1.png",
+    image: "/images/Card4.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -16,7 +16,7 @@ export const tours25: Tour[] = [
     buttonType: "details" as const,
   },
   {
-    image: "/images/Card2.png",
+    image: "/images/Card5.png",
     title: "Wander to Vietnam",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -29,7 +29,7 @@ export const tours25: Tour[] = [
     buttonType: "details" as const,
   },
   {
-    image: "/images/Card3.png",
+    image: "/images/Card6.png",
     title: "Wander Across Romania",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",

@@ -48,11 +48,11 @@ export default function ClientReview() {
   const activePage = Math.floor(currentIndex / itemsPerPage) % totalPages;
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="flex flex-row justify-between items-end sm:items-center gap-4">
         <div className="section-title text-primary-navy">
           What Our Clients Say{" "}
-          <span className="text-accent-orange sm:inline lg:block">About Us</span>
+          <span className="text-accent-orange sm:inline md:block">About Us</span>
         </div>
 
         <div className="flex flex-row gap-[16px] sm:gap-[35.61px] items-center shrink-0">
@@ -79,7 +79,7 @@ export default function ClientReview() {
           {visibleReviews.map((review, index) => (
             <div
               key={index}
-              className="w-full max-w-[488px] mx-auto md:max-w-none h-full"
+              className="w-full sm:max-w-[488px] mx-auto md:max-w-none h-full"
             >
               <Review
                 description={review.description}

@@ -5,37 +5,34 @@ export default function ContactSection() {
     <div className="container 2xl:!px-[80px]">
       <div className="pt-[24px] sm:pt-[50px] md:pt-[60px] 2xl:pt-[85.41px] pb-[24px] sm:pb-[40px] md:pb-[50px] 2xl:pb-[84.41px]">
 
-        {/* MOBILE LAYOUT (up to 450px) - Stacked Column Card */}
-        <div className="max-[450px]:flex hidden flex-col items-center
-        w-full rounded-[16px] border-[2px] border-[#E9482B]/20 bg-accent-orange shadow-lg">
+        {/* MOBILE & TABLET LAYOUT (< md breakpoint) - Stacked Column Card */}
+        <div className="md:hidden flex flex-col items-center w-full max-w-[350px] min-[380px]:max-w-[420px] sm:max-w-[540px] mx-auto rounded-[16px] border-[2px] border-[#E9482B]/20 bg-accent-orange shadow-lg">
           {/* Top Orange Container */}
-          <div className="bg-[#E9482B] rounded-t-[14px] px-4 py-7 flex flex-col items-start gap-3.5 z-10">
-            <p className="font-black text-[16px] leading-[1.35] uppercase text-white tracking-wide max-w-[320px]">
+          <div className="bg-[#E9482B] rounded-t-[14px] px-5 py-6 sm:py-7 flex flex-col items-center sm:items-start text-center sm:text-left gap-3.5 sm:gap-4 z-10 w-full">
+            <p className="font-black text-[15px] sm:text-[20px] leading-[1.35] uppercase text-white tracking-wide max-w-[360px] sm:max-w-[500px]">
               If you have any questions, simply get in touch. We’re here to help
               and we always reply quickly.
             </p>
-            <button className="py-2 px-5 rounded-[30px] bg-[#1E365C] font-inter font-bold text-[13px] text-white hover:bg-[#152744] transition-colors shadow-md">
+            <button className="py-2.5 px-6 rounded-[30px] bg-[#1E365C] font-inter font-bold text-[13px] sm:text-[15px] text-white hover:bg-[#152744] transition-colors shadow-md">
               Contact Us
             </button>
           </div>
 
           {/* Bottom Image Container */}
-          <div className="relative w-full h-[240px] 
-          min-[360px]:h-[235px]
-           flex justify-center p-2 z-10">
+          <div className="relative w-full h-[220px] min-[360px]:h-[240px] sm:h-[280px] flex justify-center p-2 z-10">
             <Image
               src="/images/thumbsUp.png"
               fill
               alt="Tourist_Thumbs_UP"
-              sizes="350px"
+              sizes="(max-width: 768px) 100vw, 500px"
               priority
-              className="object-contain object-center scale-115"
+              className="object-contain object-center scale-110 sm:scale-105"
             />
           </div>
         </div>
 
-        {/* LAYOUT ABOVE 450px - Original Code Preserved */}
-        <div className="max-[450px]:hidden relative flex justify-between bg-[#E9482B] border-[2px] sm:border-[3px] border-[#AF8A79] rounded-tl-[16px] sm:rounded-tl-[24px] rounded-tr-[100px] sm:rounded-tr-[240px] md:rounded-tr-[380px] lg:rounded-tr-[600px] 2xl:rounded-tr-[860px] rounded-bl-[16px] sm:rounded-bl-[24px] rounded-br-[16px] sm:rounded-br-[24px]">
+        {/* DESKTOP LAYOUT (md and above) */}
+        <div className="hidden md:flex relative justify-between bg-[#E9482B] border-[2px] sm:border-[3px] border-[#AF8A79] rounded-tl-[16px] sm:rounded-tl-[24px] rounded-tr-[100px] sm:rounded-tr-[240px] md:rounded-tr-[380px] lg:rounded-tr-[600px] 2xl:rounded-tr-[860px] rounded-bl-[16px] sm:rounded-bl-[24px] rounded-br-[16px] sm:rounded-br-[24px]">
 
           <div className="pt-[16px] sm:pt-[24px] md:pt-[30px] lg:pt-[50px] 2xl:pt-[112px] pl-[12px] sm:pl-[24px] md:pl-[35px] lg:pl-[50px] 2xl:pl-[128px] pr-[145px] sm:pr-[250px] md:pr-[310px] lg:pr-[420px] xl:pr-[500px] 2xl:pr-0 pb-[16px] sm:pb-[24px] md:pb-[30px] lg:pb-[50px] 2xl:pb-[103px] flex flex-col items-start gap-[10px] sm:gap-[16px] md:gap-[20px] 2xl:gap-[40px] z-10">
 

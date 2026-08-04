@@ -50,7 +50,7 @@ export default function TourSection({
           {tours.map((tour, index) => (
             <div
               key={index}
-              className="w-full max-w-[488px] mx-auto md:max-w-none md:last:col-span-2 md:last:max-w-[calc(50%-10px)] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
+              className="w-full sm:max-w-[488px] mx-auto md:max-w-none md:last:col-span-2 md:last:max-w-[calc(50%-10px)] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
             >
               <TourCard {...tour} />
             </div>

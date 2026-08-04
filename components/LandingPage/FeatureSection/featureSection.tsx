@@ -49,19 +49,19 @@ const featuresData = [
 
 export default function FeatureSection() {
   return (
-    <div className='flex flex-col relative overflow-hidden mt-[60px] md:mt-[120px] 2xl:mt-[197px]'>
+    <div className='flex flex-col relative overflow-hidden mt-[40px] sm:mt-[60px] md:mt-[120px] 2xl:mt-[197px]'>
       {/* Top Text Header */}
-      <div className='container text-center flex flex-col gap-[16px] sm:gap-[20px] 2xl:gap-[24px] mb-[40px] md:mb-[60px] 2xl:mb-[80px] z-10'>
+      <div className='container text-center flex flex-col gap-[12px] sm:gap-[20px] 2xl:gap-[24px] mb-[24px] sm:mb-[40px] md:mb-[60px] 2xl:mb-[80px] z-10'>
         <h2 className='section-title text-center text-text-dark uppercase self-center'>
           OUR TRIPS ARE NOT STANDARD <span className='text-accent-orange block'>GROUP TOURS</span>
         </h2>
-        <h4 className='text-center font-inter font-normal text-[16px] sm:text-[20px] 2xl:text-[24px] leading-[1.25] 2xl:leading-[29px] text-text-dark'>
+        <h4 className='text-center font-inter font-normal text-[14px] sm:text-[20px] 2xl:text-[24px] leading-[1.3] 2xl:leading-[29px] text-text-dark'>
           Experience culture, wonder and fun like never before.
         </h4>
       </div>
 
       {/* Cards Grid - Placed in front */}
-      <div className='relative z-10 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] pb-[103px]'>
+      <div className='relative z-10 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[16px] sm:gap-[20px] pb-[40px] sm:pb-[60px] lg:pb-[103px]'>
         {featuresData.map((feature) => (
           <div key={feature.title} className="w-full max-w-[488px] mx-auto md:max-w-none h-full">
             <FeatureCard

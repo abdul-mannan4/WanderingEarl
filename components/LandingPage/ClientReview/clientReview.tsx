@@ -52,7 +52,7 @@ export default function ClientReview() {
       <div className="flex flex-row justify-between items-end sm:items-center gap-4">
         <div className="section-title text-primary-navy">
           What Our Clients Say{" "}
-          <span className="text-accent-orange lg:block sm:inline 2xl:block">About Us</span>
+          <span className="text-accent-orange sm:inline lg:block">About Us</span>
         </div>
 
         <div className="flex flex-row gap-[16px] sm:gap-[35.61px] items-center shrink-0">
@@ -75,20 +75,20 @@ export default function ClientReview() {
       </div>
 
       <div className="mt-[24px] sm:mt-[32px]">
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
-  {visibleReviews.map((review, index) => (
-    <div
-      key={index}
-      className="w-full max-w-[488px] mx-auto md:max-w-none h-full"
-    >
-      <Review
-        description={review.description}
-        name={review.name}
-        location={review.location}
-      />
-    </div>
-  ))}
-</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+          {visibleReviews.map((review, index) => (
+            <div
+              key={index}
+              className="w-full max-w-[488px] mx-auto md:max-w-none h-full"
+            >
+              <Review
+                description={review.description}
+                name={review.name}
+                location={review.location}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="flex justify-center items-center gap-[12px] sm:gap-[16px] mt-[32px] sm:mt-[48px]">
@@ -96,11 +96,10 @@ export default function ClientReview() {
           <button
             key={index}
             onClick={() => setCurrentIndex(index * itemsPerPage)}
-            className={`h-[11px] rounded-[6px] transition-all duration-300 cursor-pointer ${
-              activePage === index
-                ? "w-[40px] sm:w-[55px] bg-primary-navy"
-                : "w-[18px] sm:w-[24px] bg-primary-navy/30 hover:bg-primary-navy/50"
-            }`}
+            className={`h-[11px] rounded-[6px] transition-all duration-300 cursor-pointer ${activePage === index
+              ? "w-[40px] sm:w-[55px] bg-primary-navy"
+              : "w-[18px] sm:w-[24px] bg-primary-navy/30 hover:bg-primary-navy/50"
+              }`}
           />
         ))}
       </div>

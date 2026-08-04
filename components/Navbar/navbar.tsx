@@ -93,14 +93,14 @@ export default function Navbar({
       </div>
 
       {/* MOBILE LAYOUT (< 768px) */}
-      <div className="flex lg:hidden items-center justify-between w-full px-5  py-3 ">
+      <div className="flex lg:hidden items-center justify-between w-full px-5 max-[350px]:px-3 py-3">
         <img
           src="/images/logo.png"
           alt="Wandering Earl Tours Logo"
-          className="object-contain sm:h-13 h-11"
+          className="object-contain sm:h-13 h-11 max-[350px]:h-[34px] max-[350px]:max-w-[145px] w-auto"
         />
 
-        <div className="flex items-center gap-3 relative ">
+        <div className="flex items-center gap-3 max-[350px]:gap-1.5 relative">
           {/* Login button first */}
           <button className="h-[36px] hidden sm:flex bg-primary-navy text-white/90 rounded-[20px] font-inter font-medium text-[12px] px-5 py-3.5 cursor-pointer items-center justify-center whitespace-nowrap hover:bg-primary-navy-hover transition-colors">
             Login
@@ -108,10 +108,10 @@ export default function Navbar({
           {/* Hamburger second */}
           <button
             onClick={() => setIsOpen(true)}
-            className="h-[36px] w-[36px] flex items-center justify-center text-white focus:outline-none cursor-pointer "
-            aria-label="Toggle Navigation ">
+            className="h-[36px] w-[36px] max-[350px]:h-8 max-[350px]:w-8 flex items-center justify-center text-white focus:outline-none cursor-pointer"
+            aria-label="Toggle Navigation">
             <svg
-              className="w-6 h-6"
+              className="w-6 h-6 max-[350px]:w-5 max-[350px]:h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24">
@@ -127,82 +127,88 @@ export default function Navbar({
       </div>
 
       {/* Mobile Drawer */}
-      {isOpen && (
-        <div className="fixed inset-0 z-50 flex lg:hidden">
-          {/* Drawer */}
-          <div
-            className="h-screen w-[60vw] 
-      bg-[linear-gradient(180deg,rgba(30,54,92,100)_100%,rgba(30,54,92,0.70)_100%,rgba(30,54,92,0.5)_100%)] 
-      backdrop-blur-md
-      px-6 pt-2 pb-6 space-y-4 border-r border-white/10">
-            <div className="flex justify-end py-2">
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-white cursor-pointer hover:scale-110"
-                aria-label="Close Navigation">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={3}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="w-auto flex justify-center px-[5px] py-[10px]">
-              <img src="/images/logo.png" alt="" className="h-12 w-auto " />
-            </div>
+{isOpen && (
+  <div
+    className="fixed inset-0 z-40 lg:hidden"
+    onClick={() => setIsOpen(false)}
+  />
+)}
 
-            <div className="flex flex-col gap-3 font-inter font-medium text-[14px] text-white/90">
-              <a href="#" className="py-2 hover:text-white transition-colors">
-                TOURS
-              </a>
-              <a href="#" className="py-2 hover:text-white transition-colors">
-                ABOUT US
-              </a>
-              <a href="#" className="py-2 hover:text-white transition-colors">
-                OUR STYLE
-              </a>
-              <a href="#" className="py-2 hover:text-white transition-colors">
-                PRIVATE TOURS
-              </a>
-              <a href="#" className="py-2 hover:text-white transition-colors">
-                PAST TOURS
-              </a>
-              <a href="#" className="py-2 hover:text-white transition-colors">
-                CONTACT US
-              </a>
-            </div>
+<div
+  className={`fixed top-0 left-0 h-screen w-[60vw] max-[350px]:w-[80vw] max-[350px]:px-4 z-50 bg-[#1E365C] px-6 pt-2 pb-6 space-y-4 max-[350px]:space-y-2 border-r border-white/10 lg:hidden transform transition-transform duration-300 ease-in-out ${
+    isOpen ? "translate-x-0" : "-translate-x-full"
+  }`}
+>
+  <div className="flex justify-end py-2">
+    <button
+      onClick={() => setIsOpen(false)}
+      className="text-white cursor-pointer hover:scale-110"
+      aria-label="Close Navigation"
+    >
+      <svg
+        className="w-6 h-6 max-[350px]:w-5 max-[350px]:h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={3}
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </div>
 
-            <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-white/90 font-inter text-[14px]">
-                <button className="flex flex-row gap-1">
-                  <img
-                    src="/images/cart.png"
-                    alt="Cart Logo"
-                    className="w-10 h-10"
-                  />
-                </button>
-              </div>
+  <div className="w-auto flex justify-center px-[5px] py-[10px] max-[350px]:py-[4px]">
+    <img
+      src="/images/logo.png"
+      alt="Logo"
+      className="h-12 max-[350px]:h-9 w-auto"
+    />
+  </div>
 
-              <button className="h-[38px] bg-white cursor-pointer  text-primary-navy rounded-[24px] font-inter font-medium text-[14px] px-[24px]">
-                Login
-              </button>
-            </div>
-          </div>
+  <div className="flex flex-col gap-3 max-[350px]:gap-1.5 font-inter font-medium text-[14px] max-[350px]:text-[12px] text-white/90">
+    <a href="#" className="py-2 max-[350px]:py-1 hover:text-white transition-colors">
+      TOURS
+    </a>
 
-          {/* Outside Click Area */}
-          <div
-            className="flex-1 bg-black/40"
-            onClick={() => setIsOpen(false)}
-          />
-        </div>
-      )}
+    <a href="#" className="py-2 max-[350px]:py-1 hover:text-white transition-colors">
+      ABOUT US
+    </a>
+
+    <a href="#" className="py-2 max-[350px]:py-1 hover:text-white transition-colors">
+      OUR STYLE
+    </a>
+
+    <a href="#" className="py-2 max-[350px]:py-1 hover:text-white transition-colors">
+      PRIVATE TOURS
+    </a>
+
+    <a href="#" className="py-2 max-[350px]:py-1 hover:text-white transition-colors">
+      PAST TOURS
+    </a>
+
+    <a href="#" className="py-2 max-[350px]:py-1 hover:text-white transition-colors">
+      CONTACT US
+    </a>
+  </div>
+
+  <div className="pt-4 max-[350px]:pt-3 border-t border-white/10 flex items-center justify-between">
+    <button className="flex flex-row gap-1">
+      <img
+        src="/images/cart.png"
+        alt="Cart Logo"
+        className="w-10 h-10 max-[350px]:w-8 max-[350px]:h-8"
+      />
+    </button>
+
+    <button className="h-[38px] max-[350px]:h-[32px] bg-white cursor-pointer text-primary-navy rounded-[24px] font-inter font-medium text-[14px] max-[350px]:text-[12px] px-[24px] max-[350px]:px-[16px]">
+      Login
+    </button>
+  </div>
+</div>
     </nav>
   );
 }

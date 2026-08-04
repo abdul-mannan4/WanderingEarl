@@ -58,7 +58,7 @@ html, body {
 }
 
 /* Standard Unified Container */
-@utility container {
+.container {
   width: 100%;
   max-width: 1920px;
   margin-left: auto;

@@ -28,7 +28,7 @@ export default function Navbar({
         1280px (xl) par exact Figma px-[80px] pt-[30px] pb-[20px] active hogi.
       */}
       <div
-        className="container hidden lg:flex flex-row items-center justify-between pt-3 2xl:pt-[30px] pb-3 2xl:!px-[80px] box-border">
+        className="container hidden lg:flex flex-row items-center justify-between pt-3 2xl:pt-[30px] pb-3 2xl:!px-[80px] box-border lg:!px-[30px]">
         {/* 1. Logo Container (Nest Hub par chota, XL par full size) */}
         <div className="">
 <img

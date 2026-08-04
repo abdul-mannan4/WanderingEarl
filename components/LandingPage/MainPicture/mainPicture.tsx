@@ -1,9 +1,9 @@
 // PageMain.tsx
 import Image from "next/image";
-import Navbar from "../../Navbar/page";
+import Navbar from "../../Navbar/navbar";
 
 import StorySection from "../StorySection/page";
-import Overlay from "./Overlay/page";
+import Overlay from "./Overlay/overlay";
 import TourSection from "../TourSection/page";
 export default function PageMain() {
   return (

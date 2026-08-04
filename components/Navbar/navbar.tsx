@@ -15,7 +15,7 @@ export default function Navbar({
 
   const bgStyles = {
     transparent: "bg-transparent",
-    solid: "bg-[#1E365C]",
+    solid: "bg-primary-navy",
     dark: "bg-black/90",
   };
 
@@ -28,9 +28,7 @@ export default function Navbar({
         1280px (xl) par exact Figma px-[80px] pt-[30px] pb-[20px] active hogi.
       */}
       <div
-        className="hidden lg:flex flex-row items-center justify-between px-4  2xl:px-[80px]  pt-3 2xl:pt-[30px] pb-3
-        xl:px-[40px]      
-       w-full box-border">
+        className="container hidden lg:flex flex-row items-center justify-between pt-3 2xl:pt-[30px] pb-3 2xl:!px-[80px] box-border">
         {/* 1. Logo Container (Nest Hub par chota, XL par full size) */}
         <div className="">
 <img
@@ -88,7 +86,7 @@ export default function Navbar({
             />
           </div>
 
-          <button className="h-[32px] lg:h-[36px] xl:h-[40px] bg-[#1E365C] text-white/90 lg:rounded-[24px] md:rounded-[20px] font-inter font-medium text-[11px] lg:text-[13px] xl:text-[14px] leading-none md:px-4 lg:px-6 xl:px-[30px] cursor-pointer flex items-center justify-center flex-shrink-0 whitespace-nowrap hover:bg-[#152744] transition-colors">
+          <button className="h-[32px] lg:h-[36px] xl:h-[40px] bg-primary-navy text-white/90 lg:rounded-[24px] md:rounded-[20px] font-inter font-medium text-[11px] lg:text-[13px] xl:text-[14px] leading-none md:px-4 lg:px-6 xl:px-[30px] cursor-pointer flex items-center justify-center flex-shrink-0 whitespace-nowrap hover:bg-primary-navy-hover transition-colors">
             Login
           </button>
         </div>
@@ -104,7 +102,7 @@ export default function Navbar({
 
         <div className="flex items-center gap-3 relative ">
           {/* Login button first */}
-          <button className="h-[36px] hidden sm:flex bg-[#1E365C] text-white/90 rounded-[20px] font-inter font-medium text-[12px] px-5 py-3.5 cursor-pointer items-center justify-center whitespace-nowrap hover:bg-[#152744] transition-colors">
+          <button className="h-[36px] hidden sm:flex bg-primary-navy text-white/90 rounded-[20px] font-inter font-medium text-[12px] px-5 py-3.5 cursor-pointer items-center justify-center whitespace-nowrap hover:bg-primary-navy-hover transition-colors">
             Login
           </button>
           {/* Hamburger second */}
@@ -192,7 +190,7 @@ export default function Navbar({
                 </button>
               </div>
 
-              <button className="h-[38px] bg-white cursor-pointer  text-[#1E365C] rounded-[24px] font-inter font-medium text-[14px] px-[24px]">
+              <button className="h-[38px] bg-white cursor-pointer  text-primary-navy rounded-[24px] font-inter font-medium text-[14px] px-[24px]">
                 Login
               </button>
             </div>

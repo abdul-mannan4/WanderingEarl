@@ -6,7 +6,7 @@ import GlobeSvg from "./GlobeSvg/globe";
 export default function StorySection() {
   return (
     <div className="relative">
-      <div className="bg-[linear-gradient(180deg,#1E365C_0%,#1E365C_84.5%,rgba(30,54,92,0.94)_100%)] relative grid  grid-col-1  lg:grid-cols-2 2xl:gap-0 lg:gap-[10px] items-start justify-between w-full xl:pt-[50px] 2xl:px-[208px] lg:px-[80px] md:px-[50px] px-[20px] mt-[-1px] 2xl:mt-[0]">
+      <div className="bg-[linear-gradient(180deg,#1E365C_0%,#1E365C_84.5%,rgba(30,54,92,0.94)_100%)] container relative grid grid-cols-1 lg:grid-cols-2 2xl:gap-0 lg:gap-[10px] items-start justify-between xl:pt-[50px] mt-[-1px] 2xl:mt-[0]">
 
         <div className="xl:pb-[122px] xl:pt-[155px] lg:pt-[118px] lg:pb-[98px] md:pt-[70px] md:pb-[50px] pt-[50px] 
         pb-[30px]
@@ -42,7 +42,7 @@ export default function StorySection() {
               lasting impact and that our visit leaves a minimal footprint.
             </p>
             <div className="pt-[25px] xl:pt-[30px] flex lg:justify-start justify-center">
-              <button className="pt-[15px] pb-[16px] px-[30px] font-bold text-[18px] leading-[22px] text-white bg-[#E9482B] rounded-[30px] cursor-pointer hover:hover:bg-[#d13a1f] ">
+              <button className="pt-[15px] pb-[16px] px-[30px] font-bold text-[18px] leading-[22px] text-white bg-accent-orange rounded-[30px] cursor-pointer hover:hover:bg-accent-orange-hover ">
                 Book a Tour Now
               </button>
             </div>

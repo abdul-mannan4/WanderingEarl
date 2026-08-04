@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function contactSection() {
   return (
-    <div className='px-[16px] sm:px-[30px] md:px-[50px] lg:px-[60px] 2xl:px-[80px]'>
+    <div className='container 2xl:!px-[80px]'>
       <div className="pt-[40px] sm:pt-[50px] md:pt-[60px] 2xl:pt-[85.41px] pb-[30px] sm:pb-[40px] md:pb-[50px] 2xl:pb-[84.41px]">
         <div className="relative flex justify-between bg-[#E9482B] border-[2px] sm:border-[3px] border-[#AF8A79] rounded-tl-[16px] sm:rounded-tl-[24px] rounded-tr-[100px] sm:rounded-tr-[240px] md:rounded-tr-[380px] lg:rounded-tr-[600px] 2xl:rounded-tr-[860px] rounded-bl-[16px] sm:rounded-bl-[24px] rounded-br-[16px] sm:rounded-br-[24px]">
 
@@ -24,6 +24,8 @@ export default function contactSection() {
               src="/images/thumbsUp.png"
               fill
               alt="Tourist_Thumbs_UP"
+              sizes="100"
+              priority
               className="object-contain object-right-bottom"
             />
           </div>

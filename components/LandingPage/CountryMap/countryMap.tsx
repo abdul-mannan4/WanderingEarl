@@ -7,14 +7,16 @@ export default function CountryMap() {
         2xl:bg-[linear-gradient(180deg,rgba(30,54,92,0.3)_0%,#1E365C_20%,#1E365C_90%,rgba(30,54,92,0.4)_100%)] blur-[60px] pointer-events-none z-0" />
 
         <div className="relative z-10 pt-[30px] md:pt-[50px] 2xl:pt-[77px] pb-[40px] md:pb-[80px] 2xl:pb-[125px] flex flex-col gap-[32px] sm:gap-[48px] md:gap-[60px] 2xl:gap-[80px]">
-          <div className="pt-[20px] sm:pt-[60px] lg:pt-[60px] 2xl:pt-[151px] px-[20px] sm:px-[50px] md:px-[120px] lg:px-[220px] xl:px-[300px] 2xl:px-[377px] text-center">
-            <p className="font-inter font-black text-[24px] sm:text-[32px] md:text-[40px] 2xl:text-[48px] text-center uppercase leading-[1.15] 2xl:leading-[58px] text-white">
+          <div className="pt-[20px] sm:pt-[60px] lg:pt-[60px] 2xl:pt-[151px] container text-center">
+
+
+            <p className="section-title text-white">
               countries where we are offering tours{" "}
-              <span className="text-[#E9482B]">each year</span>
+              <span className="text-accent-orange block">each year</span>
             </p>
           </div>
 
-          <div className="px-[16px] sm:px-[32px] md:px-[50px] 2xl:px-[79.98px] pb-[40px] md:pb-[80px] 2xl:pb-[115px]">
+          <div className="container pb-[40px] md:pb-[80px] 2xl:pb-[115px]">
             <img src="/svg/Maps.svg" alt="Map SVG" className="w-full h-auto" />
           </div>
         </div>

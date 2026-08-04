@@ -1,8 +1,8 @@
-import { Features } from "./FeatureCard/feature";
-import { FeatureCard } from "./FeatureCard/page";
-import CountryMap from "../CountryMap/page";
+import { Features } from "../../data/feature";
+import { FeatureCard } from "./FeatureCard/featureCard";
+import CountryMap from "../CountryMap/countryMap";
 import TourSection from "../TourSection/page";
-import { tours25 } from "../TourSection/TourCard/tour25";
+import { tours25 } from "../../data/tour25";
 
 
 import {
@@ -51,17 +51,17 @@ export default function FeatureSection() {
   return (
     <div className='flex flex-col relative overflow-hidden mt-[60px] md:mt-[120px] 2xl:mt-[197px]'>
       {/* Top Text Header */}
-      <div className='px-[20px] sm:px-[40px] md:px-[80px] lg:px-[250px] xl:px-[350px] 2xl:px-[525px] text-center flex flex-col gap-[16px] sm:gap-[20px] 2xl:gap-[24px] mb-[40px] md:mb-[60px] 2xl:mb-[80px] z-10'>
-        <h2 className='font-inter font-black text-[26px] sm:text-[34px] md:text-[40px] 2xl:text-[48px] leading-[1.15] 2xl:leading-[58px] text-center text-[#1E1E1E] uppercase self-center'>
-          OUR TRIPS ARE NOT STANDARD <span className='text-[#E9482B]'>GROUP TOURS</span>
+      <div className='container text-center flex flex-col gap-[16px] sm:gap-[20px] 2xl:gap-[24px] mb-[40px] md:mb-[60px] 2xl:mb-[80px] z-10'>
+        <h2 className='section-title text-center text-text-dark uppercase self-center'>
+          OUR TRIPS ARE NOT STANDARD <span className='text-accent-orange block'>GROUP TOURS</span>
         </h2>
-        <h4 className='text-center font-inter font-normal text-[16px] sm:text-[20px] 2xl:text-[24px] leading-[1.25] 2xl:leading-[29px] text-[#1e1e1e]'>
+        <h4 className='text-center font-inter font-normal text-[16px] sm:text-[20px] 2xl:text-[24px] leading-[1.25] 2xl:leading-[29px] text-text-dark'>
           Experience culture, wonder and fun like never before.
         </h4>
       </div>
 
       {/* Cards Grid - Placed in front */}
-      <div className='relative z-10 px-[20px] md:px-[50px] lg:px-[80px] 2xl:px-[208px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] pb-[103px] '>
+      <div className='relative z-10 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] pb-[103px]'>
         {featuresData.map((feature) => (
           <div key={feature.title} className="w-full max-w-[488px] mx-auto md:max-w-none h-full">
             <FeatureCard

@@ -20,7 +20,7 @@ export default function Review({ description, name, location }: ReviewProps) {
       </div>
 
       <div className="flex flex-col items-center gap-3">
-        <div className="font-poppins font-semibold text-[14px] sm:text-[16px] text-center text-[#404040]">
+        <div className="font-poppins font-semibold text-[14px] sm:text-[16px] text-center text-text-muted">
           {name}
         </div>
         <div className="w-full border-t border-[#D6D6D6]" />

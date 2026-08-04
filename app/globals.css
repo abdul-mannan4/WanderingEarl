@@ -10,6 +10,14 @@ html {
 }
 
 :root {
+  --primary-navy: #1E365C;
+  --primary-navy-hover: #152744;
+  --accent-orange: #E9482B;
+  --accent-orange-hover: #d13a1f;
+  --text-dark: #1E1E1E;
+  --text-muted: #404040;
+  --border-gray: #D1D5DB;
+  --cta-border: #AF8A79;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -21,6 +29,18 @@ html {
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
   --font-poppins: var(--font-poppins), sans-serif;
+
+  --color-primary-navy: var(--primary-navy);
+  --color-primary-navy-hover: var(--primary-navy-hover);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-orange-hover: var(--accent-orange-hover);
+  --color-text-dark: var(--text-dark);
+  --color-text-muted: var(--text-muted);
+  --color-border-gray: var(--border-gray);
+  --color-cta-border: var(--cta-border);
+  
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,4 +55,36 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   overflow-x: hidden !important;
+}
+
+/* Standard Unified Container */
+@utility container {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (min-width: 1024px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (min-width: 1536px) {
+    padding-left: 208px;
+    padding-right: 208px;
+  }
+}
+
+
+@utility section-title{
+  font-family:var(--font-inter);
+  font-weight:900;
+  font-size:clamp(26px,4vw,48px);
+  line-height:1.15;
+  text-transform:uppercase;
 }

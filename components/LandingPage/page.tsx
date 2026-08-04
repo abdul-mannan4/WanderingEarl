@@ -1,13 +1,13 @@
-import PageMain from "./MainPicture/page";
+import PageMain from "./MainPicture/mainPicture";
 import StorySection from "./StorySection/page";
 import TourSection from "./TourSection/page";
-import { tours24 } from "./TourSection/TourCard/tour24";
-import { tours25 } from "./TourSection/TourCard/tour25";
-import CountryMap from "./CountryMap/page";
-import FeatureSection from "./FeatureSection/page";
-import ClientReview from "./ClientReview/page";
-import ContactCTA from "./ContactCTA/page";
-import Footer from "../Footer/page";
+import { tours24 } from "../data/tour24";
+import { tours25 } from "../data/tour25";
+import CountryMap from "./CountryMap/countryMap";
+import FeatureSection from "./FeatureSection/featureSection";
+import ClientReview from "./ClientReview/clientReview";
+import ContactCTA from "./ContactCTA/contactCTA";
+import Footer from "../Footer/footer";
 
 export default function LandingPage(){
 

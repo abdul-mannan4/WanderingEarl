@@ -53,10 +53,10 @@ export default function TourCard({
         <div className='px-[14px] sm:px-[16px] 2xl:px-[20px] flex flex-col gap-[18px] sm:gap-[22px] 2xl:gap-[30px] bg-white h-full justify-between flex-1'>
           <div className='flex flex-col gap-[16px] sm:gap-[20px] 2xl:gap-[24px]'>
             <div className='flex flex-col gap-[8px] sm:gap-[10px]'>
-              <h1 className='font-inter font-black text-[16px] sm:text-[18px] 2xl:text-[20px] leading-[1.2] 2xl:leading-[24px] uppercase text-[#1E1E1E]'>
+              <h1 className='font-inter font-black text-[16px] sm:text-[18px] 2xl:text-[20px] leading-[1.2] 2xl:leading-[24px] uppercase text-text-dark'>
                 {title}
               </h1>
-              <p className='font-inter font-normal text-[13px] sm:text-[14px] 2xl:text-[16px] leading-[1.35] 2xl:leading-[22px] text-[#1E1E1E]'>
+              <p className='font-inter font-normal text-[13px] sm:text-[14px] 2xl:text-[16px] leading-[1.35] 2xl:leading-[22px] text-text-dark'>
                 {description}
               </p>
             </div>
@@ -68,14 +68,14 @@ export default function TourCard({
                     <UserLogo />
                   </div>
                   <p className='font-inter font-semibold text-[12px] sm:text-[13px] 2xl:text-[14px] leading-[100%] text-center self-center'>
-                    <span className="font-bold text-[#404040]">{spotsBooked}<span className='text-[#8F8F8F]'> out of {totalSpots} </span> spots booked</span>
+                    <span className="font-bold text-text-muted">{spotsBooked}<span className='text-[#8F8F8F]'> out of {totalSpots} </span> spots booked</span>
                   </p>
                 </div>
                 <div className='flex flex-row items-center gap-[8px]'>
                   <div>
                     <LocationLogo />
                   </div>
-                  <p className='font-inter font-normal text-[12px] sm:text-[13px] 2xl:text-[14px] leading-[100%] text-[#404040] self-center'>
+                  <p className='font-inter font-normal text-[12px] sm:text-[13px] 2xl:text-[14px] leading-[100%] text-text-muted self-center'>
                     {location}
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export default function TourCard({
                 <div>
                   <CalendarLogo />
                 </div>
-                <p className='font-inter font-normal text-[12px] sm:text-[13px] 2xl:text-[14px] leading-[100%] text-[#404040] self-center'>
+                <p className='font-inter font-normal text-[12px] sm:text-[13px] 2xl:text-[14px] leading-[100%] text-text-muted self-center'>
                   {dateRange} <span className='text-[#8F8F8F]'>({duration})</span>
                 </p>
               </div>
@@ -94,11 +94,11 @@ export default function TourCard({
 
           <div className='mt-auto pt-[4px]'>
             {buttonType === 'details' ? (
-              <button className='px-[20px] sm:px-[24px] 2xl:px-[30px] pt-[10px] pb-[11px] sm:pt-[12px] sm:pb-[13px] 2xl:pt-[15px] 2xl:pb-[16px] w-full rounded-[30px] border-[1px] border-[#D6D6D6] font-inter font-bold text-[14px] sm:text-[16px] 2xl:text-[18px] leading-[21px] text-center text-[#1E365C] cursor-pointer hover:bg-[#1E365C]/5 transition-colors'>
+              <button className='px-[20px] sm:px-[24px] 2xl:px-[30px] pt-[10px] pb-[11px] sm:pt-[12px] sm:pb-[13px] 2xl:pt-[15px] 2xl:pb-[16px] w-full rounded-[30px] border-[1px] border-[#D6D6D6] font-inter font-bold text-[14px] sm:text-[16px] 2xl:text-[18px] leading-[21px] text-center text-primary-navy cursor-pointer hover:bg-primary-navy/5 transition-colors'>
                 Details
               </button>
             ) : (
-              <button className='px-[20px] sm:px-[24px] 2xl:px-[30px] pt-[10px] pb-[11px] sm:pt-[12px] sm:pb-[13px] 2xl:pt-[15px] 2xl:pb-[16px] w-full rounded-[30px] border-[1px] border-[#E9482B4D]/30 font-inter font-bold text-[14px] sm:text-[16px] 2xl:text-[18px] leading-[21px] text-center text-[#E9482B] cursor-pointer hover:bg-[#E9482B]/5 transition-colors'>
+              <button className='px-[20px] sm:px-[24px] 2xl:px-[30px] pt-[10px] pb-[11px] sm:pt-[12px] sm:pb-[13px] 2xl:pt-[15px] 2xl:pb-[16px] w-full rounded-[30px] border-[1px] border-accent-orange/30 font-inter font-bold text-[14px] sm:text-[16px] 2xl:text-[18px] leading-[21px] text-center text-accent-orange cursor-pointer hover:bg-accent-orange/5 transition-colors'>
                 Add to Waitlist
               </button>
             )}

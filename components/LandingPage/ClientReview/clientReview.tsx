@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { reviews } from "./review";
-import Review from "./ReviewCard/page";
+import { reviews } from "../../data/review";
+import Review from "./ReviewCard/reviewCard";
 
 export default function ClientReview() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,18 +48,18 @@ export default function ClientReview() {
   const activePage = Math.floor(currentIndex / itemsPerPage) % totalPages;
 
   return (
-    <div className="px-[20px] md:px-[50px] lg:px-[80px] 2xl:px-[208px]">
+    <div className="container">
       <div className="flex flex-row justify-between items-end sm:items-center gap-4">
-        <div className="font-inter font-black text-[26px] sm:text-[36px] md:text-[40px] 2xl:text-[48px] leading-[1.15] 2xl:leading-[58px] uppercase text-[#1E365C]">
+        <div className="section-title text-primary-navy">
           What Our Clients Say{" "}
-          <span className="text-[#E9482B] lg:block sm:inline 2xl:block">About Us</span>
+          <span className="text-accent-orange lg:block sm:inline 2xl:block">About Us</span>
         </div>
 
         <div className="flex flex-row gap-[16px] sm:gap-[35.61px] items-center shrink-0">
           <button
             onClick={handlePrev}
             aria-label="Previous Review"
-            className="w-[48px] h-[48px] sm:w-[65.39px] sm:h-[65.39px] flex items-center justify-center rounded-full border-[2px] border-[#D1D5DB] text-[#8F8F8F] hover:border-[#1E365C] hover:text-[#1E365C] transition-all duration-300 cursor-pointer"
+            className="w-[48px] h-[48px] sm:w-[65.39px] sm:h-[65.39px] flex items-center justify-center rounded-full border-[2px] border-border-gray text-[#8F8F8F] hover:border-primary-navy hover:text-primary-navy transition-all duration-300 cursor-pointer"
           >
             <ChevronLeft className="w-6 h-6 sm:w-9 sm:h-9" />
           </button>
@@ -67,7 +67,7 @@ export default function ClientReview() {
           <button
             onClick={handleNext}
             aria-label="Next Review"
-            className="w-[48px] h-[48px] sm:w-[65.39px] sm:h-[65.39px] flex items-center justify-center rounded-full bg-[#1E365C] border-[2px] border-[#1E365C] text-white hover:bg-[#152744] hover:border-[#152744] transition-all duration-300 cursor-pointer"
+            className="w-[48px] h-[48px] sm:w-[65.39px] sm:h-[65.39px] flex items-center justify-center rounded-full bg-primary-navy border-[2px] border-primary-navy text-white hover:bg-primary-navy-hover hover:border-primary-navy-hover transition-all duration-300 cursor-pointer"
           >
             <ChevronRight className="w-6 h-6 sm:w-9 sm:h-9" />
           </button>
@@ -98,8 +98,8 @@ export default function ClientReview() {
             onClick={() => setCurrentIndex(index * itemsPerPage)}
             className={`h-[11px] rounded-[6px] transition-all duration-300 cursor-pointer ${
               activePage === index
-                ? "w-[40px] sm:w-[55px] bg-[#1E365C]"
-                : "w-[18px] sm:w-[24px] bg-[#1E365C]/30 hover:bg-[#1E365C]/50"
+                ? "w-[40px] sm:w-[55px] bg-primary-navy"
+                : "w-[18px] sm:w-[24px] bg-primary-navy/30 hover:bg-primary-navy/50"
             }`}
           />
         ))}

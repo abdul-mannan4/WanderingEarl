@@ -1,5 +1,5 @@
 import React from "react";
-import { Tour } from "./TourCard/type";
+import { Tour } from "../../data/type";
 import TourCard from "./TourCard/page";
 
 interface TourSectionProps {
@@ -21,14 +21,14 @@ export default function TourSection({
 
       <div className="relative z-10">
         <div 
-          className={`px-[20px] md:px-[50px] lg:px-[80px] 2xl:px-[208px] flex flex-row justify-between items-end gap-[16px] ${
+          className={`container flex flex-row justify-between items-end gap-[16px] ${
             showGradient ? "pt-[150px] lg:pt-[140px] 2xl:pt-[200px]" : "pt-0"
           }`}
         >
-          <p className="font-inter font-black text-[#1e365c] text-[36px] sm:text-[48px] md:text-[72px] lg:text-[96px] 2xl:text-[128px] leading-[1.05] 2xl:leading-[120px] uppercase block">
-            {year} <span className="text-[#404040] block">TOURS</span>
+          <p className="font-inter font-black text-primary-navy text-[36px] sm:text-[48px] md:text-[72px] lg:text-[96px] 2xl:text-[128px] leading-[1.05] 2xl:leading-[120px] uppercase block">
+            {year} <span className="text-text-muted block">TOURS</span>
           </p>
-          <button className="group flex items-center gap-2.5 pt-[10px] pb-[11px] md:pt-[15px] md:pb-[16px] px-[20px] xl:px-[30px] text-[#1e365c] rounded-[30px] border-[1px] border-[#1E365C] font-bold text-[14px] md:text-[16px] cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 shrink-0 mb-[6px] md:mb-[10px]">
+          <button className="group flex items-center gap-2.5 pt-[10px] pb-[11px] md:pt-[15px] md:pb-[16px] px-[20px] xl:px-[30px] text-primary-navy rounded-[30px] border-[1px] border-primary-navy font-bold text-[14px] md:text-[16px] cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 shrink-0 mb-[6px] md:mb-[10px]">
             All Tours
             <svg
               width="15"
@@ -40,13 +40,13 @@ export default function TourSection({
             >
               <path
                 d="M14.7071 8.07112C15.0976 7.6806 15.0976 7.04743 14.7071 6.65691L8.34315 0.292947C7.95262 -0.0975778 7.31946 -0.0975779 6.92893 0.292946C6.53841 0.683471 6.53841 1.31664 6.92893 1.70716L12.5858 7.36401L6.92893 13.0209C6.53841 13.4114 6.53841 14.0446 6.92893 14.4351C7.31946 14.8256 7.95262 14.8256 8.34314 14.4351L14.7071 8.07112ZM-8.74228e-08 8.36401L14 8.36401L14 6.36401L8.74228e-08 6.36401L-8.74228e-08 8.36401Z"
-                fill="#1E365C"
+                fill="var(--primary-navy)"
               />
             </svg>
           </button>
         </div>
 
-        <div className="px-[20px] md:px-[50px] lg:px-[80px] 2xl:px-[208px] mt-[24px] md:mt-[32px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+        <div className="container mt-[24px] md:mt-[32px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
           {tours.map((tour, index) => (
             <div
               key={index}

@@ -22,7 +22,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <div className="relative bg-[#1E365C] 2xl:aspect-[1921/441] py-[30px] sm:py-[40px] lg:py-[50px] 2xl:py-0 overflow-hidden">
+    <div className="relative bg-primary-navy 2xl:aspect-[1921/441] py-[30px] sm:py-[40px] lg:py-[50px] 2xl:py-0 overflow-hidden">
       <Image
         src="/images/footer.png"
         alt="footer bg"
@@ -33,7 +33,7 @@ export default function Footer() {
       />
       <div className="bg-[linear-gradient(0deg,rgba(30,54,92,0)_0%,rgba(30,54,92,0.95)_54.63%,#1E365C_75.11%,#1E365C_100%)] absolute inset-0" />
 
-      <div className="flex flex-col justify-between h-full gap-[30px] sm:gap-[40px] md:gap-[50px] 2xl:gap-[106px] px-[20px] sm:px-[40px] md:px-[50px] 2xl:px-[80px] relative z-10">
+      <div className="container flex flex-col justify-between h-full gap-[30px] sm:gap-[40px] md:gap-[50px] 2xl:gap-[106px] relative z-10">
         <div className="2xl:pt-[80px] flex flex-col md:flex-row gap-8 md:gap-[40px] lg:gap-[60px] xl:gap-[100px] 2xl:gap-[148px]">
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-[16px] sm:gap-[24px] 2xl:gap-[30px] w-full md:w-[280px] lg:w-[340px] xl:w-[380px] 2xl:w-[425px]">
             <div className="w-[150px] sm:w-[180px] md:w-[200px] 2xl:w-[255px]">
@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
 
         <div className="2xl:pb-[36px] text-center">
-          <p className="font-inter font-medium text-[13px] sm:text-[14px] 2xl:text-[16px] leading-[19px] text-[#404040]">
+          <p className="font-inter font-medium text-[13px] sm:text-[14px] 2xl:text-[16px] leading-[19px] text-text-muted">
             ©2024 Wandering Earl, LLC. All rights reserved.
           </p>
         </div>

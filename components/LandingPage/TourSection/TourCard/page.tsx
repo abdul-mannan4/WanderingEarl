@@ -62,7 +62,7 @@ export default function TourCard({
             </div>
 
             <div className='flex flex-col gap-[10px] sm:gap-[14px]'>
-              <div className='flex flex-wrap xl:flex-nowrap items-center justify-between gap-x-[10px] gap-y-[6px]'>
+              <div className='flex flex-wrap xl:flex-nowrap items-center justify-start sm:justify-between gap-x-[16px] sm:gap-x-[10px] gap-y-[6px]'>
                 <div className='flex flex-row items-center gap-[6px] shrink-0'>
                   <div>
                     <UserLogo />

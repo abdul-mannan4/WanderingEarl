@@ -9,8 +9,8 @@ export default function ContactSection() {
         <div className="max-[450px]:flex hidden flex-col items-center
         w-full rounded-[16px] border-[2px] border-[#E9482B]/20 bg-accent-orange shadow-lg">
           {/* Top Orange Container */}
-          <div className="bg-[#E9482B] rounded-t-[14px] px-4 py-5 flex flex-col items-start gap-3.5 z-10">
-            <p className="font-black text-[13px] leading-[1.35] uppercase text-white tracking-wide max-w-[320px]">
+          <div className="bg-[#E9482B] rounded-t-[14px] px-4 py-7 flex flex-col items-start gap-3.5 z-10">
+            <p className="font-black text-[16px] leading-[1.35] uppercase text-white tracking-wide max-w-[320px]">
               If you have any questions, simply get in touch. We’re here to help
               and we always reply quickly.
             </p>
@@ -22,14 +22,14 @@ export default function ContactSection() {
           {/* Bottom Image Container */}
           <div className="relative w-full h-[240px] 
           min-[360px]:h-[235px]
-           flex items-end justify-center p-2 z-10">
+           flex justify-center p-2 z-10">
             <Image
               src="/images/thumbsUp.png"
               fill
               alt="Tourist_Thumbs_UP"
               sizes="350px"
               priority
-              className="object-contain object-center scale-125"
+              className="object-contain object-center scale-115"
             />
           </div>
         </div>

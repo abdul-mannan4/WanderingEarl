@@ -53,11 +53,11 @@ export default function StorySection() {
         <div className="2xl:pt-[48px] xl:pt-[140px] lg:pt-[110px] pt-[20px] max-[350px]:pt-[10px] lg:order-2 order-1 w-full flex justify-center lg:justify-end 2xl:justify-start">
           <div className="relative w-full lg:max-w-[500px] xl:max-w-[620px] 2xl:max-w-[705px] aspect-[705/609] 2xl:w-[705px] 2xl:h-[609px] shrink-0">
             <div className="absolute left-[18.30%] top-[27.09%] w-[42.41%] h-[72.91%] 2xl:w-[299px] 2xl:h-[444px] rounded-[16px] sm:rounded-[24px] border border-[#FFFFFF99] overflow-hidden shadow-[-15px_15px_30px_0px_#0000001A] sm:shadow-[-30px_30px_60px_0px_#0000001A]">
-              <Image src="/images/story-flag.jpg" alt="underImage" priority fill sizes="(max-width: 1024px) 50vw, 300px" className="object-cover" />
+              <Image src="/images/story-flag.png" alt="underImage" fill sizes="(max-width: 1024px) 50vw, 400px" className="object-cover" />
             </div>
 
             <div className="absolute left-[57.59%] top-[8.37%] w-[42.41%] h-[72.91%] 2xl:w-[299px] 2xl:h-[444px] aspect-[299/444] overflow-hidden border border-[#FFFFFF99] rounded-[16px] sm:rounded-[24px] shadow-[-20px_15px_30px_0px_#00000066] sm:shadow-[-40px_30px_60px_0px_#00000066]">
-              <Image src="/images/story-mountain.jpg" fill priority sizes="(max-width: 1024px) 50vw, 300px" alt="upImage" className="object-cover" />
+              <Image src="/images/story-mountain.png" fill sizes="(max-width: 1024px) 50vw, 400px" alt="upImage" className="object-cover" />
             </div>
 
             <div className="absolute left-[37.68%] top-[8.37%] w-[9.36%]">

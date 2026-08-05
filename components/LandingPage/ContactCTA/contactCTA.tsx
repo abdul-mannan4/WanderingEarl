@@ -25,7 +25,6 @@ export default function ContactSection() {
               fill
               alt="Tourist_Thumbs_UP"
               sizes="(max-width: 768px) 100vw, 500px"
-              priority
               className="object-contain object-center scale-110 sm:scale-105"
             />
           </div>
@@ -55,8 +54,7 @@ export default function ContactSection() {
               src="/images/thumbsUp.png"
               fill
               alt="Tourist_Thumbs_UP"
-              sizes="100"
-              priority
+              sizes="(max-width: 1024px) 50vw, 600px"
               className="object-contain object-right-bottom"
             />
           </div>

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="flex flex-col gap-[12px] min-[360px]:gap-[20px] sm:gap-[24px] md:gap-[40px] lg:gap-[45px] xl:gap-[60px] w-full items-center text-center">
         {/* Text Group */}
         <div className="flex flex-col gap-[4px] sm:gap-[6px] md:gap-[8px] xl:gap-[25px] items-center text-center w-full">
-          <h1 className="font-sans font-black max-[300px]:whitespace-normal max-sm:whitespace-nowrap text-[17px] min-[360px]:text-[19px] min-[400px]:text-[23px] min-[430px]:text-[23px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] leading-[1.25] sm:leading-[1.2] lg:leading-[77px] text-white uppercase w-full flex justify-center items-center text-center">
+          <h1 className="font-sans font-black max-[300px]:whitespace-normal max-sm:whitespace-nowrap text-[17px] min-[360px]:text-[21px] min-[400px]:text-[23px] min-[430px]:text-[23px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[64px] leading-[1.25] sm:leading-[1.2] lg:leading-[77px] text-white uppercase w-full flex justify-center items-center text-center">
             <span>
               UNIQUE, LOCAL, SMALL{" "}
               <span className="text-accent-orange">GROUPS</span>

@@ -28,7 +28,6 @@ export default function Footer() {
         alt="footer bg"
         fill
         sizes="100vw"
-        priority
         className="object-cover object-center absolute inset-0"
       />
       <div className="bg-[linear-gradient(0deg,rgba(30,54,92,0)_0%,rgba(30,54,92,0.95)_54.63%,#1E365C_75.11%,#1E365C_100%)] absolute inset-0" />

@@ -15,7 +15,8 @@ interface TourSectionProps {
   allTourBtn?: boolean;
   fontSize?: string;
   centerGrid?: boolean;
-  linearGradient?:string;
+  linearGradient?: string;
+  cardWidth?: string;
 }
 
 export default function TourSection({
@@ -31,15 +32,16 @@ export default function TourSection({
   allTourBtn = false,
   fontSize = "text-[36px] sm:text-[48px] md:text-[72px] lg:text-[96px] 2xl:text-[128px]",
   centerGrid = false,
-linearGradient =
-  "linear-gradient(180deg,rgba(30,54,92,0.94) 1.84%,rgba(30,54,92,0.85) 22.16%,rgba(30,54,92,0.67) 40.63%,rgba(30,54,92,0.26) 66.16%,rgba(30,54,92,0) 87.56%)"
+  linearGradient =
+  "linear-gradient(180deg,rgba(30,54,92,0.94) 1.84%,rgba(30,54,92,0.85) 22.16%,rgba(30,54,92,0.67) 40.63%,rgba(30,54,92,0.26) 66.16%,rgba(30,54,92,0) 87.56%)",
+  cardWidth,
 }: TourSectionProps) {
 
   return (
     <div className="relative">
       {showGradient && (
-        <div className="absolute top-0 left-0 right-0 h-[309px] pointer-events-none z-0" 
-          style={{background:linearGradient}}
+        <div className="absolute top-0 left-0 right-0 h-[309px] pointer-events-none z-0"
+          style={{ background: linearGradient }}
         />
       )}
 
@@ -76,15 +78,17 @@ linearGradient =
         {/* Dynamic Card Container */}
         <div
           className={`container mt-[24px] md:mt-[32px] gap-[20px] ${containerPadding} ${centerGrid
-              ? "flex flex-wrap justify-center"
-              : gridCols
+            ? "flex flex-wrap justify-center"
+            : gridCols
             }`}
         >
           {tours.map((tour, index) => (
             <div
               key={index}
               className={
-                centerGrid
+                cardWidth
+                  ? cardWidth
+                  : centerGrid
                   ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
                   : "w-full sm:max-w-[488px] mx-auto md:max-w-none md:last:col-span-2 md:last:max-w-[calc(50%-10px)] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
               }

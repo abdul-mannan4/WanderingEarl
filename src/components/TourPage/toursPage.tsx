@@ -22,7 +22,7 @@ export default function TourRoute() {
                                           rgba(30,54,92,0) 100%    )"
 
           gridCols="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          cardWidth="w-full md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+          cardWidth="w-full md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] 2xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
           containerPadding="!px-[16px] sm:!px-[24px] md:!px-[32px] lg:!px-[40px] xl:!px-[50px] 2xl:!px-[60px] min-[1800px]:!px-[80px]"
           yearColor="text-[#E9482B]"
           titleColor="text-[#404040]"
@@ -38,7 +38,7 @@ export default function TourRoute() {
           layout="inline"
           centerGrid={true}
           gridCols="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          cardWidth="w-full md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+          cardWidth="w-full md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] 2xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
           containerPadding="!px-[16px] sm:!px-[24px] md:!px-[32px] lg:!px-[40px] xl:!px-[50px] 2xl:!px-[60px] min-[1800px]:!px-[80px]"
           yearColor="text-[#E9482B]"
           titleColor="text-[#404040]"

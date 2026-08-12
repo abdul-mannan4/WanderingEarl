@@ -1,12 +1,12 @@
 import PageMain from "./MainPicture/mainPicture";
 import StorySection from "./StorySection/storySection";
-import TourSection from "./TourSection/tourSection";
+import TourSection from "../SharedComponents/TourSection/tourSection";
 import { tours24 } from "../data/tour24";
 import { tours25 } from "../data/tour25";
 import CountryMap from "./CountryMap/countryMap";
 import FeatureSection from "./FeatureSection/featureSection";
-import ClientReview from "./ClientReview/clientReview";
-import ContactCTA from "./ContactCTA/contactCTA";
+import ClientReview from "../SharedComponents/ClientReview/clientReview";
+import ContactCTA from "../SharedComponents/ContactCTA/contactCTA";
 
 
 

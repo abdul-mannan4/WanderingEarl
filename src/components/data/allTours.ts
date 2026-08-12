@@ -2,7 +2,7 @@ import { Tour } from "./type";
 
 export const allTours24: Tour[] = [
   {
-    image: "/images/tourPage/Card1.png",
+    image: "/images/cardImages/Card1.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -16,7 +16,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
-    image: "/images/tourPage/Card2.png",
+    image: "/images/cardImages/Card2.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -29,7 +29,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
-    image: "/images/tourPage/Card3.png",
+    image: "/images/cardImages/Card3.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -43,7 +43,7 @@ export const allTours24: Tour[] = [
     buttonType: "waitlist" as const,
   },
   {
-    image: "/images/tourPage/Card4.png",
+    image: "/images/cardImages/Card4.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -57,7 +57,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
-    image: "/images/tourPage/Card5.png",
+    image: "/images/cardImages/Card5.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -71,7 +71,7 @@ export const allTours24: Tour[] = [
     buttonType: "waitlist" as const,
   },
   {
-    image: "/images/tourPage/Card6.png",
+    image: "/images/cardImages/Card6.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -84,7 +84,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
-    image: "/images/tourPage/Card7.png",
+    image: "/images/cardImages/Card7.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
@@ -97,7 +97,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
-    image: "/images/tourPage/Card8.png",
+    image: "/images/cardImages/Card8.png",
     title: "Wander Across Mexico",
     description:
       "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",

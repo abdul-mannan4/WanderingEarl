@@ -7,7 +7,6 @@ interface TourSectionProps {
   title?: string;
   tours: Tour[];
   showGradient?: boolean;
-  linearGradient?: string;
   layout?: "stacked" | "inline";
   containerPadding?: string;
   yearColor?: string;
@@ -15,15 +14,15 @@ interface TourSectionProps {
   gridCols?: string;
   allTourBtn?: boolean;
   fontSize?: string;
-  centerGrid?: boolean; // Controls whether remaining cards center on the last row
+  centerGrid?: boolean;
+  linearGradient?:string;
 }
 
-export default function TourSection({ 
+export default function TourSection({
   year,
-  title = "TOURS", 
-  tours, 
+  title = "TOURS",
+  tours,
   showGradient = true,
-  linearGradient = "bg-[linear-gradient(180deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]",
   layout = "stacked",
   containerPadding = "min-[1920px]:!px-[208px]",
   yearColor,
@@ -31,21 +30,16 @@ export default function TourSection({
   gridCols = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
   allTourBtn = false,
   fontSize = "text-[36px] sm:text-[48px] md:text-[72px] lg:text-[96px] 2xl:text-[128px]",
-  centerGrid = false
+  centerGrid = false,
+linearGradient =
+  "bg-[linear-gradient(180deg,rgba(30,54,92,0.94)_1.84%,rgba(30,54,92,0.85)_22.16%,rgba(30,54,92,0.67)_40.63%,rgba(30,54,92,0.26)_66.16%,rgba(30,54,92,0)_87.56%)]"
 }: TourSectionProps) {
-
-  const isRawGradient = linearGradient?.trim().startsWith("linear-gradient");
-  const gradientStyle = isRawGradient
-    ? { background: linearGradient.trim().replaceAll("_", " ") }
-    : undefined;
-  const gradientClass = isRawGradient ? "" : linearGradient;
 
   return (
     <div className="relative">
       {showGradient && (
-        <div 
-          className={`absolute top-0 left-0 right-0 h-[309px] pointer-events-none z-0 ${gradientClass}`}
-          style={gradientStyle}
+        <div className="absolute top-0 left-0 right-0 h-[309px] pointer-events-none z-0" 
+      
         />
       )}
 
@@ -91,7 +85,7 @@ export default function TourSection({
               key={index}
               className={
                 centerGrid
-                  ? "w-full md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] 2xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+                  ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
                   : "w-full sm:max-w-[488px] mx-auto md:max-w-none md:last:col-span-2 md:last:max-w-[calc(50%-10px)] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
               }
             >

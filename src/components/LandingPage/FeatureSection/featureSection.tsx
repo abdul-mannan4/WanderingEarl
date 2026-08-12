@@ -1,7 +1,7 @@
 import { Features } from "../../data/feature";
 import { FeatureCard } from "./FeatureCard/featureCard";
 import CountryMap from "../CountryMap/countryMap";
-import TourSection from "../TourSection/tourSection";
+import TourSection from "../../SharedComponents/TourSection/tourSection";
 import { tours25 } from "../../data/tour25";
 
 

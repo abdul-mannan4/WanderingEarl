@@ -1,6 +1,6 @@
 import React from 'react'
 import TourPageMain from './MainPicture/bgPicture'
-import TourSection from "@/components/LandingPage/TourSection/tourSection";
+import TourSection from "@/components/SharedComponents/TourSection/tourSection";
 import { allTours24 } from "@/components/data/allTours";
 
 export default function TourRoute() {

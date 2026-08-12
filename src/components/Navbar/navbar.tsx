@@ -36,8 +36,8 @@ export default function Navbar({
 
   const buttonStyles = {
 
-    transparent: "bg-primary-navy text-white/90",
-    solid: "bg-white text-primary-navy",
+    transparent: "bg-primary-navy text-white/90 hover:bg-primary-navy-hover",
+    solid: "bg-white text-primary-navy hover:bg-[#E8EEF5]",
   }
 
   const isLandingPage = pathName === "/"
@@ -61,14 +61,19 @@ export default function Navbar({
         </Link>
 
 
-        <div className="flex items-center gap-1.5 min-[1024px]:gap-2 min-[1280px]:gap-3 min-[1536px]:gap-[20px] min-[1800px]:gap-[30px] font-sans font-medium text-[11px] min-[1024px]:text-[13px] min-[1280px]:text-[14px] min-[1536px]:text-[15px] min-[1800px]:text-[18px] text-white/90 antialiased whitespace-nowrap min-[1024px]:-ml-[1.5px]">
+        <div className="flex items-center gap-1.5
+         min-[1024px]:gap-2 min-[1280px]:gap-3
+          min-[1536px]:gap-[20px] min-[1800px]:gap-[30px] 
+          font-sans font-medium text-[11px] min-[1024px]:text-[13px] min-[1280px]:text-[14px] min-[1536px]:text-[15px] min-[1800px]:text-[18px] text-white/90 antialiased whitespace-nowrap min-[1024px]:-ml-[1.5px]">
+
+
           {navLinks.map((link) => {
             const isActive = pathName === link.href;
 
             return (
               <Link href={link.href}
                 key={link.href}
-                className={`py-1 px-1.5 xl:py-[10px] xl:px-[16px] hover:text-white transition-colors 
+                className={`py-1 px-1.5 lg:px-2 lg:py-2 xl:py-[10px] xl:px-[16px] hover:text-white transition-colors 
                 ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}
                 
                 ${isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px]" : ""
@@ -94,7 +99,7 @@ export default function Navbar({
             />
           </div>
 
-          <button className={`h-[32px] lg:h-[36px] xl:h-[40px]  lg:rounded-[24px] md:rounded-[20px] font-inter font-medium text-[11px] lg:text-[13px] xl:text-[14px] leading-none md:px-4 lg:px-6 xl:px-[30px] cursor-pointer flex items-center justify-center flex-shrink-0 whitespace-nowrap hover:bg-primary-navy-hover transition-colors *:
+          <button className={`h-[32px] lg:h-[36px] xl:h-[40px]  lg:rounded-[24px] md:rounded-[20px] font-inter font-medium text-[11px] lg:text-[13px] xl:text-[14px] leading-none md:px-4 lg:px-6 xl:px-[30px] cursor-pointer flex items-center justify-center flex-shrink-0 whitespace-nowrap  transition-colors *:
             ${buttonStyles[variant]}
             `}>
             Login
@@ -115,7 +120,7 @@ export default function Navbar({
 
         <div className="flex items-center gap-3 max-[350px]:gap-1.5 relative">
           {/* Login button first */}
-          <button className={`h-[36px] hidden sm:flex  rounded-[20px] font-inter font-medium text-[12px] px-5 py-3.5 cursor-pointer items-center justify-center whitespace-nowrap hover:bg-primary-navy-hover transition-colors 
+          <button className={`h-[36px] hidden sm:flex  rounded-[20px] font-inter font-medium text-[12px] px-5 py-3.5 cursor-pointer items-center justify-center whitespace-nowrap  transition-colors 
             ${buttonStyles[variant]}
             `}>
             Login
@@ -183,7 +188,7 @@ export default function Navbar({
           />
         </div>
 
-        <div className="flex flex-col gap-3 max-[350px]:gap-1.5 font-inter font-medium text-[14px] max-[350px]:text-[12px] text-white/90">
+        <div className="flex flex-col gap-3 max-[350px]:gap-1.5 font-inter font-medium text-[14px] max-[350px]:text-[12px] text-white/90 items-start">
 
 
           {navLinks.map((link) => {
@@ -191,12 +196,15 @@ export default function Navbar({
             return (
               <Link href={link.href}
                 key={link.href}
-                className={`py-2 max-[350px]:py-1 hover:text-white transition-colors  ${isActive ? "bg-[#FFFFFF1A] text-white" : ""
-                  }`}
+                className={`py-2 max-[350px]:py-1 px-2 w hover:text-white transition-colors  ${isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px]" : ""
+                  }  
+                  ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}
+                  `}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
               </Link>
+
             );
 
           })}

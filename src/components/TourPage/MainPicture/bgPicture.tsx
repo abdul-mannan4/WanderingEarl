@@ -8,7 +8,7 @@ export default function TourPageMain() {
     <>
       <div className="relative w-full overflow-x-hidden flex flex-col bg-[#1E365C]">
         {/* Dedicated Aspect Ratio Container */}
-        <div className="relative w-full aspect-[668/700] sm:aspect-[668/620] md:aspect-[760/600] lg:aspect-[1921/580] xl:aspect-[1921/500]">
+        <div className="relative w-full aspect-[668/700] sm:aspect-[668/620] md:aspect-[760/600] lg:aspect-[1921/484] xl:aspect-[1921/500]">
           {/* Background Image */}
           <Image
             src="/images/tourPage/tourBackground.png"

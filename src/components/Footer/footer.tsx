@@ -1,22 +1,40 @@
 import React from "react";
 import Image from "next/image";
+import { title } from "process";
+import { link } from "fs";
 
 const footerLinks = [
   {
     title: "OUR PAGES",
-    links: ["Tours", "About Us", "Our Style"],
+    links: [
+      { label: "Tours", href: "/tours" },
+      { label: "About Us", href: "/about" },
+      { label: "Our Style", href: "/ourStyle" },
+    ],
   },
   {
     title: "TOUR PAGES",
-    links: ["Private Tours", "Past Tours"],
+    links: [
+      { label: "Private Tours", href: "/privateTours" },
+      { label: "Past Tours", href: "/pastTours" },
+    ],
   },
   {
     title: "CONTACT",
-    links: ["Contact Us"],
+    links: [
+      { label: "Contact Us", href: "/contactUs" },
+    ],
   },
   {
     title: "COMPANY",
-    links: ["Privacy Policy", "Terms of Service", "Refund / Cancellation Policy"],
+    links: [
+      { label: "Privacy Policy", href: "/privacyPolicy" },
+      { label: "Terms of Service", href: "/terms-of-service" },
+      {
+        label: "Refund / Cancellation Policy",
+        href: "/refund-cancellation-policy",
+      },
+    ],
   },
 ];
 
@@ -65,11 +83,11 @@ export default function Footer() {
                 <div className="flex flex-col items-center md:items-start text-center md:text-left gap-[6px] min-[360px]:gap-[8px] sm:gap-[12px] md:gap-[10px] lg:gap-[16px] 2xl:gap-[29px]">
                   {section.links.map((link) => (
                     <a
-                      key={link}
-                      href="#"
+                      key={link.label}
+                      href={link.href}
                       className="font-inter font-normal text-[11px] min-[360px]:text-[12px] sm:text-[13px] md:text-[12px] lg:text-[15px] 2xl:text-[16px] leading-[16px] sm:leading-[18px] lg:leading-[19px] text-white/80 hover:text-white transition-colors"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   ))}
                 </div>

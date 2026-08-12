@@ -1,10 +1,8 @@
 // PageMain.tsx
 import Image from "next/image";
-import Navbar from "../../Navbar/navbar";
-
-import StorySection from "../StorySection/storySection";
 import Overlay from "./Overlay/overlay";
-import TourSection from "../TourSection/tourSection";
+import Hero from "../Hero/hero";
+
 export default function PageMain() {
   return (
     <div className="relative w-full overflow-x-hidden flex flex-col">
@@ -22,18 +20,13 @@ export default function PageMain() {
           priority
         />
 
-        <Overlay />
-
-
-        {/* 1. Navbar Flow */}
-        <div className="absolute top-0 left-0 w-full z-20">
-          <Navbar variant="transparent" />
-        </div>
-
+        <Overlay >
+          <Hero />
+        </Overlay>
 
       </div>
 
-      {/* Next Section */}
+
 
 
     </div>

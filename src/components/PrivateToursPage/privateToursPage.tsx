@@ -2,6 +2,7 @@ import React from 'react'
 import PageHeader from '../SharedComponents/PageHeader/PageHeader'
 import ContactSection from '../SharedComponents/ContactCTA/contactCTA'
 import ClientReview from '../SharedComponents/ClientReview/clientReview'
+import PrivateTourStory from './PrivateTourContent/contentWithCollage'
 
 const PageHeaderData = {
   title: "Private Tours By Wandering Earl Tours",
@@ -17,7 +18,13 @@ export default function PrivateToursPage() {
         
                 <PageHeader title={PageHeaderData.title} description={PageHeaderData.description} imageSrc={PageHeaderData.imageSrc} isextraSpan={true} spanData={PageHeaderData.spanData}/>
               </div>
+              
+              <PrivateTourStory />
+              <div className='2xl:mb-[140px] lg:mb-[100px] sm:mb-[60px] mb-[40px]'>
+
               <ContactSection />
+              </div>
+
               
               <div className='2xl:pb-[140px] lg:pb-[100px] sm:pb-[60px] pb-[30px]'>
               <ClientReview />

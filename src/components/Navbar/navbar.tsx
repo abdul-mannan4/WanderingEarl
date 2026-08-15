@@ -45,7 +45,7 @@ export default function Navbar({
   const buttonStyles = {
 
     transparent: "bg-primary-navy text-white/90 hover:bg-primary-navy-hover",
-    solid: "bg-white text-primary-navy hover:bg-[#E8EEF5]",
+    solid: "bg-accent-orange text-white hover:bg-accent-orange-hover",
   }
 
   const isLandingPage = pathName === "/"

@@ -1,7 +1,7 @@
 // teamData.ts
 export const TeamData = [
       {
-    image: "/images/aboutUs/team/Image1.png",
+    image: "/images/aboutUs/Team/Image1.png",
     description1: "Travel has always been my greatest passion. I've worked in different countries since I was 18, going on adventures in Europe and Africa, volunteering in Canada and even working on cruise ships so that I could get paid to travel.",
     despcription2: "I always focus on enjoying the simple things in life, such as an aimless wander around a new place, watching a beautiful sunset, people-watching and sharing a smile with anyone that crosses my path.",
     despcription3: "As a Tour Manager at Wandering Earl Tours, I get excited every time someone books a trip, as I love to play a role in helping our guests achieve one of their travel goals!",
@@ -10,7 +10,7 @@ export const TeamData = [
     position: "CEO",
   },
   {
-    image: "/images/aboutUs/team/Image2.png",
+    image: "/images/aboutUs/Team/Image2.png",
     description1: "Travel has always been my greatest passion. I've worked in different countries since I was 18, going on adventures in Europe and Africa, volunteering in Canada and even working on cruise ships so that I could get paid to travel.",
     despcription2: "I always focus on enjoying the simple things in life, such as an aimless wander around a new place, watching a beautiful sunset, people-watching and sharing a smile with anyone that crosses my path.",
     despcription3: "As a Tour Manager at Wandering Earl Tours, I get excited every time someone books a trip, as I love to play a role in helping our guests achieve one of their travel goals!",
@@ -19,7 +19,7 @@ export const TeamData = [
     position: "Tour Manager",
   },
   {
-    image: "/images/aboutUs/team/Image3.png",
+    image: "/images/aboutUs/Team/Image3.png",
     description1: "Since I was a little kid, I had a deep connection with stories about adventurers. I heard about people that had gone to deserts with dunes taller than skyscrapers, to cities where people needed boats to go from one house to another, and of forests with trees as far as the eye can see.",
     despcription2: "All of the decisions I made since then have been directed to travel, and so here I am, being a full-time digital nomad, traveling to all of the places I had once only heard of. I am now an adventurer of sorts, and I wouldn't change it for anything.",
     despcription3: "Now, I can not only achieve this dream for myself, but working with Wandering Earl Tours has helped me bring this dream to others, which I'm extremely happy about!",
@@ -28,7 +28,7 @@ export const TeamData = [
     position: "Tour Director",
   },
   {
-    image: "/images/aboutUs/team/Image4.png",
+    image: "/images/aboutUs/Team/Image4.png",
     description1: "With over 20 years of travel experience and almost as many years of guiding around the world, I'm ALWAYS prepared for any kind of adventure, even on a minute's notice. From Vietnam to Morocco, Jordan to Cambodia, Egypt to Indonesia and so many unbelievable destinations in between...just name a place and I'm ready to go!",
     despcription2: "The way I see it – the more we travel, the deeper connection we have with our planet and all the cultures that exist, leading to more sustainable choices to ensure it all survives.",
     despcription3: "I've been leading small group trips for Wandering Earl Tours for the past 7 years, in Morocco, Jordan, Egypt, India, SE Asia and more!",
@@ -37,7 +37,7 @@ export const TeamData = [
     position: "Tour Leader",
   },
   {
-    image: "/images/aboutUs/team/Image5.png",
+    image: "/images/aboutUs/Team/Image5.png",
     description1: "I first traveled overseas after graduating high school and I haven't stopped! I've traveled to 49 states and over 70 countries (I am still missing Ohio!). After working in restaurant and retail management for many years I decided it was time to fulfill my dream of traveling. I packed up all my belongings, sold my house and embarked on a 13+ month trip around the world.",
     despcription2: "After running into a tour group on a small island in southern Laos, I filed it away thinking that would be a great job. When I came back to the US, I then applied to be a tour leader. Six months later I was in Vietnam training for my dream job.",
     despcription3: "This career has taken me to all corners of the globe and I now love working for Wandering Earl and sharing my passion for travel with everyone on these trips!",
@@ -46,7 +46,7 @@ export const TeamData = [
     position: "Tour Leader",
   },
   {
-    image: "/images/aboutUs/team/Image6.png",
+    image: "/images/aboutUs/Team/Image6.png",
     description1: "It is no secret to those who know me that I am the happiest while on the road! I studied tourism in college and I've worked for more than 12 years in the tourism industry, only to discover that tour leading is one of my favorite things to do!",
     despcription2: "I seek adventure when I travel and I always find ways to get out of my comfort zone. I have lived in several cities across four continents, and I am not planning to stop discovering our beautiful world, learning about new cultures, speaking different languages and blending in with locals.",
     despcription3: "I've lead tours in Africa, Europe, the Middle East and more, and I genuinely look forward to seeing happy faces while in the unique destinations we travel to on Wandering Earl tours!",
@@ -55,7 +55,7 @@ export const TeamData = [
     position: "Tour Leader",
   },
   {
-    image: "/images/aboutUs/team/Image7.png",
+    image: "/images/aboutUs/Team/Image7.png",
     description1: "I am happiest when I'm outside and on an adventure! Travel is truly my greatest passion and when I'm not on a trip, I'm dreaming of the next one. From spending months backpacking through Europe and Southeast Asia to taking countless road trips around North America, I always try to find exciting ways to get off the beaten path and immerse myself in each destination.",
     despcription2: "I believe unique and meaningful experiences are essential elements of any successful trip and work hard to ensure all guests leave our tours feeling the same.",
     despcription3: "Some of my favorite things include photography, cycling, and spending time in nature. I'm also easily excited by anything related to food – especially spicy Thai meals and delicious local beers!",

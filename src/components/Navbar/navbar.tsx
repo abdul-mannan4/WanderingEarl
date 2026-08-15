@@ -227,7 +227,7 @@ export default function Navbar({
             />
           </button>
 
-          <button className="h-[38px] max-[350px]:h-[32px] bg-white cursor-pointer text-primary-navy rounded-[24px] font-inter font-medium text-[14px] max-[350px]:text-[12px] px-[24px] max-[350px]:px-[16px]">
+          <button className="h-[38px] max-[350px]:h-[32px] bg-accent-orange hover:bg-accent-orange-hover cursor-pointer text-white rounded-[24px] font-inter font-medium text-[14px] max-[350px]:text-[12px] px-[24px] max-[350px]:px-[16px]">
             Login
           </button>
         </div>

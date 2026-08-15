@@ -43,11 +43,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-inter">
+      <body className="min-h-screen flex flex-col font-inter">
      
           
         <NavBarWrapper />
-        {children}
+        <main className="flex-1">
+          {children}
+        </main>
         <Footer />
 
       </body>

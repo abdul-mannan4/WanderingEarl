@@ -3,7 +3,7 @@ import { Tour } from "../../data/type";
 import TourCard from "./TourCard/tourCard";
 
 interface TourSectionProps {
-  year: string | number;
+  year?: string | number | null;
   title?: string;
   tours: Tour[];
   showGradient?: boolean;
@@ -20,7 +20,7 @@ interface TourSectionProps {
 }
 
 export default function TourSection({
-  year,
+  year = "",
   title = "TOURS",
   tours,
   showGradient = true,
@@ -51,10 +51,16 @@ export default function TourSection({
           className={`container flex flex-row ${allTourBtn ? "justify-between" : "justify-center"} items-end gap-[16px] ${containerPadding} ${showGradient ? "pt-[150px] lg:pt-[140px] 2xl:pt-[200px]" : "pt-0"
             }`}
         >
-          <p className={`font-inter font-black ${yearColor} ${allTourBtn ? "text-left" : "text-center"} ${fontSize} leading-[1.05] 2xl:leading-[120px] uppercase`}>
-            {year} <span className={`${layout === "stacked" ? "block" : "inline"} ${titleColor}`}>{title}</span>
-          </p>
-
+          {(year || title) && (
+            <p className={`font-inter font-black ${yearColor} ${allTourBtn ? "text-left" : "text-center"} ${fontSize} leading-[1.05] 2xl:leading-[120px] uppercase`}>
+              {year && <span >{year}</span>}
+              {title && (
+                <span className={`${layout === "stacked" ? "block" : "inline"} ${titleColor}`}>
+                  {title}
+                </span>
+              )}
+            </p>
+          )}
           {allTourBtn && (
             <button className="group flex items-center gap-2.5 pt-[10px] pb-[11px] md:pt-[15px] md:pb-[16px] px-[20px] xl:px-[30px] text-primary-navy rounded-[30px] border-[1px] border-primary-navy font-bold text-[14px] md:text-[16px] cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 shrink-0 mb-[6px] md:mb-[10px]">
               All Tours
@@ -89,8 +95,8 @@ export default function TourSection({
                 cardWidth
                   ? cardWidth
                   : centerGrid
-                  ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
-                  : "w-full sm:max-w-[488px] mx-auto md:max-w-none md:last:col-span-2 md:last:max-w-[calc(50%-10px)] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
+                    ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+                    : "w-full md:last:col-span-2 md:last:max-w-[calc(50%-10px)] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
               }
             >
               <TourCard {...tour} />

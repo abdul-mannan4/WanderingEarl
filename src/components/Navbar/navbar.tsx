@@ -19,6 +19,10 @@ const navLinks =
     { label: "CONTACT US", href: "/contactUS" },
   ]
 
+const overlayRoutes=["/","/tours","/pastTours","/contactUs"];
+const relativeRoutes=["/aboutUS","/ourStyle","/privateTours"];
+
+
 export default function Navbar({
   className = "",
   variant = "transparent",
@@ -27,6 +31,10 @@ export default function Navbar({
 
   const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
+
+  const isOverlay=overlayRoutes.includes(pathName);
+  const positionClass=isOverlay ? "absolute top-0 left-0":"relative";
+
 
   const bgStyles = {
     transparent: "bg-transparent",
@@ -44,7 +52,7 @@ export default function Navbar({
 
   return (
     <nav
-      className={`absolute top-0 left-0 w-full z-50 ${bgStyles[variant]} ${className}`}>
+      className={` ${positionClass} w-full z-50 ${bgStyles[variant]} ${className}`}>
       <div
         className="container hidden lg:flex flex-row items-center justify-between pt-3 2xl:pt-[30px] pb-3 2xl:!px-[80px] box-border lg:!px-[30px]">
         {/* 1. Logo Container (Nest Hub par chota, XL par full size) */}

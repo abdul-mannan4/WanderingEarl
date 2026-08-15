@@ -16,6 +16,7 @@ html {
   --accent-orange-hover: #d13a1f;
   --text-dark: #1E1E1E;
   --text-muted: #404040;
+  --text-light-gray:#D6D6D6;
   --border-gray: #D1D5DB;
   --cta-border: #AF8A79;
   --background: #ffffff;
@@ -36,6 +37,7 @@ html {
   --color-accent-orange-hover: var(--accent-orange-hover);
   --color-text-dark: var(--text-dark);
   --color-text-muted: var(--text-muted);
+  --color-light-gray:var(--text-light-gray);
   --color-border-gray: var(--border-gray);
   --color-cta-border: var(--cta-border);
 

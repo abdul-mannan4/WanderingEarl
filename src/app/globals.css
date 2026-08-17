@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@theme {
+  --breakpoint-3xl:1800px;
+}
 
 ::-webkit-scrollbar {
   height: 0;

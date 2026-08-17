@@ -5,7 +5,7 @@ export default function ContentCollage() {
   return (
     <div className='container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-6 sm:gap-10 lg:gap-6 xl:gap-10 2xl:gap-12 min-[1910px]:gap-[128px] px-4 sm:px-6 md:px-12 lg:px-8 xl:px-12 2xl:px-16 min-[1910px]:!px-[208px] pb-8 lg:pb-[120px]'>
 
-      <div className='flex flex-col justify-center gap-3 lg:gap-3.5 xl:gap-6 2xl:gap-[24px] min-[1910px]:gap-[40px] w-full flex-1 max-w-[762px] font-inter font-medium text-text-dark text-center lg:text-left'>
+      <div className='flex flex-col justify-center gap-3 lg:gap-3.5 xl:gap-6 2xl:gap-[24px] min-[1910px]:gap-[40px] w-full flex-1 max-w-[762px] font-inter font-medium text-text-dark lg:text-left'>
         <div className='font-inter font-bold text-[26px] sm:text-[30px] lg:text-[30px] xl:text-[35px] 2xl:text-[36px] min-[1910px]:text-[40px] uppercase leading-tight lg:leading-[34px] xl:leading-[40px] 2xl:leading-[44px] min-[1910px]:leading-[48px]'>
           <p className='text-accent-orange'>UNIQUE TOURS</p>
           <span>you can’t find anywhere else.</span>

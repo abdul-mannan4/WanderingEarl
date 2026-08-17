@@ -11,9 +11,8 @@ export default function TeamPage() {
         return (
           <div
             key={member.name}
-            className={`flex flex-col ${
-              isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
-            } items-center lg:items-start xl:items-center gap-6 sm:gap-8 lg:gap-[40px] xl:gap-[64px]`}
+            className={`flex flex-col ${isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
+              } items-center lg:items-start xl:items-center gap-6 sm:gap-8 lg:gap-[40px] xl:gap-[64px]`}
           >
             {/* Image - Responsive size (40% on lg, 44% on xl, max-622px on 2xl) to prevent text squishing */}
             <div className="relative w-full max-w-[340px] sm:max-w-[420px] lg:w-[40%] xl:w-[44%] 2xl:max-w-[622px] aspect-square rounded-[16px] sm:rounded-[24px] overflow-hidden shadow-lg flex-shrink-0">

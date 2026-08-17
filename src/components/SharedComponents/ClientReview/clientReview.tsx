@@ -5,7 +5,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { reviews } from "../../data/review";
 import Review from "./ReviewCard/reviewCard";
 
-export default function ClientReview() {
+type ClientReviewProp={
+  sliderColor?:string
+}
+
+export default function ClientReview({sliderColor="bg-primary-navy"}:ClientReviewProp) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
   const totalItems = reviews.length;
@@ -97,8 +101,8 @@ export default function ClientReview() {
             key={index}
             onClick={() => setCurrentIndex(index * itemsPerPage)}
             className={`h-[11px] rounded-[6px] transition-all duration-300 cursor-pointer ${activePage === index
-              ? "w-[40px] sm:w-[55px] bg-primary-navy"
-              : "w-[18px] sm:w-[24px] bg-primary-navy/30 hover:bg-primary-navy/50"
+              ? `w-[40px] sm:w-[55px] ${sliderColor}` 
+              : `w-[18px] sm:w-[24px] ${sliderColor}/30 hover:${sliderColor}/50`
               }`}
           />
         ))}

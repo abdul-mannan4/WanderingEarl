@@ -10,7 +10,7 @@ export default function ContentCollage() {
         <Collage />
       </div>
 
-      <div className='flex flex-col justify-center gap-3 lg:gap-3.5 xl:gap-6 2xl:gap-[24px] min-[1910px]:gap-[40px] w-full flex-1 max-w-[762px] font-inter font-medium text-text-dark text-center lg:text-left'>
+      <div className='flex flex-col justify-center gap-3 lg:gap-3.5 xl:gap-6 2xl:gap-[24px] min-[1910px]:gap-[40px] w-full flex-1 max-w-[762px] font-inter font-medium text-text-dark lg:text-left'>
         <div className='font-inter font-bold text-[26px] sm:text-[30px] lg:text-[30px] xl:text-[35px] 2xl:text-[36px] min-[1910px]:text-[40px] uppercase leading-tight lg:leading-[34px] xl:leading-[40px] 2xl:leading-[44px] min-[1910px]:leading-[48px]'>
           <p className='text-accent-orange'>TOURS</p>
           <span>that are good for everyone.</span>

@@ -20,11 +20,11 @@ export default function GlobalFamilySection() {
 
       <div className="w-full flex flex-col-reverse lg:flex-row items-center lg:items-stretch justify-between min-h-[440px] sm:min-h-[480px] lg:h-[480px] xl:h-[540px] 2xl:h-[580px]">
         {/* Text Side - Left Aligned */}
-        <div className="relative z-10 w-full lg:w-[50%] xl:w-[48%] 2xl:max-w-[742px] px-6 sm:px-10 lg:pl-[40px] xl:pl-[80px] lg:pr-6 py-10 sm:py-14 lg:py-16 xl:py-20 flex flex-col items-start text-left justify-center gap-4 sm:gap-5 lg:gap-6">
-          <h2 className="font-extrabold text-white text-[28px] sm:text-[34px] lg:text-[38px] xl:text-[44px] leading-tight uppercase tracking-tight text-left">
+        <div className="relative z-10 w-full lg:w-[50%] xl:w-[48%] 2xl:max-w-[742px] px-6 sm:px-10 lg:pl-[40px] xl:pl-[80px] lg:pr-6 py-6 sm:py-14 lg:py-16 xl:py-20 flex flex-col items-start text-left justify-center gap-4 sm:gap-5 lg:gap-6">
+          <h2 className="font-extrabold text-white text-[24px] sm:text-[34px] lg:text-[38px] xl:text-[44px] leading-tight uppercase tracking-tight text-left">
             Our Global Family
           </h2>
-          <p className="text-white/90 font-inter text-[15px] sm:text-[16px] xl:text-[18px] leading-relaxed max-w-full lg:max-w-[460px] xl:max-w-[500px] 2xl:max-w-[742px] text-left">
+          <p className="text-white/90 font-inter text-[14px] sm:text-[16px] xl:text-[18px] leading-relaxed max-w-full lg:max-w-[460px] xl:max-w-[500px] 2xl:max-w-[742px] text-left">
             Our team also consists of our incredible travel partners, friends
             and endless local contacts in every country where we operate.
             These wonderful people work extremely hard to help us create and
@@ -32,7 +32,7 @@ export default function GlobalFamilySection() {
             it takes such a dedicated and global team to create our rewarding
             travel experiences!
           </p>
-          <div className="pt-2 flex justify-start items-start w-full">
+          <div className="flex justify-start items-start w-full">
             <button className="bg-[#0B2545] text-white font-medium text-[14px] sm:text-[15px] xl:text-[16px] px-7 py-3 xl:px-8 xl:py-3.5 rounded-full hover:bg-[#061830] transition-all shadow-md active:scale-95 text-left">
               Contact Us Today
             </button>

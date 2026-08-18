@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function AboutUSCollage() {
   return (
-    <div
-      className="relative w-full max-w-[614px] mx-auto shrink-0"
-      style={{ aspectRatio: "614 / 550" }}
-    >
+  <div
+  className="relative w-full max-w-full lg:max-w-[614px] mx-auto shrink-0
+    aspect-[614/430] lg:aspect-[614/550]"
+>
       {/* Image 1 (Top - villa/beach hotel, full width) */}
       <div className="absolute left-0 top-0 w-full h-[63.45%] overflow-hidden shadow-lg z-10 rounded-[16px] sm:rounded-[24px]">
         <Image

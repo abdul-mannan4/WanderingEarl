@@ -29,7 +29,7 @@ export default function OurStylePage() {
 
       <InfoSection />
       <ContactSection />
-      <div className="pb-[150px] pt-[141px]">
+      <div className="mb-[52px] lg:pb-[150px] mt-[32px] lg:pt-[100px] xl:pt-[141px]">
         <TourSection
           title="Tours"
           tours={tours24}

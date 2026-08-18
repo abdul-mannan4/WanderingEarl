@@ -12,7 +12,7 @@ export const NicheCard: React.FC<NicheCardProps> = ({ Icon, label }) => {
     <div className="bg-white rounded-[16px] sm:rounded-[20px] 2xl:rounded-[24px] border border-[#D6D6D6] shadow-[0_15px_35px_-15px_rgba(0,0,0,0.1)] 
     hover:shadow-[0_25px_50px_-20px_rgba(0,0,0,0.15)] 
     transition-all duration-300 flex flex-col items-center justify-center 
-    gap-[12px] sm:gap-[16px] xl:gap-[24px] 2xl:gap-[30px] px-4 sm:px-5 xl:px-8 2xl:px-[40px] pt-3 sm:pt-5 xl:pt-6 2xl:pt-[30px] pb-4 sm:pb-6 xl:pb-8 2xl:pb-[40px] w-full 2xl:w-[425px] h-[150px] sm:h-[180px] lg:h-[200px] xl:h-[215px] 2xl:h-[229px] mx-auto">
+    gap-[12px] sm:gap-[16px] xl:gap-[20px] 2xl:gap-[24px] px-3 sm:px-4 xl:px-6 2xl:px-[24px] pt-3 sm:pt-5 xl:pt-6 2xl:pt-[24px] pb-4 sm:pb-6 xl:pb-6 2xl:pb-[24px] w-full max-w-[425px] h-[150px] sm:h-[180px] lg:h-[190px] xl:h-[205px] 2xl:h-[220px] mx-auto">
       <div className="relative w-[50px] h-[50px] sm:w-[65px] sm:h-[65px] xl:w-[80px] xl:h-[80px] 2xl:w-[100px] 2xl:h-[100px] shrink-0">
         <Image
           src={Icon}

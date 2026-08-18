@@ -7,23 +7,17 @@ export default function TourRoute() {
   return (
     <div>
       <PageMain title='TOURS' imgSrc='/images/tourPage/tourBackground.png'/>
-      <div className="pb-[94px]">
+      <div className="pb-[52px] lg:pb-[94px]">
         <TourSection
         id='tours2024'
           year={2024}
           tours={allTours24}
           layout="inline"
           centerGrid={true}
-          linearGradient="linear-gradient(180deg,
-                                          rgba(30,54,92,1) 0%,
-                                          rgba(30,54,92,0.94) 15%,
-                                          rgba(30,54,92,0.82) 30%,
-                                          rgba(30,54,92,0.58) 50%,
-                                          rgba(30,54,92,0.25) 70%,
-                                          rgba(30,54,92,0) 100%    )"
+          linearGradient="linear-gradient(180deg, rgba(30,54,92,1) 0%, rgba(30,54,92,0.94) 15%, rgba(30,54,92,0.82) 30%, rgba(30,54,92,0.58) 50%, rgba(30,54,92,0.25) 70%, rgba(30,54,92,0) 100%)"
 
-          gridCols="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          cardWidth="w-full md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] 2xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+          gridCols="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          cardWidth="w-full sm:w-[calc(50%-10px)] md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] 2xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
           containerPadding="!px-[16px] sm:!px-[24px] md:!px-[32px] lg:!px-[40px] xl:!px-[50px] 2xl:!px-[60px] min-[1800px]:!px-[80px]"
           yearColor="text-accent-orange"
           titleColor="text-text-muted"
@@ -31,7 +25,7 @@ export default function TourRoute() {
         />
       </div>
 
-      <div className="pb-[144px]">
+      <div className="pb-[52px] lg:pb-[144px]">
         <TourSection
         id='tours2025'
           year={2025}
@@ -39,8 +33,8 @@ export default function TourRoute() {
           showGradient={false}
           layout="inline"
           centerGrid={true}
-          gridCols="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          cardWidth="w-full md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] 2xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+          gridCols="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          cardWidth="w-full sm:w-[calc(50%-10px)] md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] 2xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
           containerPadding="!px-[16px] sm:!px-[24px] md:!px-[32px] lg:!px-[40px] xl:!px-[50px] 2xl:!px-[60px] min-[1800px]:!px-[80px]"
           yearColor="text-accent-orange"
           titleColor="text-text-muted"

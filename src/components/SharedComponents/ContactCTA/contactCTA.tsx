@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function ContactSection() {
   return (
-    <div className="container 2xl:!px-[80px]">
-      <div className="pt-[24px] sm:pt-[50px] md:pt-[60px] 2xl:pt-[85.41px] pb-[24px] sm:pb-[40px] md:pb-[50px] 2xl:pb-[84.41px]">
+    <div className="container 2xl:!px-[80px] ">
+      <div className="lg:pt-[60px] 2xl:pt-[85.41px] pb-[24px] sm:pb-[40px] md:pb-[50px] 2xl:pb-[84.41px]">
 
         {/* MOBILE & TABLET LAYOUT (< md breakpoint) - Stacked Column Card */}
-        <div className="md:hidden flex flex-col items-center w-full max-w-[350px] min-[380px]:max-w-[420px] sm:max-w-[540px] mx-auto rounded-[16px] border-[2px] border-[#E9482B]/20 bg-accent-orange shadow-lg">
+        <div className="md:hidden flex flex-col items-center w-full mx-auto rounded-[16px] border-[2px] border-[#E9482B]/20 bg-accent-orange shadow-lg">
           {/* Top Orange Container */}
-          <div className="bg-[#E9482B] rounded-t-[14px] px-5 py-6 sm:py-7 flex flex-col items-center sm:items-start text-center sm:text-left gap-3.5 sm:gap-4 z-10 w-full">
-            <p className="font-black text-[15px] sm:text-[20px] leading-[1.35] uppercase text-white tracking-wide max-w-[360px] sm:max-w-[500px]">
+          <div className="bg-[#E9482B] rounded-t-[14px] px-5 py-6 sm:py-7 flex flex-col items-start text-left gap-3.5 sm:gap-4 z-10 w-full">
+            <p className="font-black text-[15px] sm:text-[20px] leading-[1.35] uppercase text-white tracking-wide max-w-[360px] sm:max-w-[70vw]">
               If you have any questions, simply get in touch. We’re here to help
               and we always reply quickly.
             </p>

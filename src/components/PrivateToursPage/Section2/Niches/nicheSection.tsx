@@ -20,11 +20,11 @@ const nicheData = [
 export default function NicheSection() {
   return (
     <section className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-8 xl:px-12 2xl:!px-[80px] mt-0">
-      <div className="w-full flex flex-col items-center gap-8 sm:gap-12 lg:gap-16 xl:gap-[80px]">
-        <div className="w-full flex justify-center items-center text-center font-inter max-w-[850px] mx-auto">
-          <h2 className="font-bold text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[50.5px] uppercase text-text-dark">
+      <div className="w-full flex flex-col items-center gap-6 xl:gap-[80px]">
+        <div className="w-full flex justify-start lg:justify-center items-center text-left lg:text-center font-inter max-w-[850px] mx-auto">
+          <h2 className="font-bold text-2xl sm:text-3xl lg:text-[40px] lg:leading-[50.5px] uppercase text-text-dark">
             NICHES
-            <span className="block font-normal text-sm sm:text-base md:text-lg lg:text-[24px] leading-normal text-text-muted mt-2 sm:mt-3 capitalize">
+            <span className="block font-normal text-sm sm:text-base md:text-lg lg:text-[24px] leading-relaxed text-text-muted capitalize">
               Some of the niches that we&apos;ve organized private tours around include:
             </span>
           </h2>

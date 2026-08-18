@@ -3,7 +3,7 @@ import InfoCard from "./infoCard"
 
 export default function InfoSection() {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:!px-0 pb-[60px] lg:pb-[100px] xl:pb-[141px] relative lg:pt-[20px] w-full flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-0">
+    <div className="container mx-auto px-4 sm:px-6 lg:!px-0 pb-[32px] lg:pb-[100px] xl:pb-[141px] relative lg:pt-[20px] w-full flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-0">
       <InfoCard
         image="/images/ourStyle/AeroPlane.jpg"
         alt="Airplane ticket and globe"

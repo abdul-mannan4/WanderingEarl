@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function PrivateTourStory() {
   return (
-    <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-6 sm:gap-10 lg:gap-6 xl:gap-10 2xl:gap-12 min-[1910px]:gap-[128px] px-4 sm:px-6 md:px-12 lg:px-8 xl:px-12 2xl:!px-[80px] pb-8 lg:pb-[120px]">
-      <div className="flex flex-col justify-center gap-3 lg:gap-3.5 xl:gap-6 2xl:gap-[24px] min-[1910px]:gap-[40px] w-full flex-1 max-w-[762px] font-inter font-medium text-text-dark text-center lg:text-left">
+    <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-6 xl:gap-10 2xl:gap-12 min-[1910px]:gap-[128px] px-4 sm:px-6 md:px-12 lg:px-8 xl:px-12 2xl:!px-[80px] pb-8 lg:pb-[120px]">
+      <div className="flex flex-col justify-center gap-3 lg:gap-3.5 xl:gap-6 2xl:gap-[24px] min-[1910px]:gap-[40px] w-full flex-1 max-w-[762px] font-inter font-medium text-text-dark text-left">
         <div className="font-inter font-bold text-[26px] sm:text-[30px] lg:text-[30px] xl:text-[35px] 2xl:text-[36px] min-[1910px]:text-[40px] uppercase leading-tight lg:leading-[34px] xl:leading-[40px] 2xl:leading-[44px] min-[1910px]:leading-[48px]">
           <h2>
             <span className="text-accent-orange">PRIVATE TOURS</span>
@@ -34,7 +34,7 @@ export default function PrivateTourStory() {
           <p></p>
         </div>
       </div>
-      <div className="w-full max-w-[360px] sm:max-w-[500px] md:max-w-[650px] lg:max-w-[870px] lg:flex-1 shrink-0 self-center mb-6 lg:mb-0">
+<div className="w-full max-w-[762px] lg:max-w-[870px]  lg:flex-1 shrink-0 self-center mb-6 lg:mb-0">
         <div className="border-[8px] sm:border-[12px] lg:border-[16px] border-white box-border rounded-[16px] sm:rounded-[20px] lg:rounded-[24px] shadow-[-15px_15px_30px_0px_#00000033] sm:shadow-[-25px_20px_45px_0px_#00000045] lg:shadow-[-40px_30px_60px_0px_#00000066] w-full aspect-[870/557] relative">
           <div className="relative w-full h-full rounded-[6px] sm:rounded-[8px] overflow-hidden">
             <Image

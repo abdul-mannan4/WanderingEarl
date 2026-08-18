@@ -6,7 +6,7 @@ import CountriesSection from './Countries/countriesSection'
 
 export default function Section2() {
   return (
-    <div className="container flex flex-col gap-12 sm:gap-20 lg:gap-[100px] xl:gap-[140px] !px-0 pb-12 sm:pb-20 lg:pb-[100px] xl:pb-[140px]">
+    <div className="w-full flex flex-col gap-8 sm:gap-16 lg:gap-[80px] xl:gap-[140px] pb-12 sm:pb-20 lg:pb-[100px] xl:pb-[140px]">
       <NicheSection />
       <CountriesSection />
       <ContactSection />

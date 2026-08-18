@@ -4,8 +4,7 @@ import Image from "next/image";
 export default function AboutUSCollage() {
   return (
     <div
-      className="relative w-full max-w-[740px] h-[320px] sm:h-[400px] lg:h-[460px] 2xl:h-[520px] mx-auto shrink-0"
-      style={{ aspectRatio: "740 / 520" }}
+      className="relative w-full max-w-full lg:max-w-[740px] h-[320px] sm:h-[400px] lg:h-[460px] 2xl:h-[520px] mx-auto shrink-0 aspect-[614/430] lg:aspect-[740/520]"
     >
       {/* Image 1 (Left Back) */}
       <div className="absolute left-0 top-0 w-[42.84%] h-[78%] overflow-hidden shadow-lg z-10 rounded-[16px] sm:rounded-[24px]">

@@ -31,7 +31,7 @@ export default function TourSection({
   containerPadding = "min-[1920px]:!px-[208px]",
   yearColor,
   titleColor,
-  gridCols = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+  gridCols = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
   allTourBtn = false,
   fontSize = "text-[36px] sm:text-[48px] md:text-[72px] lg:text-[96px] 2xl:text-[128px]",
   centerGrid = false,
@@ -51,7 +51,7 @@ export default function TourSection({
       <div className="relative z-10">
         {/* Header Row */}
         <div
-          className={`container flex flex-row ${allTourBtn ? "justify-between" : "justify-center"} items-end gap-[16px] ${containerPadding} ${showGradient ? "pt-[150px] lg:pt-[140px] 2xl:pt-[200px]" : "pt-0"
+          className={`container flex flex-row ${allTourBtn ? "justify-between" : "justify-center"} items-center h-[100%] lg:items-end gap-[16px] ${containerPadding} ${showGradient ? "pt-[52px] lg:pt-[140px] 2xl:pt-[200px]" : "pt-0"
             }`}
         >
           {(year || title) && (
@@ -86,7 +86,7 @@ export default function TourSection({
 
         {/* Dynamic Card Container */}
         <div
-          className={`container mt-[24px] md:mt-[32px] gap-[20px] ${containerPadding} ${centerGrid
+          className={`container mt-[24px] md:mt-[32px] gap-[18px] lg:gap-[20px] ${containerPadding} ${centerGrid
             ? "flex flex-wrap justify-center"
             : gridCols
             }`}
@@ -98,8 +98,8 @@ export default function TourSection({
                 cardWidth
                   ? cardWidth
                   : centerGrid
-                    ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
-                    : "w-full md:last:col-span-2 md:last:max-w-[calc(50%-10px)] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
+                    ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+                    : "w-full sm:last:col-span-2 sm:last:max-w-[calc(50%-10px)] sm:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
               }
             >
               <TourCard {...tour} />

@@ -26,13 +26,13 @@ export default function AboutUs() {
       <ContentCollage />
       
       {/* GlobalFamilySection edge-to-edge full screen width background */}
-      <div className="pb-16 lg:pb-[140px]">
+      <div className="pb-[52px] md:pb-16 lg:pb-[140px]">
         <GlobalFamilySection />
       </div>
 
       <TeamSection />
       
-      <div className="py-[150px]">
+      <div className="py-[52px] lg:py-[150px]">
         <TourSection
           title="Tours"
           tours={tours24}

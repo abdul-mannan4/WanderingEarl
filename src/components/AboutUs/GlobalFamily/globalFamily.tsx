@@ -61,7 +61,7 @@ export default function GlobalFamilySection() {
         <div className="block lg:hidden relative w-full aspect-[16/10] sm:aspect-[16/9] min-h-[260px] sm:min-h-[340px] shrink-0">
           <div
             className="w-full h-full relative"
-            style={{ clipPath: "url(#global-family-curve-mobile)" }}
+            
           >
             <Image
               src="/images/aboutUs/globalFamily.jpg"

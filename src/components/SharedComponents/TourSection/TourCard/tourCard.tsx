@@ -53,21 +53,21 @@ export default function TourCard({
         <div className='px-[12px] sm:px-[16px] 2xl:px-[20px] flex flex-col gap-[14px] sm:gap-[18px] 2xl:gap-[24px] bg-white h-full justify-between flex-1'>
           <div className='flex flex-col gap-[12px] sm:gap-[16px] 2xl:gap-[20px]'>
             <div className='flex flex-col gap-[6px] sm:gap-[8px]'>
-              <h1 className='font-inter font-black text-[15px] sm:text-[17px] xl:text-[18px] 2xl:text-[20px] leading-[1.25] uppercase text-text-dark min-h-[2.5em] flex items-center'>
+              <h1 className='font-inter font-black text-[15px] sm:text-[17px] xl:text-[18px] 2xl:text-[20px] leading-[1.25] uppercase text-text-dark md:min-h-[2.5em] flex items-center'>
                 {title}
               </h1>
-              <p className='font-inter font-normal text-[12px] sm:text-[13px] xl:text-[14px] 2xl:text-[16px] leading-[1.4] 2xl:leading-[22px] text-text-dark line-clamp-3 min-h-[4.2em]'>
+              <p className='font-inter font-normal text-[12px] sm:text-[13px] xl:text-[14px] 2xl:text-[16px] leading-[1.4] 2xl:leading-[22px] text-text-dark md:line-clamp-3 min-h-[4.2em]'>
                 {description}
               </p>
             </div>
 
             <div className='flex flex-col gap-[10px] sm:gap-[14px]'>
-              <div className='flex flex-wrap items-center justify-start gap-x-[16px] sm:gap-x-[16px] gap-y-[6px]'>
+              <div className='flex flex-wrap items-center justify-start gap-x-[18px] sm:gap-x-[11px] lg:gap-x-[14px] gap-y-[6px]'>
                 <div className='flex flex-row items-center gap-[6px] shrink-0'>
                   <div>
                     <UserLogo />
                   </div>
-                  <p className='font-inter font-semibold text-[11px] sm:text-[12px] xl:text-[13px] 2xl:text-[14px] leading-[100%] whitespace-nowrap self-center'>
+                  <p className='font-inter font-semibold text-[13px] sm:text-[12px] xl:text-[13px] 2xl:text-[14px] leading-[100%] whitespace-nowrap self-center'>
                     <span className="font-bold text-text-muted">{spotsBooked}<span className='text-[#8F8F8F]'> out of {totalSpots} </span> spots booked</span>
                   </p>
                 </div>

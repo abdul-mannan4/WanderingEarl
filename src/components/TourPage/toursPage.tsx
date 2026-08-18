@@ -9,6 +9,7 @@ export default function TourRoute() {
       <PageMain title='TOURS' imgSrc='/images/tourPage/tourBackground.png'/>
       <div className="pb-[94px]">
         <TourSection
+        id='tours2024'
           year={2024}
           tours={allTours24}
           layout="inline"
@@ -32,6 +33,7 @@ export default function TourRoute() {
 
       <div className="pb-[144px]">
         <TourSection
+        id='tours2025'
           year={2025}
           tours={allTours24}
           showGradient={false}

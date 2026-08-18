@@ -20,7 +20,7 @@ const footerLinks = [
   {
     title: "CONTACT",
     links: [
-      { label: "Contact Us", href: "/contactUs" },
+      { label: "Contact Us", href: "/contactUS" },
     ],
   },
   {

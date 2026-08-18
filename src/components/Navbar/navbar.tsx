@@ -19,7 +19,7 @@ const navLinks =
     { label: "CONTACT US", href: "/contactUS" },
   ]
 
-const overlayRoutes=["/","/tours","/pastTours","/contactUs"];
+const overlayRoutes=["/","/tours","/pastTours","/contactUS"];
 const relativeRoutes=["/aboutUS","/ourStyle","/privateTours"];
 
 

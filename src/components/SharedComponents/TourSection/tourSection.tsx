@@ -1,8 +1,10 @@
 import React from "react";
 import { Tour } from "../../data/type";
 import TourCard from "./TourCard/tourCard";
+import Link from "next/link";
 
 interface TourSectionProps {
+  id?:string
   year?: string | number | null;
   title?: string;
   tours: Tour[];
@@ -20,6 +22,7 @@ interface TourSectionProps {
 }
 
 export default function TourSection({
+  id,
   year = "",
   title = "TOURS",
   tours,
@@ -38,13 +41,13 @@ export default function TourSection({
 }: TourSectionProps) {
 
   return (
-    <div className="relative">
+    <div id={id} className="relative">
       {showGradient && (
         <div className="absolute top-0 left-0 right-0 h-[309px] pointer-events-none z-0"
           style={{ background: linearGradient }}
         />
       )}
-
+ 
       <div className="relative z-10">
         {/* Header Row */}
         <div
@@ -62,7 +65,7 @@ export default function TourSection({
             </p>
           )}
           {allTourBtn && (
-            <button className="group flex items-center gap-2.5 pt-[10px] pb-[11px] md:pt-[15px] md:pb-[16px] px-[20px] xl:px-[30px] text-primary-navy rounded-[30px] border-[1px] border-primary-navy font-bold text-[14px] md:text-[16px] cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 shrink-0 mb-[6px] md:mb-[10px]">
+            <Link href="/tours" className="group flex items-center gap-2.5 pt-[10px] pb-[11px] md:pt-[15px] md:pb-[16px] px-[20px] xl:px-[30px] text-primary-navy rounded-[30px] border-[1px] border-primary-navy font-bold text-[14px] md:text-[16px] cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 shrink-0 mb-[6px] md:mb-[10px]">
               All Tours
               <svg
                 width="15"
@@ -77,7 +80,7 @@ export default function TourSection({
                   fill="var(--primary-navy)"
                 />
               </svg>
-            </button>
+            </Link>
           )}
         </div>
 

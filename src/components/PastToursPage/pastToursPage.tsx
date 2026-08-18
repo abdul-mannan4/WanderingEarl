@@ -14,7 +14,7 @@ export default function PastToursPage() {
         <PhotoGallery />
       </div>
 
-      <div className="bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(30,54,92,0.1)_30%,rgba(30,54,92,0.4)_35%,rgba(30,54,92,0.67)_40%,rgba(30,54,92,0.9)_45%,#1E365C_50%,#1E365C_100%)]">
+      <div className="bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(30,54,92,0.3)_30%,rgba(30,54,92,0.7)_35%,rgba(30,54,92,0.8)_40%,rgba(30,54,92,0.9)_45%,#1E365C_50%,#1E365C_100%)]">
         <div className="2xl:pb-[140px] lg:pb-[100px] sm:pb-[60px] pb-[30px]">
           <ClientReview sliderColor="bg-[#D6D6D6]" />
         </div>

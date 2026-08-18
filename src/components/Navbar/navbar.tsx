@@ -139,7 +139,7 @@ export default function Navbar({
             className="h-[36px] w-[36px] max-[350px]:h-8 max-[350px]:w-8 flex items-center justify-center text-white focus:outline-none cursor-pointer"
             aria-label="Toggle Navigation">
             <svg
-              className="w-6 h-6 max-[350px]:w-5 max-[350px]:h-5"
+              className="w-9 h-9 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24">
@@ -163,20 +163,28 @@ export default function Navbar({
       )}
 
       <div
-        className={`fixed top-0 left-0 h-screen w-[60vw] max-[350px]:w-[80vw] max-[350px]:px-4 z-50 bg-[#1E365C] px-6 pt-2 pb-6 space-y-4 max-[350px]:space-y-2 border-r border-white/10 lg:hidden transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-0 left-0 h-screen w-[40vw]  z-50 bg-[#1E365C] pt-2 pb-6 space-y-4 max-[350px]:space-y-2 border-r border-white/10 lg:hidden transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
-        <div className="flex justify-end py-2">
-          <button
+        <div className="flex justify-between items-center px-3 py-2 px-0">
+     
+        <div className="w-auto flex justify-center px py-[10px]">
+          <img
+            src="/images/landingPage/logo.png"
+            alt="Logo"
+            className="h-13 w-full"
+          />
+        </div>
+            <button
             onClick={() => setIsOpen(false)}
             className="text-white cursor-pointer hover:scale-110"
             aria-label="Close Navigation"
           >
             <svg
-              className="w-6 h-6 max-[350px]:w-5 max-[350px]:h-5"
+              className="w-10 h-10 max-[350px]:w-8 max-[350px]:h-8"
               fill="none"
               stroke="currentColor"
-              viewBox="0 0 24 24"
+              viewBox="0 0 34 34"
             >
               <path
                 strokeLinecap="round"
@@ -188,15 +196,8 @@ export default function Navbar({
           </button>
         </div>
 
-        <div className="w-auto flex justify-center px-[5px] py-[10px] max-[350px]:py-[4px]">
-          <img
-            src="/images/landingPage/logo.png"
-            alt="Logo"
-            className="h-12 max-[350px]:h-9 w-auto"
-          />
-        </div>
 
-        <div className="flex flex-col gap-3 max-[350px]:gap-1.5 font-inter font-medium text-[14px] max-[350px]:text-[12px] text-white/90 items-start">
+        <div className="flex flex-col gap-3 max-[350px]:gap-1.5 font-inter font-medium text-[14px] max-[350px]:text-[12px] text-white/90 px-2">
 
 
           {navLinks.map((link) => {
@@ -204,7 +205,7 @@ export default function Navbar({
             return (
               <Link href={link.href}
                 key={link.href}
-                className={`py-2 max-[350px]:py-1 px-2 w hover:text-white transition-colors  ${isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px]" : ""
+                className={`py-2 max-[350px]:py-1 px-6 w hover:text-white transition-colors  ${isActive ? "bg-[#FFFFFF1A]  text-white rounded-[12px] max-w-full" : ""
                   }  
                   ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}
                   `}
@@ -218,7 +219,7 @@ export default function Navbar({
           })}
         </div>
 
-        <div className="pt-4 max-[350px]:pt-3 border-t border-white/10 flex items-center justify-between">
+        <div className="pt-4 px-7 max-[350px]:pt-3 border-t border-white/10 flex items-center justify-between">
           <button className="flex flex-row gap-1">
             <img
               src="/images/landingPage/cart.png"

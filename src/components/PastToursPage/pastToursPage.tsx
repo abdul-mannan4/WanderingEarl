@@ -10,7 +10,9 @@ export default function PastToursPage() {
         title="PAST TOURS"
         imgSrc="/images/pastTours/pastTourBackGround.png"
       />
-      <div className="mt-[-4px]">
+      <div className="mt-[-3px]">
+
+      <div>
         <PhotoGallery />
       </div>
 
@@ -23,10 +25,11 @@ export default function PastToursPage() {
           <AskQuestion
             variant="dark"
             title="IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE'RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY."
-          />
+            />
         </div>
       </div>
 
+            </div>
     </div>
   );
 }

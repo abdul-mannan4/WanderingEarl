@@ -19,8 +19,8 @@ const navLinks =
     { label: "CONTACT US", href: "/contactUS" },
   ]
 
-const overlayRoutes=["/","/tours","/pastTours","/contactUS"];
-const relativeRoutes=["/aboutUS","/ourStyle","/privateTours"];
+const overlayRoutes = ["/", "/tours", "/pastTours", "/contactUS"];
+const relativeRoutes = ["/aboutUS", "/ourStyle", "/privateTours"];
 
 
 export default function Navbar({
@@ -32,8 +32,8 @@ export default function Navbar({
   const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
 
-  const isOverlay=overlayRoutes.includes(pathName);
-  const positionClass=isOverlay ? "absolute top-0 left-0":"relative";
+  const isOverlay = overlayRoutes.includes(pathName);
+  const positionClass = isOverlay ? "absolute top-0 left-0" : "relative";
 
 
   const bgStyles = {
@@ -118,35 +118,39 @@ export default function Navbar({
         </div>
       </div>
 
-      {/* MOBILE LAYOUT (< 768px) */}
-      <div className="flex lg:hidden items-center justify-between w-full px-5 max-[350px]:px-3 py-3">
-        <img
-          src="/images/landingPage/logo.png"
-          alt="Wandering Earl Tours Logo"
-          className="object-contain sm:h-13 h-11 max-[350px]:h-[34px] max-[350px]:max-w-[145px] w-auto"
-        />
+      {/* MOBILE LAYOUT (< 1024px) */}
+      <div className="flex lg:hidden items-center justify-between w-full px-4 sm:px-6 py-3">
+        <Link href="/" className="shrink-0">
+          <img
+            src="/images/landingPage/logo.png"
+            alt="Wandering Earl Tours Logo"
+            className="object-contain h-9 sm:h-11 w-auto max-w-[180px] sm:max-w-[220px]"
+          />
+        </Link>
 
-        <div className="flex items-center gap-4 relative">
-          {/* Login button first */}
-          <button className={`h-[36px] hidden sm:flex  rounded-[20px] font-inter font-medium text-[12px] px-5 py-3.5 cursor-pointer items-center justify-center whitespace-nowrap  transition-colors 
-            ${buttonStyles[variant]}
-            `}>
+        <div className="flex items-center gap-3">
+          {/* Login button */}
+          <button
+            className={`h-[34px] hidden sm:flex rounded-[20px] font-inter font-medium text-[12px] px-4 cursor-pointer items-center justify-center whitespace-nowrap transition-colors ${buttonStyles[variant]}`}
+          >
             Login
           </button>
-          {/* Hamburger second */}
+          {/* Hamburger button */}
           <button
             onClick={() => setIsOpen(true)}
-            className=" flex items-center justify-center text-white focus:outline-none cursor-pointer"
-            aria-label="Toggle Navigation">
+            className="flex items-center justify-center text-white focus:outline-none cursor-pointer p-1"
+            aria-label="Toggle Navigation"
+          >
             <svg
-              className="w-9 h-10 "
+              className="w-8 h-8"
               fill="none"
               stroke="currentColor"
-              viewBox="0 0 24 24">
+              viewBox="0 0 24 24"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={2.2}
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
@@ -154,81 +158,82 @@ export default function Navbar({
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 lg:hidden"
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300"
           onClick={() => setIsOpen(false)}
         />
       )}
 
+      {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 left-0 h-screen w-[40vw]  z-50 bg-[#1E365C] pt-2 pb-6 space-y-4 max-[350px]:space-y-2 border-r border-white/10 lg:hidden transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+        className={`fixed top-0 left-0 h-screen w-[75vw] sm:w-[300px] max-w-[320px] z-50 bg-[#1E365C] flex flex-col justify-between p-5 border-r border-white/10 shadow-2xl lg:hidden transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
-        <div className="flex justify-between items-center px-3 py-2 px-0">
-     
-        <div className="w-auto flex justify-center px py-[10px]">
-          <img
-            src="/images/landingPage/logo.png"
-            alt="Logo"
-            className="h-13 w-full"
-          />
-        </div>
-            <button
-            onClick={() => setIsOpen(false)}
-            className="text-white cursor-pointer hover:scale-110"
-            aria-label="Close Navigation"
-          >
-            <svg
-              className="w-10 h-10 max-[350px]:w-8 max-[350px]:h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 34 34"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                d="M6 18L18 6M6 6l12 12"
+        <div>
+          {/* Drawer Header */}
+          <div className="flex justify-between items-center pb-4 border-b border-white/10">
+            <Link href="/" onClick={() => setIsOpen(false)} className="shrink-0">
+              <img
+                src="/images/landingPage/logo.png"
+                alt="Logo"
+                className="h-9 sm:h-10 w-auto object-contain"
               />
-            </svg>
-          </button>
-        </div>
-
-
-        <div className="flex flex-col gap-3 max-[350px]:gap-1.5 font-inter font-medium text-[14px] max-[350px]:text-[12px] text-white/90 px-2">
-
-
-          {navLinks.map((link) => {
-            const isActive = pathName === link.href;
-            return (
-              <Link href={link.href}
-                key={link.href}
-                className={`py-2 max-[350px]:py-1 px-6 w hover:text-white transition-colors  ${isActive ? "bg-[#FFFFFF1A]  text-white rounded-[12px] max-w-full" : ""
-                  }  
-                  ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}
-                  `}
-                onClick={() => setIsOpen(false)}
+            </Link>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-white p-1 rounded-full hover:bg-white/10 transition-colors cursor-pointer"
+              aria-label="Close Navigation"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                {link.label}
-              </Link>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
 
-            );
-
-          })}
+          {/* Nav Links with original color logic preserved */}
+          <div className="flex flex-col gap-2 pt-4 font-inter font-medium text-[14px] sm:text-[15px]">
+            {navLinks.map((link) => {
+              const isActive = pathName === link.href;
+              return (
+                <Link
+                  href={link.href}
+                  key={link.href}
+                  className={`py-2 px-4 hover:text-white transition-colors ${
+                    isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px] max-w-full font-bold" : ""
+                  } ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="pt-4 px-7 max-[350px]:pt-3 border-t border-white/10 flex items-center justify-between">
-          <button className="flex flex-row gap-1">
+        {/* Drawer Footer: Cart + Login */}
+        <div className="pt-4 border-t border-white/10 flex items-center justify-between gap-3">
+          <button className="flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors cursor-pointer" aria-label="Cart">
             <img
               src="/images/landingPage/cart.png"
               alt="Cart Logo"
-              className="w-10 h-10 max-[350px]:w-8 max-[350px]:h-8"
+              className="w-6 h-6 object-contain"
             />
           </button>
 
-          <button className="h-[38px] max-[350px]:h-[32px] bg-accent-orange hover:bg-accent-orange-hover cursor-pointer text-white rounded-[24px] font-inter font-medium text-[14px] max-[350px]:text-[12px] px-[24px] max-[350px]:px-[16px]">
+          <button className="flex-1 h-[40px] bg-accent-orange hover:bg-accent-orange-hover active:scale-[0.98] cursor-pointer text-white rounded-[24px] font-inter font-bold text-[14px] px-6 transition-all shadow-md flex items-center justify-center">
             Login
           </button>
         </div>

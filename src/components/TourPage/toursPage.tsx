@@ -5,9 +5,9 @@ import { allTours24 } from "@/components/data/allTours";
 
 export default function TourRoute() {
   return (
-    <div>
+    <div >
       <PageMain title='TOURS' imgSrc='/images/tourPage/tourBackground.png'/>
-      <div className="pb-[52px] lg:pb-[94px]">
+      <div className="pb-[52px] lg:pb-[94px] mt-[-4px]">
         <TourSection
         id='tours2024'
           year={2024}

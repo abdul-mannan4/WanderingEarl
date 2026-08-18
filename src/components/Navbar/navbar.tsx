@@ -126,7 +126,7 @@ export default function Navbar({
           className="object-contain sm:h-13 h-11 max-[350px]:h-[34px] max-[350px]:max-w-[145px] w-auto"
         />
 
-        <div className="flex items-center gap-3 max-[350px]:gap-1.5 relative">
+        <div className="flex items-center gap-4 relative">
           {/* Login button first */}
           <button className={`h-[36px] hidden sm:flex  rounded-[20px] font-inter font-medium text-[12px] px-5 py-3.5 cursor-pointer items-center justify-center whitespace-nowrap  transition-colors 
             ${buttonStyles[variant]}
@@ -136,10 +136,10 @@ export default function Navbar({
           {/* Hamburger second */}
           <button
             onClick={() => setIsOpen(true)}
-            className="h-[36px] w-[36px] max-[350px]:h-8 max-[350px]:w-8 flex items-center justify-center text-white focus:outline-none cursor-pointer"
+            className=" flex items-center justify-center text-white focus:outline-none cursor-pointer"
             aria-label="Toggle Navigation">
             <svg
-              className="w-9 h-9 "
+              className="w-9 h-10 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24">

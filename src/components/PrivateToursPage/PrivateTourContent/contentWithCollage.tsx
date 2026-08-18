@@ -36,7 +36,8 @@ export default function PrivateTourStory() {
       </div>
 <div className="w-full max-w-[762px] lg:max-w-[870px]  lg:flex-1 shrink-0 self-center mb-6 lg:mb-0">
         <div className="border-[8px] sm:border-[12px] lg:border-[16px] border-white box-border rounded-[16px] sm:rounded-[20px] lg:rounded-[24px] shadow-[-15px_15px_30px_0px_#00000033] sm:shadow-[-25px_20px_45px_0px_#00000045] lg:shadow-[-40px_30px_60px_0px_#00000066] w-full aspect-[870/557] relative">
-          <div className="relative w-full h-full rounded-[6px] sm:rounded-[8px] overflow-hidden">
+          <div className="relative w-full h-full rounded-[6px] sm:rounded-[8px] overflow-hidden shadow-[-40px_30px_60px_0px_rgba(0, 0, 0, 0.4)]
+">
             <Image
               src="/images/privateTours/groupPhoto.png"
               alt="Group of travelers on a private tour"

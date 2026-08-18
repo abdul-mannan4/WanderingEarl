@@ -34,21 +34,20 @@ export default function AboutUSCollage() {
         </div>
       </div>
 
-      {/* Image 3 (Top Right Small Badge Overlap) */}
-      <div className="absolute left-[57.4%] top-[2%] z-10 w-[40.13%] h-[42%]">
-        <div className="border-[8px] sm:border-[12px] 2xl:border-[16px] border-white box-content w-full h-full rounded-[24px] sm:rounded-[36px] 2xl:rounded-[44px]">
-          <div className="relative w-full h-full rounded-[16px] sm:rounded-[24px] overflow-hidden shadow-lg">
-            <Image
-              src="/images/aboutUs/aboutUsCollage/Image3.jpg"
-              alt="Travelers on stairs 3"
-              priority
-              fill
-              sizes="(max-width: 768px) 45vw, 297px"
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </div>
+ <div className="absolute left-[57.4%] top-[2%] z-10 w-[40.13%] h-[42%]">
+  <div className="border-[8px] sm:border-[12px] 2xl:border-[16px] border-white box-content w-full h-full rounded-[24px] sm:rounded-[36px] 2xl:rounded-[44px] shadow-[-40px_30px_60px_0px_rgba(0,0,0,0.4)]">
+    <div className="relative w-full h-full rounded-[16px] sm:rounded-[24px] overflow-hidden">
+      <Image
+        src="/images/aboutUs/aboutUsCollage/Image3.jpg"
+        alt="Travelers on stairs 3"
+        priority
+        fill
+        sizes="(max-width: 768px) 45vw, 297px"
+        className="object-cover"
+      />
+    </div>
+  </div>
+</div>
     </div>
   );
 }

@@ -36,16 +36,16 @@ export default function AboutUSCollage() {
       </div>
 
       {/* Image 3 (Top Right Small Badge - hot air balloons) */}
-      <div className="absolute left-[46.37%] top-[-4%] z-10 w-[51.63%] h-[39.58%]">
+      <div className="absolute left-[46.37%] top-[-4%] z-10 w-[51.63%] h-[39.58%] shadow-[-40px_30px_60px_0px_rgba(0, 0, 0, 0.4)]">
         <div className=" border-[16px] border-white box-content w-full h-full rounded-[40px] shadow-[-40px_30px_60px_0px_#00000066]">
-          <div className="relative w-full h-full rounded-[24px] overflow-hidden">
+          <div className="relative w-full h-full rounded-[24px] overflow-hidden ">
             <Image
               src="/images/ourStyle/Collage1/Image2.jpg"
               alt="Hot air balloons over mountains"
               priority
               fill
               sizes="(max-width: 768px) 45vw, 317px"
-              className="object-cover"
+              className="object-cover "
             />
           </div>
         </div>

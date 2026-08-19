@@ -8,10 +8,10 @@ export default function StorySection() {
     <div className="relative max-w-full bg-[linear-gradient(180deg,#1E365C_0%,#1E365C_84.5%,rgba(30,54,92,0.94)_100%)]">
       <div className=" container relative grid grid-cols-1 lg:grid-cols-2 2xl:gap-0 lg:gap-[10px] items-start justify-between xl:pt-[50px] mt-[-1px] 2xl:mt-[0] min-[1920px]:!px-[208px]">
 
-        <div className="xl:pb-[122px] xl:pt-[155px] lg:pt-[118px] lg:pb-[98px] md:pt-[70px] md:pb-[50px] pt-[50px] 
-        pb-[30px]
+        <div className="xl:pb-[122px] xl:pt-[155px] lg:pt-[118px] lg:pb-[98px] md:pt-[52px] md:pb-[52px] pt-[40px] 
+        pb-[40px]
         order-2 lg:order-1 2xl:max-w-[742px]  
-        text-center lg:text-start">
+        text-start">
           <div>
             <p className="uppercase font-[Inter] font-black  2xl:text-[48px] xl:text-[40px] md:text-[34px] lg:text-[30px] sm:text-[28px] text-[25px] leading-[122%] tracking-[0%] text-white">
               Sustainable and Responsible Travel
@@ -51,7 +51,7 @@ export default function StorySection() {
 
         {/* Self-contained image cluster — one box, all children positioned by % of THIS box */}
         <div className="2xl:pt-[48px] xl:pt-[140px] lg:pt-[110px] pt-[20px] max-[350px]:pt-[10px] lg:order-2 order-1 w-full flex justify-center lg:justify-end 2xl:justify-end">
-          <div className="relative w-full lg:max-w-[500px] xl:max-w-[620px] 2xl:max-w-[705px] aspect-[705/609] 2xl:w-[705px] 2xl:h-[609px] shrink-0">
+          <div className="relative w-full max-w-full lg:max-w-[500px] xl:max-w-[620px] 2xl:max-w-[705px] aspect-[705/609] 2xl:w-[705px] 2xl:h-[609px] shrink-0">
             <div className="absolute left-[18.30%] top-[27.09%] w-[42.41%] h-[72.91%] 2xl:w-[299px] 2xl:h-[444px] rounded-[16px] sm:rounded-[24px] border border-[#FFFFFF99] overflow-hidden shadow-[-15px_15px_30px_0px_#0000001A] sm:shadow-[-30px_30px_60px_0px_#0000001A]">
               <Image src="/images/landingPage/story-flag.jpg" alt="underImage" priority fill
                 sizes="42.41vw"

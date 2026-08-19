@@ -26,7 +26,10 @@ return(
         <div className="flex flex-col gap-[48px] sm:gap-[70px] md:gap-[100px] lg:gap-[140px]">
           <TourSection year={2025} tours={tours25} showGradient={false} layout="stacked" yearColor="text-[#1E365C]" titleColor="text-[#404040]" allTourBtn={true}/>
           <ClientReview />
+          <div className="pb-[16px] lg:pb-0">
+
           <ContactCTA />
+          </div>
         </div>
     </div>
 )

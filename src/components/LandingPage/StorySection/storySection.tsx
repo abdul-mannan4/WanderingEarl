@@ -41,7 +41,7 @@ export default function StorySection() {
               ensure that your tourism dollar leaves a positive and
               lasting impact and that our visit leaves a minimal footprint.
             </p>
-            <div className="pt-[25px] xl:pt-[30px] flex lg:justify-start justify-center">
+            <div className="pt-[25px] xl:pt-[30px] flex lg:justify-start">
               <button className="pt-[14px] pb-[15px] px-[28px] text-[16px]  sm:pt-[15px] sm:pb-[16px] sm:px-[30px] font-bold sm:text-[18px] leading-[22px] text-white bg-accent-orange rounded-[30px] cursor-pointer hover:hover:bg-accent-orange-hover ">
                 Book a Tour Now
               </button>

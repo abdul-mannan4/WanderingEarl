@@ -26,7 +26,7 @@ export default function AskQuestionCard({ variant = 'light' }: AskQuestionCardPr
                            <input
                         type='text'
                         placeholder='Write'
-                        className={`w-full font-medium rounded-lg py-1 px-3 sm:px-4 sm:py-3  text-[14px] sm:text-[18px] lg:text-[20px]  text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
+                        className={`w-full font-medium rounded-lg py-2 px-3 sm:px-4 sm:py-3  text-[14px] sm:text-[18px] lg:text-[20px]  text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
                     />
                 </div>  
 
@@ -35,7 +35,7 @@ export default function AskQuestionCard({ variant = 'light' }: AskQuestionCardPr
                     <input
                         type='text'
                         placeholder='Write'
-                        className={`w-full font-medium rounded-lg py-1 px-3 sm:px-4 sm:py-3  text-[14px] sm:text-[18px] lg:text-[20px]  text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
+                        className={`w-full font-medium rounded-lg py-2 px-3 sm:px-4 sm:py-3  text-[14px] sm:text-[18px] lg:text-[20px]  text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
                     />
                 </div>
         </div>
@@ -47,7 +47,7 @@ export default function AskQuestionCard({ variant = 'light' }: AskQuestionCardPr
                <input
                         type='email'
                         placeholder='Email'
-                        className={`w-full font-medium rounded-lg py-1 px-3 sm:px-4 sm:py-3 text-[14px] sm:text-[18px] lg:text-[20px] text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
+                        className={`w-full font-medium rounded-lg py-2 px-3 sm:px-4 sm:py-3 text-[14px] sm:text-[18px] lg:text-[20px] text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
                     />
         </div>
 
@@ -56,7 +56,7 @@ export default function AskQuestionCard({ variant = 'light' }: AskQuestionCardPr
             <textarea
                 placeholder='Write'
                 rows={5}
-                className={`w-full rounded-lg py-1 px-3 sm:px-4 sm:py-3  text-[14px] sm:text-[18px]  lg:text-[20px] font-medium resize-y focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[2.01]`}
+                className={`w-full rounded-lg py-2 px-3 sm:px-4 sm:py-3  text-[14px] sm:text-[18px]  lg:text-[20px] font-medium resize-y focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[2.01]`}
             />
         </div>
       

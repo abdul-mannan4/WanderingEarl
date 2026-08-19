@@ -9,7 +9,8 @@ export default function ContactUsPage() {
               imgSrc="/images/contactUs/contactUsBackground.png"
             />
      
-                   <div className="pb-[60px] sm:pb-[80px] lg:pb-[100px] bg-primary-navy">
+          
+                   <div className="pb-[60px] sm:pb-[80px] lg:pb-[100px] bg-primary-navy ">
                         <AskQuestion
                           variant="dark"
                           title="Hello! Have a question?"

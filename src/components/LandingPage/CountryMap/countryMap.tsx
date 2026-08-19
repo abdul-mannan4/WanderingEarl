@@ -8,8 +8,8 @@ export default function CountryMap() {
         2xl:bg-[linear-gradient(180deg,rgba(30,54,92,0)_0%,#1E365C_20%,#1E365C_80%,rgba(30,54,92,0)_100%)] blur-[60px] pointer-events-none z-0"
         />
 
-        <div className="relative z-10 pt-[30px] md:pt-[50px] 2xl:pt-[77px] pb-[40px] md:pb-[80px] 2xl:pb-[125px] flex flex-col gap-[32px] sm:gap-[48px] md:gap-[60px] 2xl:gap-[80px]">
-          <div className="pt-[20px] sm:pt-[60px] lg:pt-[60px] 2xl:pt-[151px] container text-center">
+        <div className="relative z-10 md:pt-[50px] 2xl:pt-[77px] md:pb-[80px] 2xl:pb-[125px] flex flex-col gap-[38px] sm:gap-[48px] md:gap-[60px] 2xl:gap-[80px]">
+          <div className="  lg:pt-[60px] 2xl:pt-[151px] container text-center">
             <p className="section-title text-white">
               countries where we are offering tours{" "}
               <span className="text-accent-orange block">each year</span>
@@ -44,7 +44,7 @@ export default function CountryMap() {
                   <div className="relative flex flex-col items-center mb-0.5 sm:mb-0.5 md:mb-1 2xl:mb-[18px] drop-shadow-md">
                     {/* White Rounded Text Box */}
 
-                    <div className="bg-white text-[#1E365C] font-inter font-medium text-[8px] sm:text-[10px] md:text-[13px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] px-2 sm:px-2.5 md:px-3 lg:px-3.5 xl:px-4 2xl:px-4 py-0.5 sm:py-1 md:py-1.5 lg:py-2 xl:py-2.5 2xl:py-3 rounded-[5px] sm:rounded-[6px] md:rounded-[8px] 2xl:rounded-[10px] border border-white/90 whitespace-nowrap leading-tight text-center">
+                    <div className="bg-white text-[#1E365C] font-inter font-medium text-[7px] sm:text-[10px] md:text-[13px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] px-1.5 sm:px-2.5 md:px-3 lg:px-3.5 xl:px-4 2xl:px-4 py-1 sm:py-1.5 lg:py-2 xl:py-2.5 2xl:py-3 rounded-[5px] sm:rounded-[6px] md:rounded-[8px] 2xl:rounded-[10px] border border-white/90 whitespace-nowrap leading-tight text-center">
                       {location.name}
                     </div>
 
@@ -68,7 +68,7 @@ export default function CountryMap() {
                   <img
                     src="/svg/location.svg"
                     alt={`${location.name} Pin`}
-                    className="w-[18px] sm:w-[26px] md:w-[36px] lg:w-[46px] xl:w-[56px] 2xl:w-[68px] h-[25.4px] sm:h-[36.7px] md:h-[51px] lg:h-[65px] xl:h-[79px] 2xl:h-[96px] drop-shadow-md shrink-0 object-contain"
+                    className="w-[28px]  md:w-[36px] lg:w-[46px] xl:w-[56px] 2xl:w-[68px] h-[33px] sm:h-[36.7px] md:h-[51px] lg:h-[65px] xl:h-[79px] 2xl:h-[96px] drop-shadow-md shrink-0 object-contain"
                   />
                 </div>
               ))}

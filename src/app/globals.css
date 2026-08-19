@@ -102,7 +102,7 @@ body {
 @utility section-title {
   font-family: var(--font-inter);
   font-weight: 900;
-  font-size: clamp(24px, 4vw, 48px);
+  font-size: clamp(20px, 4vw, 48px);
   line-height: 1.15;
   text-transform: uppercase;
 }

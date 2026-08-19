@@ -15,8 +15,8 @@ export default function PhotoGallery() {
 
       <div className="absolute top-0 left-0 w-full h-[280px] sm:h-[340px] lg:h-[400px] bg-gradient-to-b from-primary-navy via-primary-navy/70 to-transparent pointer-events-none z-[-10]" />
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 2xl:!px-[80px] py-16 sm:py-24 lg:pb-[150px] pt-16 sm:pt-24 md:pt-32 lg:pt-[165px] xl:pt-[200px] 2xl:pt-[240px]">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+      <div className="relative z-10 container mx-auto !px-2.5 sm:!px-3 lg:!px-6 2xl:!px-[40px] pb-[40px] md:pb-[52px] lg:pb-[150px] pt-[40px] md:pt-[52px] lg:pt-[165px] xl:pt-[200px] 2xl:pt-[240px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-1.5 sm:gap-3 lg:gap-4">
           {galleryImages.map((image, i) => {
             const isLast = i === galleryImages.length - 1;
             return (

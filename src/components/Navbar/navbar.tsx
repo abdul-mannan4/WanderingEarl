@@ -119,30 +119,30 @@ export default function Navbar({
       </div>
 
       {/* MOBILE LAYOUT (< 1024px) */}
-      <div className="flex lg:hidden items-center justify-between w-full px-4 sm:px-6 py-3">
+      <div className="flex lg:hidden items-center justify-between w-full px-2 sm:px-5 py-3">
         <Link href="/" className="shrink-0">
           <img
             src="/images/landingPage/logo.png"
             alt="Wandering Earl Tours Logo"
-            className="object-contain h-9 sm:h-11 w-auto max-w-[180px] sm:max-w-[220px]"
+            className="object-contain h-11  sm:h-16 w-auto max-w-[180px] sm:max-w-[220px]"
           />
         </Link>
 
         <div className="flex items-center gap-3">
           {/* Login button */}
           <button
-            className={`h-[34px] hidden sm:flex rounded-[20px] font-inter font-medium text-[12px] px-4 cursor-pointer items-center justify-center whitespace-nowrap transition-colors ${buttonStyles[variant]}`}
+            className={`hidden sm:flex rounded-[20px] font-inter font-medium text-[12px] px-7 py-3 cursor-pointer items-center justify-center whitespace-nowrap transition-colors ${buttonStyles[variant]}`}
           >
             Login
           </button>
           {/* Hamburger button */}
           <button
             onClick={() => setIsOpen(true)}
-            className="flex items-center justify-center text-white focus:outline-none cursor-pointer p-1"
+            className="flex items-center justify-center text-white focus:outline-none cursor-pointer"
             aria-label="Toggle Navigation"
           >
             <svg
-              className="w-8 h-8"
+              className="w-8 h-9"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -233,7 +233,7 @@ export default function Navbar({
             />
           </button>
 
-          <button className="flex-1 h-[40px] bg-accent-orange hover:bg-accent-orange-hover active:scale-[0.98] cursor-pointer text-white rounded-[24px] font-inter font-bold text-[14px] px-6 transition-all shadow-md flex items-center justify-center">
+          <button className=" h-[40px] bg-accent-orange hover:bg-accent-orange-hover active:scale-[0.98] cursor-pointer text-white rounded-[24px] font-inter font-bold text-[14px] px-6 transition-all shadow-md flex items-center justify-center">
             Login
           </button>
         </div>

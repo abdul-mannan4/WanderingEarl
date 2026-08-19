@@ -52,17 +52,17 @@ export default function Footer() {
       <div className="container flex flex-col justify-between h-full gap-[24px] sm:gap-[32px] md:gap-[50px] 2xl:gap-[106px] relative 2xl:!px-[80px] z-10">
         <div className="2xl:pt-[80px] flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-[24px] lg:gap-[60px] xl:gap-[100px] 2xl:gap-[148px]">
           {/* Logo & Info Block - Centered on Mobile/Tablet */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-[12px] sm:gap-[18px] md:gap-[18px] lg:gap-[24px] 2xl:gap-[30px] w-full max-w-[520px] md:w-[220px] lg:w-[340px] xl:w-[380px] 2xl:w-[425px] shrink-0 mx-auto md:mx-0">
+          <div className="flex flex-col items-start md:text-left gap-[12px] sm:gap-[18px] md:gap-[18px] lg:gap-[24px] 2xl:gap-[30px] w-full max-w-[520px] md:w-[220px] lg:w-[340px] xl:w-[380px] 2xl:w-[425px] shrink-0 md:mx-0">
             <div className="w-[140px] sm:w-[170px] md:w-[160px] lg:w-[200px] 2xl:w-[255px] mx-auto md:mx-0">
               <Image
                 src="/images/landingPage/logo.png"
                 alt="logo"
                 width={255}
-                height={74}
-                className="w-full h-auto mx-auto md:mx-0"
+                height={84}
+                className="w-full h-auto"
               />
             </div>
-            <div className="text-[12px] min-[360px]:text-[13px] sm:text-[14px] md:text-[12px] lg:text-[14px] leading-[1.45] sm:leading-5 lg:leading-6 font-inter font-normal text-white w-full text-center md:text-left">
+            <div className="text-[12px] min-[360px]:text-[13px] sm:text-[14px] md:text-[12px] lg:text-[14px] leading-[1.45] sm:leading-5 lg:leading-6 font-inter font-normal text-white w-full  md:text-left">
               <p>
                 Thank you for such a well thought out and memorable trip. The
                 sights and people of Morocco are wonderful. I appreciated you

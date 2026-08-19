@@ -54,7 +54,7 @@ export default function Navbar({
     <nav
       className={` ${positionClass} w-full z-50 ${bgStyles[variant]} ${className}`}>
       <div
-        className="container hidden lg:flex flex-row items-center justify-between pt-3 2xl:pt-[30px] pb-3 2xl:!px-[80px] box-border lg:!px-[30px]">
+        className="container hidden lg:flex flex-row items-center justify-between pt-3 2xl:pt-[30px] pb-3 2xl:!px-[80px] box-border lg:!px-[20px]">
         {/* 1. Logo Container (Nest Hub par chota, XL par full size) */}
         <Link href="/">
           <img
@@ -62,7 +62,7 @@ export default function Navbar({
             alt="Wandering Earl Tours Logo"
             className="object-contain 
             md:w-[180px] md:h-12
-            lg:max-w-[200px] lg:-ml-[1px]
+            lg:max-w-[170px] lg:-ml-[1px]
             xl:max-w-[200px] xl:h-auto
             2xl:w-auto 2xl:max-w-none"
           />
@@ -81,7 +81,7 @@ export default function Navbar({
             return (
               <Link href={link.href}
                 key={link.href}
-                className={`py-1 px-1.5 lg:px-2 lg:py-2 xl:py-[10px] xl:px-[16px] hover:text-white transition-colors 
+                className={`py-1 px-1.5 lg:px-1.5 lg:py-1.5 xl:py-[10px] xl:px-[16px] hover:text-white transition-colors 
                 ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}
                 
                 ${isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px]" : ""
@@ -97,7 +97,7 @@ export default function Navbar({
         </div>
 
         <div
-          className="flex items-center gap-2
+          className="flex items-center gap-3
         xl:gap-[16px] flex-shrink-0">
           <div className="flex items-center justify-center">
             <img
@@ -128,7 +128,7 @@ export default function Navbar({
           />
         </Link>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           {/* Login button */}
           <button
             className={`hidden sm:flex rounded-[20px] font-inter font-medium text-[12px] px-7 py-3 cursor-pointer items-center justify-center whitespace-nowrap transition-colors ${buttonStyles[variant]}`}
@@ -168,72 +168,70 @@ export default function Navbar({
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 left-0 h-screen w-[75vw] sm:w-[300px] max-w-[320px] z-50 bg-[#1E365C] flex flex-col justify-between p-5 border-r border-white/10 shadow-2xl lg:hidden transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-[100dvh] max-h-[100dvh] w-[63vw] sm:w-[55vw] z-50 bg-[#1E365C] flex flex-col overflow-hidden p-5 border-r border-white/10 shadow-2xl lg:hidden transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div>
-          {/* Drawer Header */}
-          <div className="flex justify-between items-center pb-4 border-b border-white/10">
-            <Link href="/" onClick={() => setIsOpen(false)} className="shrink-0">
-              <img
-                src="/images/landingPage/logo.png"
-                alt="Logo"
-                className="h-9 sm:h-10 w-auto object-contain"
-              />
-            </Link>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="text-white p-1 rounded-full hover:bg-white/10 transition-colors cursor-pointer"
-              aria-label="Close Navigation"
+        {/* Drawer Header */}
+        <div className="shrink-0 flex justify-between items-center pb-4">
+          <Link href="/" onClick={() => setIsOpen(false)} className="shrink-0">
+            <img
+              src="/images/landingPage/logo.png"
+              alt="Logo"
+              className="h-9 sm:h-10 w-auto object-contain"
+            />
+          </Link>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-white p-1 rounded-full hover:bg-white/10 transition-colors cursor-pointer"
+            aria-label="Close Navigation"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2.5}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-
-          {/* Nav Links with original color logic preserved */}
-          <div className="flex flex-col gap-2 pt-4 font-inter font-medium text-[14px] sm:text-[15px]">
-            {navLinks.map((link) => {
-              const isActive = pathName === link.href;
-              return (
-                <Link
-                  href={link.href}
-                  key={link.href}
-                  className={`py-2 px-4 hover:text-white transition-colors ${
-                    isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px] max-w-full font-bold" : ""
-                  } ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
 
-        {/* Drawer Footer: Cart + Login */}
-        <div className="pt-4 border-t border-white/10 flex items-center justify-between gap-3">
+        {/* Nav Links with scrollable middle area */}
+        <div className="flex-1 overflow-y-auto py-4 flex flex-col gap-2 font-inter font-medium text-[14px] sm:text-[15px]">
+          {navLinks.map((link) => {
+            const isActive = pathName === link.href;
+            return (
+              <Link
+                href={link.href}
+                key={link.href}
+                className={`py-2 px-4 hover:text-white transition-colors ${
+                  isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px] max-w-full font-bold" : ""
+                } ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
+
+        {/* Drawer Footer: Cart + Login (always pinned at bottom) */}
+        <div className="shrink-0 pt-4 mt-auto border-t border-white/20 flex items-center justify-between gap-3">
           <button className="flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors cursor-pointer" aria-label="Cart">
             <img
               src="/images/landingPage/cart.png"
               alt="Cart Logo"
-              className="w-6 h-6 object-contain"
+              className="w-7 h-7 object-contain"
             />
           </button>
 
-          <button className=" h-[40px] bg-accent-orange hover:bg-accent-orange-hover active:scale-[0.98] cursor-pointer text-white rounded-[24px] font-inter font-bold text-[14px] px-6 transition-all shadow-md flex items-center justify-center">
+          <button className="h-[40px] bg-accent-orange hover:bg-accent-orange-hover active:scale-[0.98] cursor-pointer text-white rounded-[24px] font-inter font-bold text-[14px] px-6 transition-all shadow-md flex items-center justify-center">
             Login
           </button>
         </div>

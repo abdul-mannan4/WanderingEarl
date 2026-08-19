@@ -51,8 +51,12 @@ export default function ClientReview({sliderColor="bg-primary-navy"}:ClientRevie
 
   const activePage = Math.floor(currentIndex / itemsPerPage) % totalPages;
 
+  const VISIBLE_DOTS = 3;
+  const maxStartIndex = Math.max(0, totalPages - VISIBLE_DOTS);
+  const startDotIndex = Math.max(0, Math.min(activePage - (VISIBLE_DOTS - 1), maxStartIndex));
+
   return (
-    <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 2xl:!px-[80px] w-full">
+    <div className="container mx-auto 3xl:!px-[208px] w-full">
       <div className="flex flex-row justify-between items-center gap-3 sm:gap-4">
         <h2 className="font-inter font-black text-[22px] min-[360px]:text-[24px] sm:text-[28px] md:text-[34px] lg:text-[40px] 2xl:text-[48px] uppercase leading-[1.15] text-primary-navy">
           What Our Clients Say{" "}
@@ -79,7 +83,7 @@ export default function ClientReview({sliderColor="bg-primary-navy"}:ClientRevie
       </div>
 
       <div className="mt-[20px] sm:mt-[28px] lg:mt-[32px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 lg:gap-6 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 lg:gap-[20px] justify-items-center">
           {visibleReviews.map((review, index) => (
             <div
               key={index}
@@ -95,20 +99,33 @@ export default function ClientReview({sliderColor="bg-primary-navy"}:ClientRevie
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-[10px] sm:gap-[16px] mt-[28px] sm:mt-[48px]">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index * itemsPerPage)}
-            aria-label={`Go to review page ${index + 1}`}
-            className={`h-[10px] sm:h-[11px] rounded-[6px] transition-all duration-300 cursor-pointer ${
-              activePage === index
-                ? `w-[36px] sm:w-[55px] ${sliderColor}`
-                : `w-[14px] sm:w-[24px] ${sliderColor}/30 hover:${sliderColor}/50`
-            }`}
-          />
-        ))}
+      <div className="flex justify-center items-center mt-[28px] sm:mt-[48px]">
+        <div 
+          className="overflow-hidden w-[84px] sm:w-[135px] py-1"
+          style={{
+            '--dot-offset-mobile': `${startDotIndex * 24}px`,
+            '--dot-offset-desktop': `${startDotIndex * 40}px`,
+          } as React.CSSProperties}
+        >
+          <div 
+            className="flex items-center gap-[10px] sm:gap-[16px] transition-transform duration-300 ease-in-out -translate-x-[var(--dot-offset-mobile)] sm:-translate-x-[var(--dot-offset-desktop)]"
+          >
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index * itemsPerPage)}
+                aria-label={`Go to review page ${index + 1}`}
+                className={`h-[10px] sm:h-[11px] rounded-[6px] shrink-0 transition-all duration-300 ease-in-out cursor-pointer ${sliderColor} ${
+                  activePage === index
+                    ? "w-[36px] sm:w-[55px]"
+                    : "w-[14px] sm:w-[24px] opacity-30 hover:opacity-50"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
+
     </div>
   );
 }

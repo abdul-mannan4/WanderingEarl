@@ -21,7 +21,7 @@ export default function PastToursPage() {
           <ClientReview sliderColor="bg-[#D6D6D6]" />
         </div>
       
-        <div className="pb-[60px] sm:pb-[80px] lg:pb-[100px]">
+        <div className="pb-[40px] sm:pb-[52px] lg:pb-[100px]">
           <AskQuestion
             variant="dark"
             title="IF YOU HAVE ANY QUESTIONS, SIMPLY GET IN TOUCH. WE'RE HERE TO HELP AND WE ALWAYS REPLY QUICKLY."

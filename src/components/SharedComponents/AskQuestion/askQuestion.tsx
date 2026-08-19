@@ -19,7 +19,7 @@ export default function AskQuestion({
 
   return (
     <div
-      className={`w-full py-16 sm:py-20 lg:py-[100px] `}
+      className={`w-full lg:py-[100px] `}
     >
       <div className='container px-4 sm:px-6 lg:px-8 2xl:!px-[80px] flex flex-col items-center gap-[24px] sm:gap-[32px] lg:gap-[42px] xl:gap-[80px]'>
         <div className='flex flex-col items-center text-center gap-[8px] sm:gap-[12px] max-w-[1504px]'>

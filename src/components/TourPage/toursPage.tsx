@@ -14,6 +14,7 @@ export default function TourRoute() {
           tours={allTours24}
           layout="inline"
           centerGrid={true}
+          
           linearGradient="linear-gradient(180deg, rgba(30,54,92,1) 0%, rgba(30,54,92,0.94) 15%, rgba(30,54,92,0.82) 30%, rgba(30,54,92,0.58) 50%, rgba(30,54,92,0.25) 70%, rgba(30,54,92,0) 100%)"
 
           gridCols="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"

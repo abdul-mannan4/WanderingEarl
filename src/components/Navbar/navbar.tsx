@@ -19,8 +19,8 @@ const navLinks =
     { label: "CONTACT US", href: "/contactUS" },
   ]
 
-const overlayRoutes = ["/", "/tours", "/pastTours", "/contactUS"];
-const relativeRoutes = ["/aboutUS", "/ourStyle", "/privateTours"];
+const overlayRoutes = ["/", "/tours"];
+const relativeRoutes = ["/aboutUS", "/ourStyle", "/privateTours", "/pastTours", "/contactUS",];
 
 
 export default function Navbar({
@@ -70,7 +70,7 @@ export default function Navbar({
 
 
         <div className="flex items-center gap-1.5
-         min-[1024px]:gap-2 min-[1280px]:gap-3
+         min-[1024px]:gap-1.5 min-[1280px]:gap-3
           min-[1536px]:gap-[20px] min-[1800px]:gap-[30px] 
           font-sans font-medium text-[11px] min-[1024px]:text-[13px] min-[1280px]:text-[14px] min-[1536px]:text-[15px] min-[1800px]:text-[18px] text-white/90 antialiased whitespace-nowrap min-[1024px]:-ml-[1.5px]">
 
@@ -168,9 +168,8 @@ export default function Navbar({
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 left-0 h-[100dvh] max-h-[100dvh] w-[63vw] sm:w-[55vw] z-50 bg-[#1E365C] flex flex-col overflow-hidden p-5 border-r border-white/10 shadow-2xl lg:hidden transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 h-[100dvh] max-h-[100dvh] w-[63vw] sm:w-[55vw] z-50 bg-[#1E365C] flex flex-col overflow-hidden p-5 border-r border-white/10 shadow-2xl lg:hidden transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         {/* Drawer Header */}
         <div className="shrink-0 flex justify-between items-center pb-4">
@@ -210,9 +209,8 @@ export default function Navbar({
               <Link
                 href={link.href}
                 key={link.href}
-                className={`py-2 px-4 hover:text-white transition-colors ${
-                  isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px] max-w-full font-bold" : ""
-                } ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}`}
+                className={`py-2 px-4 hover:text-white transition-colors ${isActive ? "bg-[#FFFFFF1A] text-white rounded-[12px] max-w-full font-bold" : ""
+                  } ${isLandingPage ? "text-white" : "text-[#8F8F8F]"}`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

@@ -19,13 +19,13 @@ export default function AskQuestion({
 
   return (
     <div
-      className={`w-full lg:py-[100px] `}
+      className="w-full py-[48px] sm:py-[64px] lg:py-[100px] xl:py-[140px] relative z-20"
     >
-      <div className='container px-4 sm:px-6 lg:px-8 2xl:!px-[80px] flex flex-col items-center gap-[24px] sm:gap-[32px] lg:gap-[42px] xl:gap-[80px]'>
-        <div className='flex flex-col lg:items-center text-left lg:text-center gap-[8px] sm:gap-[12px] max-w-full lg:max-w-[1504px]'>
+      <div className='container px-4 sm:px-6 lg:px-8 2xl:!px-[80px] flex flex-col items-center gap-[24px] sm:gap-[32px] lg:gap-[42px] xl:gap-[60px]'>
+        <div className='flex flex-col lg:items-center text-left lg:text-center gap-[10px] sm:gap-[14px] max-w-full lg:max-w-[1504px]'>
           <h2
-            className={`font-inter font-bold uppercase  text-[18px] sm:text-[28px] lg:text-[40px] leading-[1.2] ${
-              isDark ? 'text-white' : 'text-text-dark'
+            className={`font-inter font-black uppercase text-[22px] sm:text-[32px] lg:text-[44px] leading-[1.15] tracking-tight ${
+              isDark ? 'text-white' : 'text-primary-navy'
             }`}
           >
             {highlightedWord ? (
@@ -41,8 +41,8 @@ export default function AskQuestion({
 
           {subtitle && (
             <p
-              className={`font-inter font-medium text-[14px] sm:text-[16px] leading-[1.4] lg:text-[20px] max-w-[890px] ${
-                isDark ? 'text-white/80' : 'text-text-muted'
+              className={`font-inter font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-relaxed max-w-[850px] ${
+                isDark ? 'text-[#D6D6D6]' : 'text-text-muted'
               }`}
             >
               {subtitle}
@@ -51,16 +51,16 @@ export default function AskQuestion({
         </div>
 
         <AskQuestionCard variant={variant} />
-        <div className='flex justify-center cursor-pointer'>
-                <button
-                type='submit'
-                className='cursor-pointer bg-accent-orange hover:bg-accent-orange-hover text-white font-inter font-bold text-[14px] sm:text-[16px] lg:text-[18px] px-8 lg:px-[53px] py-3 lg:pt-[15px] lg:pb-[16px] rounded-full transition-colors'
-                >
-                Submit
-                </button>
+        
+        <div className='flex justify-center'>
+          <button
+            type='submit'
+            className='cursor-pointer bg-accent-orange hover:bg-accent-orange-hover text-white font-inter font-bold text-[14px] sm:text-[16px] lg:text-[18px] px-8 lg:px-[53px] py-3 lg:pt-[15px] lg:pb-[16px] rounded-full transition-all duration-300 hover:scale-105 shadow-md'
+          >
+            Submit
+          </button>
+        </div>
       </div>
-      </div>
-
     </div>
   )
 }

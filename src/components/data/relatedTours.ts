@@ -1,7 +1,7 @@
 // TourCard/tour25.ts
 import { Tour } from "./type";
 
-export const tours25: Tour[] = [
+export const relatedTours: Tour[] = [
   {
     id: "wander-across-mexico",
     image: "/images/cardImages/Card4.png",
@@ -46,4 +46,19 @@ export const tours25: Tour[] = [
     badgeText: "SOLD OUT",
     buttonType: "waitlist" as const,
   },
+    {
+    id: "wander-across-mexico-2024",
+    image: "/images/cardImages/Card1.png",
+    title: "Wander Across Mexico",
+    description:
+      "Join our unique journey into the heart of Mexico! We'll dive into the rich history, flavorful cuisine, city and village life and vibrant cultures in a style you won't want to miss!",
+    spotsBooked: 2,
+    totalSpots: 12,
+    location: "Mexico",
+    dateRange: "Nov 08 — Nov 17, 2024",
+    duration: "10 days",
+    badge: "spots-left" as const,
+    badgeText: "ONLY 2 SPOTS LEFT",
+    buttonType: "details" as const,
+  }
 ];

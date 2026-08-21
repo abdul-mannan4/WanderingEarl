@@ -1,8 +1,10 @@
 // data/tours.ts
 
 import { Tour } from "./type";
-export const tours24:Tour[]= [
+
+export const tours24: Tour[] = [
   {
+    id: "wander-across-mexico-2024",
     image: "/images/cardImages/Card1.png",
     title: "Wander Across Mexico",
     description:
@@ -17,6 +19,7 @@ export const tours24:Tour[]= [
     buttonType: "details" as const,
   },
   {
+    id: "wander-to-vietnam-2024",
     image: "/images/cardImages/Card2.png",
     title: "Wander to Vietnam",
     description:
@@ -31,6 +34,7 @@ export const tours24:Tour[]= [
     buttonType: "waitlist" as const,
   },
   {
+    id: "wander-across-romania-2024",
     image: "/images/cardImages/Card3.png",
     title: "Wander Across Romania",
     description:

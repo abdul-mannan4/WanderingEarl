@@ -6,8 +6,9 @@ export default function ContactUsPage() {
   return (
     <div className="bg-primary-navy">
       <PageMain
-        title="Contact Us"
+        title="CONTACT US"
         imgSrc="/images/contactUs/contactUsBackground.png"
+        objectPosition="center 18%"
       />
 
       <div className="pb-[60px] sm:pb-[80px] lg:pb-[100px] bg-primary-navy">

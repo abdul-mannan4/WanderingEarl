@@ -9,11 +9,12 @@ export default function PastToursPage() {
       <PageMain
         title="PAST TOURS"
         imgSrc="/images/pastTours/pastTourBackGround.png"
+        objectPosition="center 18%"
       />
       <div className="mt-[-3px]">
 
       <div>
-        <PhotoGallery />
+        <PhotoGallery variant="featured"/>
       </div>
 
       <div className="bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(30,54,92,0.3)_30%,rgba(30,54,92,0.7)_35%,rgba(30,54,92,0.8)_40%,rgba(30,54,92,0.9)_45%,#1E365C_50%,#1E365C_100%)]">

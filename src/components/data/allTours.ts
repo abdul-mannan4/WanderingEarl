@@ -2,6 +2,7 @@ import { Tour } from "./type";
 
 export const allTours24: Tour[] = [
   {
+    id: "wander-across-mexico-1",
     image: "/images/cardImages/Card1.png",
     title: "Wander Across Mexico",
     description:
@@ -16,6 +17,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
+    id: "wander-across-mexico-2",
     image: "/images/cardImages/Card2.png",
     title: "Wander Across Mexico",
     description:
@@ -29,6 +31,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
+    id: "wander-across-mexico-3",
     image: "/images/cardImages/Card3.png",
     title: "Wander Across Mexico",
     description:
@@ -43,6 +46,7 @@ export const allTours24: Tour[] = [
     buttonType: "waitlist" as const,
   },
   {
+    id: "wander-across-mexico-4",
     image: "/images/cardImages/Card4.png",
     title: "Wander Across Mexico",
     description:
@@ -57,6 +61,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
+    id: "wander-across-mexico-5",
     image: "/images/cardImages/Card5.png",
     title: "Wander Across Mexico",
     description:
@@ -71,6 +76,7 @@ export const allTours24: Tour[] = [
     buttonType: "waitlist" as const,
   },
   {
+    id: "wander-across-mexico-6",
     image: "/images/cardImages/Card6.png",
     title: "Wander Across Mexico",
     description:
@@ -84,6 +90,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
+    id: "wander-across-mexico-7",
     image: "/images/cardImages/Card7.png",
     title: "Wander Across Mexico",
     description:
@@ -97,6 +104,7 @@ export const allTours24: Tour[] = [
     buttonType: "details" as const,
   },
   {
+    id: "wander-across-mexico-8",
     image: "/images/cardImages/Card8.png",
     title: "Wander Across Mexico",
     description:

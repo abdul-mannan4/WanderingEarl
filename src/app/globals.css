@@ -10,6 +10,7 @@
 
 html {
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -24,6 +25,8 @@ html {
   --cta-border: #AF8A79;
   --background: #ffffff;
   --foreground: #171717;
+  --text-dark-gray: #8F8F8F;
+  --text-negative-orange: #C60F13;
 }
 
 @theme inline {
@@ -40,7 +43,9 @@ html {
   --color-accent-orange-hover: var(--accent-orange-hover);
   --color-text-dark: var(--text-dark);
   --color-text-muted: var(--text-muted);
+  --color-dark-gray:var(--text-dark-gray);
   --color-light-gray:var(--text-light-gray);
+  --color-negative-orange:var(--text-negative-orange);
   --color-border-gray: var(--border-gray);
   --color-cta-border: var(--cta-border);
 
@@ -105,4 +110,19 @@ body {
   font-size: clamp(20px, 4vw, 48px);
   line-height: 1.15;
   text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

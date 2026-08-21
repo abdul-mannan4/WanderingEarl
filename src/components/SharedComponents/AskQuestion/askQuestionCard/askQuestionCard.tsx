@@ -7,61 +7,59 @@ type AskQuestionCardProps = {
 
 export default function AskQuestionCard({ variant = 'light' }: AskQuestionCardProps) {
   const isDark = variant === 'dark'
-
-  const wrapperClass = isDark
-    ? 'border border-dashed border-white/40'
-    : 'border border-border-gray'
-
-  const labelClass = isDark ? 'text-white' : 'text-light-gray'
+  const labelClass = isDark ? 'text-white font-medium' : 'text-text-dark font-medium'
 
   const inputClass = isDark
-    ? 'bg-primary-navy border border-white/30 text-white placeholder:text-white/50 '
-    : 'bg-white border border-border-gray text-text-dark placeholder:text-text-muted'
+    ? 'border border-white/30 text-white placeholder:text-white/50 focus:border-accent-orange'
+    : 'bg-white border border-border-gray text-text-dark placeholder:text-text-muted focus:border-accent-orange'
 
   return (
-    <div className={`w-full max-w-[1206px] rounded-[16px] flex flex-col gap-[15px] sm:gap-[20px] lg:gap-[30px] xl:gap-[42px]`}>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-[15px] sm:gap-[25px] lg:gap-[50px] xl:gap-[80px]'>
-                <div className='flex flex-col gap-2 lg:gap-3 xl:gap-4 '>
-                    <label className={`text-[14px] sm:text-[16px] lg:text-[20px] font-normal font-inter ${labelClass} leading-none lg:leading-[1.2]`}>First Name</label>
-                           <input
-                        type='text'
-                        placeholder='Write'
-                        className={`w-full font-medium rounded-lg py-2 px-3  text-[14px] sm:text-[16px] lg:text-[20px]  text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
-                    />
-                </div>  
-
-                <div className='flex flex-col gap-2 lg:gap-3 xl:gap-4'>
-                    <label className={`text-[14px] font-normal lg:text-[20px] font-inter ${labelClass} leading-relaxed lg:leading-[1.2]`}>Last Name</label>
-                    <input
-                        type='text'
-                        placeholder='Write'
-                        className={`w-full font-medium rounded-lg py-2 px-3  text-[14px] sm:text-[16px] lg:text-[20px]  text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
-                    />
-                </div>
+    <div className="w-full max-w-[1206px] flex flex-col gap-[16px] sm:gap-[24px] lg:gap-[32px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-[16px] sm:gap-[24px] lg:gap-[40px] xl:gap-[60px]">
+        <div className="flex flex-col gap-2">
+          <label className={`text-[14px] sm:text-[16px] lg:text-[18px] font-inter ${labelClass}`}>
+            First Name
+          </label>
+          <input
+            type="text"
+            placeholder="Write"
+            className={`w-full rounded-[10px] py-3 px-4 text-[14px] sm:text-[16px] focus:outline-none focus:ring-2 focus:ring-accent-orange/40 ${inputClass}`}
+          />
         </div>
 
-
-
-        <div className='flex flex-col gap-2 lg:gap-3 xl:gap-4 sm:col-span-2 '>
-            <label className={`text-[14px] lg:text-[20px] font-normal font-inter ${labelClass}  lg:leading-[1.2]`}>Email Address</label>
-               <input
-                        type='email'
-                        placeholder='Email'
-                        className={`w-full font-medium rounded-lg py-2 px-3 text-[14px] sm:text-[16px] lg:text-[20px] text-light-gray focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[1.92]`}
-                    />
+        <div className="flex flex-col gap-2">
+          <label className={`text-[14px] sm:text-[16px] lg:text-[18px] font-inter ${labelClass}`}>
+            Last Name
+          </label>
+          <input
+            type="text"
+            placeholder="Write"
+            className={`w-full rounded-[10px] py-3 px-4 text-[14px] sm:text-[16px] focus:outline-none focus:ring-2 focus:ring-accent-orange/40 ${inputClass}`}
+          />
         </div>
+      </div>
 
-        <div className='flex flex-col gap-2 lg:gap-3 xl:gap-4 sm:col-span-2'>
-            <label className={`text-[14px]  sm:text-[16px] lg:text-[20px] font-normal font-inter ${labelClass}  lg:leading-[1.2]`}>Message</label>
-            <textarea
-                placeholder='Write'
-                rows={5}
-                className={`w-full rounded-lg py-2 px-3 text-[14px] sm:text-[16px]  lg:text-[20px] font-medium resize-y focus:outline-none focus:ring-2 focus:ring-accent-orange ${inputClass} leading-relaxed lg:leading-[2.01]`}
-            />
-        </div>
-      
+      <div className="flex flex-col gap-2">
+        <label className={`text-[14px] sm:text-[16px] lg:text-[18px] font-inter ${labelClass}`}>
+          Email Address
+        </label>
+        <input
+          type="email"
+          placeholder="Email"
+          className={`w-full rounded-[10px] py-3 px-4 text-[14px] sm:text-[16px] focus:outline-none focus:ring-2 focus:ring-accent-orange/40 ${inputClass}`}
+        />
+      </div>
 
-
+      <div className="flex flex-col gap-2">
+        <label className={`text-[14px] sm:text-[16px] lg:text-[18px] font-inter ${labelClass}`}>
+          Message
+        </label>
+        <textarea
+          placeholder="Write"
+          rows={5}
+          className={`w-full rounded-[10px] py-3 px-4 text-[14px] sm:text-[16px] resize-y focus:outline-none focus:ring-2 focus:ring-accent-orange/40 ${inputClass}`}
+        />
+      </div>
     </div>
-  )
+  );
 }

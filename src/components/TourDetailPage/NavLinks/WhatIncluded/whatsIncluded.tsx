@@ -12,7 +12,7 @@ export default function  WhatsIncluded() {
       <span className='text-[16px] lg:text-[20px] font-inter font-semibold'>INCLUDED</span>
     </div>
 
-    <ul className="list-disc list-outside ml-5 space-y-5 leading-relaxed font-inter font-medium text-[16px] lg:text-[20px]  text-dark-gray">
+    <ul className="list-disc list-outside ml-5 space-y-5 leading-relaxed font-inter font-medium text-[16px] lg:text-[20px]  text-text-muted">
       <li>Wandering Earl Tours Expert Tour Leader</li>
       <li>Small group (maximum 12 participants)</li>
       <li>Accommodation (11 nights – 3*/4* hotels and a guesthouse)</li>
@@ -34,7 +34,7 @@ export default function  WhatsIncluded() {
       <span className='text-[16px] lg:text-[20px] font-inter font-semibold'>NOT INCLUDED</span>
     </div>
 
-    <ul className="list-disc list-outside ml-5 space-y-5 leading-relaxed font-inter font-medium text-[16px] lg:text-[20px]  text-dark-gray">
+    <ul className="list-disc list-outside ml-5 space-y-5 leading-relaxed font-inter font-medium text-[16px] lg:text-[20px]  text-text-muted">
       <li>Flights to/from Bangkok and Singapore</li>
       <li>Passport/visa fees</li>
       <li>Meals and activities not mentioned</li>

@@ -67,7 +67,6 @@ export default function TourDetailPage({ tour }: TourDetailPageProps) {
 
         <TourSection title="RELATED TOURS" tours={relatedTours} allTourBtn={true} showGradient={false}  gridCols = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"/>
         </div>
-
     </div>
   );
 }

@@ -31,7 +31,7 @@ export default function PageMain({
           <OverlayText title={title} />
         </div>
       </div>
-      {/* Extra fade jo image ke bottom se bahar (white area me) bleed karega */}
+    
       <div className="absolute bottom-0 left-0 h-[100px] sm:h-[150px] lg:h-[270px] translate-y-full  w-full bg-[linear-gradient(180deg,rgba(30,54,92,1)_0%,rgba(30,54,92,0.94)_15%,rgba(30,54,92,0.82)_30%,rgba(30,54,92,0.58)_50%,rgba(30,54,92,0.25)_70%,rgba(30,54,92,0)_100%)]" />
     </div>
   );

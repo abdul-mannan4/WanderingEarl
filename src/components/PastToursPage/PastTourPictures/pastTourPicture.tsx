@@ -33,6 +33,7 @@ type PhotoGalleryProp = {
   variant?: AspectVariant;
   gridCols?: string;
   showGradient?: boolean;
+ 
 };
 
 export default function PhotoGallery({

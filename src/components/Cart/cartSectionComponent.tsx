@@ -39,7 +39,7 @@ export default function CartSectionComponent({ title, heighlightedWord, border1 
                 className={`flex items-stretch ${gap === "gap-[16px]"
                     ? "gap-[8px] sm:gap-[10px] xl:gap-[16px]"
                     : "gap-[16px] sm:gap-[32px] md:gap-[136px]"
-                    } max-w-[533px] w-full`}
+                    } w-full max-w-full xl:max-w-[533px]`}
             >
                 <div className="flex-1 min-w-0 flex">
                     {isCounterBtn ? (

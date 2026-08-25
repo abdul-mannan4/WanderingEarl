@@ -91,20 +91,25 @@ export default function TourSection({
             : gridCols
             }`}
         >
-          {tours.map((tour, index) => (
-            <div
-              key={index}
-              className={
-                cardWidth
-                  ? cardWidth
-                  : centerGrid
-                    ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
-                    : "w-full sm:last:col-span-2 sm:last:max-w-[calc(50%-10px)] sm:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
-              }
-            >
-              <TourCard {...tour} />
-            </div>
-          ))}
+          {tours.map((tour, index) => {
+            const isLastOdd = tours.length % 2 !== 0 && index === tours.length - 1;
+            return (
+              <div
+                key={index}
+                className={
+                  cardWidth
+                    ? cardWidth
+                    : centerGrid
+                      ? "w-full sm:w-[calc(50%-10px)] md:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] max-w-[488px] md:max-w-none"
+                      : isLastOdd
+                        ? "w-full sm:col-span-2 sm:max-w-[calc(50%-10px)] sm:mx-auto lg:col-span-1 lg:max-w-none"
+                        : "w-full"
+                }
+              >
+                <TourCard {...tour} />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

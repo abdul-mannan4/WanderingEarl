@@ -3,7 +3,7 @@ import PhotoGallery from '@/components/PastToursPage/PastTourPictures/pastTourPi
 export default function  Gallery() {
   return (
     <div id='gallery'>
-      <PhotoGallery TotalImage={12} showGradient={false} />
+      <PhotoGallery TotalImage={12} showGradient={false} gridCols=' grid-cols-2 2xl:grid-cols-3' />
     </div>
   )
 }

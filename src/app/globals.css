@@ -65,7 +65,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Standard Unified Container */

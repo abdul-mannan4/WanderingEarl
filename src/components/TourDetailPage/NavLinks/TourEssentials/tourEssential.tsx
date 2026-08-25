@@ -43,7 +43,7 @@ export default function TourEssential() {
   return (
     <div
       id="tour-essentials"
-      className="grid grid-cols-2 gap-[12px] lg:gap-[20px]"
+      className="grid sm:grid-cols-1 md:grid-cols-2 gap-3 lg:gap-[16px] 3xl:gap-[20px]"
     >
       {tourEssentials.map((item, index) => (
         <TourEssentialCard
@@ -51,8 +51,9 @@ export default function TourEssential() {
           IconUrl={item.icon}
           title={item.title}
           description={item.description}
+          layout='self-center md:self-start'
         />
       ))}
     </div>
-  )
+  );
 }

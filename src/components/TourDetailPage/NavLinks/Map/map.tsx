@@ -5,7 +5,7 @@ export default function Map() {
   return (
     <div className="relative w-full aspect-square">
       <Image
-        src="/images/tourDetail/WorldMap.png"
+        src="/images/tourDetail/worldMap.png"
         alt="World Map"
         fill
         sizes="(max-width: 768px) 100vw, 1038px"

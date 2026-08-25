@@ -6,6 +6,7 @@ type PageMainProps = {
   imgSrc: string;
   objectPosition?: string;
   className?: string;
+  gradientHeight?: string;
 };
 
 export default function PageMain({
@@ -13,6 +14,7 @@ export default function PageMain({
   imgSrc,
   objectPosition = "center 20%",
   className = "",
+  gradientHeight = "h-[50px] sm:h-[70px] md:h-[90px] lg:h-[130px] 2xl:h-[180px]",
 }: PageMainProps) {
   return (
     <div className={`relative z-10 w-full flex flex-col bg-[#1E365C] ${className}`}>
@@ -32,7 +34,7 @@ export default function PageMain({
         </div>
       </div>
     
-      <div className="absolute bottom-0 left-0 h-[100px] sm:h-[150px] lg:h-[270px] translate-y-full  w-full bg-[linear-gradient(180deg,rgba(30,54,92,1)_0%,rgba(30,54,92,0.94)_15%,rgba(30,54,92,0.82)_30%,rgba(30,54,92,0.58)_50%,rgba(30,54,92,0.25)_70%,rgba(30,54,92,0)_100%)]" />
+      <div className={`absolute top-full -mt-[1px] left-0 ${gradientHeight} w-full pointer-events-none bg-[linear-gradient(180deg,rgba(30,54,92,1)_0%,rgba(30,54,92,0.94)_15%,rgba(30,54,92,0.82)_30%,rgba(30,54,92,0.58)_50%,rgba(30,54,92,0.25)_70%,rgba(30,54,92,0)_100%)]`} />
     </div>
   );
 }

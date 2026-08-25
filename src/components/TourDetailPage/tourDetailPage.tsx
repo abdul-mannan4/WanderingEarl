@@ -45,8 +45,8 @@ export default function TourDetailPage({ tour }: TourDetailPageProps) {
 
 
 
-      <div className="relative z-10 mt-[40px] sm:mt-[60px] md:mt-[80px] lg:mt-[120px] 2xl:mt-[200px] flex flex-col xl:flex-row justify-center items-center xl:items-start container px-4 sm:px-6 md:px-8 lg:px-12 3xl:!px-0 gap-[24px] md:gap-[36px] lg:gap-[48px] xl:gap-[64px] 3xl:gap-[129px]">
-        <div className="w-full max-w-[1038px] min-w-0">
+      <div className="relative z-10 mt-[40px] sm:mt-[60px] md:mt-[80px] lg:mt-[120px] 2xl:mt-[200px] flex flex-col xl:flex-row justify-center items-center xl:items-start container px-4 sm:px-6 md:px-8 lg:px-12 3xl:!px-0 gap-[24px] md:gap-[36px] lg:gap-[48px] xl:gap-[48px] 3xl:gap-[129px]">
+        <div className="w-full flex-1 max-w-[1038px] min-w-0">
           <TourPageNav activeTab={activeTab} setActiveTab={setActiveTab} />
 
           <div key={activeTab} className="animate-fade-in mt-[20px] sm:mt-[26px] lg:mt-[32px] 3xl:mt-[40px]">
@@ -59,7 +59,7 @@ export default function TourDetailPage({ tour }: TourDetailPageProps) {
           </div>
         </div>
 
-        <div className="w-full max-w-full xl:max-w-[540px] flex justify-center shrink-0 xl:sticky xl:top-[30px] 2xl:top-[40px] self-center xl:self-start mx-auto xl:mx-0">
+        <div className="w-full max-w-full xl:max-w-[420px] 2xl:max-w-[480px] 3xl:max-w-[540px] flex justify-center shrink-0 xl:sticky xl:top-[30px] 2xl:top-[40px] self-center xl:self-start mx-auto xl:mx-0">
           <Cart />
         </div>
       </div>

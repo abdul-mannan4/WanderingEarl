@@ -20,7 +20,7 @@ export default function CounterBtn() {
         type="button"
         onClick={handleDecrement}
         aria-label="Decrement"
-        className="flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center transition-opacity hover:opacity-70 shrink-0"
+        className="flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center transition-opacity hover:opacity-70 shrink-0 cursor-pointer"
       >
         <span className="h-[2px] sm:h-[3px] w-3.5 sm:w-5 rounded-full bg-[#404040]" />
       </button>
@@ -35,7 +35,7 @@ export default function CounterBtn() {
         type="button"
         onClick={handleIncrement}
         aria-label="Increment"
-        className="relative flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center transition-opacity hover:opacity-70 shrink-0"
+        className="relative flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center transition-opacity hover:opacity-70 shrink-0 cursor-pointer"
       >
         <span className="absolute h-[2px] sm:h-[3px] w-3.5 sm:w-5 rounded-full bg-[#E9482B]" />
         <span className="absolute h-3.5 sm:h-5 w-[2px] sm:w-[3px] rounded-full bg-[#E9482B]" />

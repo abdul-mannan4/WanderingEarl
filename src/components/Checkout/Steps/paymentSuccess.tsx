@@ -12,12 +12,12 @@ export default function PaymentSuccessStep({ email }: PaymentSuccessProps) {
   return (
     <div className="flex flex-col items-center justify-center text-center mt-[54px] sm:mt-[75px] 2xl:mt-[100px] animate-fade-in font-inter">
       {/* Credit Card Success Icon */}
-      <div className="flex flex-col items-center gap-[24px] sm:gap-[28px] 2xl:gap-[30px]">
-        <div className="w-[96px] h-[96px] sm:w-[120px] sm:h-[120px] 2xl:w-[157px] 2xl:h-[157px] rounded-full bg-[#E9482B0D] flex items-center justify-center shadow-inner relative">
-          <WalletSvg2 />
+      <div className="flex flex-col items-center gap-[20px] sm:gap-[26px] 2xl:gap-[30px]">
+        <div className="w-[84px] h-[84px] sm:w-[110px] sm:h-[110px] lg:w-[157px] lg:h-[157px] rounded-full bg-[#E9482B0D] flex items-center justify-center shadow-inner relative">
+          <WalletSvg2 className="w-[46px] h-[40px] sm:w-[58px] sm:h-[51px] lg:w-[80px] lg:h-[70px]" />
         </div>
 
-        <h2 className="text-[18px] sm:text-[20px] font-medium text-[#404040]">
+        <h2 className="text-[17px] sm:text-[20px] font-medium text-[#404040]">
           Your Payment Was Successful!
         </h2>
       </div>

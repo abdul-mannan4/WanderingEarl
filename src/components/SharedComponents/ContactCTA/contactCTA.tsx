@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactSection() {
   return (
@@ -13,9 +14,9 @@ export default function ContactSection() {
               If you have any questions, simply get in touch. We’re here to help
               and we always reply quickly.
             </p>
-            <button className="py-2.5 px-6 rounded-[30px] bg-[#1E365C] font-inter font-bold text-[13px] sm:text-[15px] text-white hover:bg-[#152744] transition-colors shadow-md">
+            <Link href={`/contactUS`} className="py-2.5 px-6 rounded-[30px] bg-[#1E365C] font-inter font-bold text-[13px] sm:text-[15px] text-white hover:bg-[#152744] transition-colors shadow-md">
               Contact Us
-            </button>
+            </Link>
           </div>
 
           {/* Bottom Image Container */}
@@ -40,11 +41,11 @@ export default function ContactSection() {
               If you have any questions, simply get in touch. We’re here to help
               and we always reply quickly.
             </p>
-            <button
+            <Link href={`/contactUS`}
               className="pt-[7px] sm:pt-[8px] md:pt-[10px] 2xl:pt-[15px] px-[14px] sm:px-[18px] md:px-[22px] 2xl:px-[30px] pb-[7px] sm:pb-[9px] md:pb-[11px] 2xl:pb-[16px] flex gap-[6px] sm:gap-[10px] rounded-[20px] sm:rounded-[30px] bg-[#1E365C] font-[Inter] font-[700] text-[11px] sm:text-[12px] md:text-[14px] 2xl:text-[18px] leading-[100%] tracking-[0%] text-white cursor-pointer hover:bg-[#152744] transition-colors"
             >
               Contact Us
-            </button>
+            </Link>
           </div>
 
           <div className="absolute w-[225px] h-[195px] sm:w-[300px] sm:h-[233px]

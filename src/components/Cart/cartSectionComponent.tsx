@@ -114,7 +114,7 @@ export default function CartSectionComponent({
             <div
                 className={`flex items-stretch ${
                     isCounterBtn || isCheckoutBtn
-                        ? "gap-[100px] xl:gap-[16px] 2xl:gap-[24px] 3xl:!gap-[136px] min-[1800px]:!gap-[136px]"
+                        ? "gap-[12px] sm:gap-[16px] xl:gap-[16px] 2xl:gap-[24px] 3xl:!gap-[136px] min-[1800px]:!gap-[136px]"
                         : "gap-[8px] sm:gap-[10px] xl:gap-[16px]"
                 } w-full max-w-full xl:max-w-[533px] 2xl:max-w-full`}
             >

@@ -49,7 +49,7 @@ export default function TourPageNav({ activeTab, setActiveTab }: TourPageNavProp
   }, [activeTab]);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-[16px] border border-light-gray shadow-[0px_16px_24px_-24px_#0000000F] bg-white xl:max-w-[1038px]">
+    <div className="relative !px-0 -mx-[20px] max-[350px]:-mx-[12px] md:-mx-[32px] lg:-mx-[40px] xl:mx-0 w-[calc(100%+40px)] max-[350px]:w-[calc(100%+24px)] md:w-[calc(100%+64px)] lg:w-[calc(100%+80px)] xl:w-full xl:max-w-[1038px] overflow-hidden rounded-[12px] sm:rounded-[14px] xl:rounded-[16px] border border-light-gray shadow-[0px_16px_24px_-24px_#0000000F] bg-white">
       {/* Left scroll shadow indicator */}
       <div
         className={`pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-r from-white via-white/80 to-transparent z-10 transition-opacity duration-300 ${
@@ -67,7 +67,7 @@ export default function TourPageNav({ activeTab, setActiveTab }: TourPageNavProp
       <nav
         ref={navRef}
         onScroll={checkScroll}
-        className="w-full flex flex-nowrap items-stretch justify-between bg-white overflow-x-auto scrollbar-hide scroll-smooth min-w-0"
+        className="w-full flex flex-nowrap items-stretch justify-between bg-white overflow-x-auto scrollbar-hide scroll-smooth min-w-0 "
       >
         {navLinks.map((item, index) => {
           const isActive = activeTab === item.link;

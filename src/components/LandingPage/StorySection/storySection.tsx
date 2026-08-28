@@ -5,7 +5,7 @@ import GlobeSvg from "./GlobeSvg/globe";
 
 export default function StorySection() {
   return (
-    <div className="relative max-w-full bg-[linear-gradient(180deg,#1E365C_0%,#1E365C_84.5%,rgba(30,54,92,0.94)_100%)]">
+    <div className="relative max-w-full bg-[linear-gradient(180deg,#1E365C_0%,#1E365C_84.5%,rgba(30,54,92,0.94)_100%)] -mb-[1px]">
       <div className=" container relative grid grid-cols-1 lg:grid-cols-2 2xl:gap-0 lg:gap-[10px] items-start justify-between xl:pt-[50px] mt-[-1px] 2xl:mt-[0] min-[1920px]:!px-[208px]">
 
         <div className="xl:pb-[122px] xl:pt-[155px] lg:pt-[118px] lg:pb-[98px] md:pt-[52px] md:pb-[52px] pt-[40px] 

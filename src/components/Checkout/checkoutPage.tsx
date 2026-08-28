@@ -115,7 +115,7 @@ function CheckoutContent({ tour }: CheckoutComponentProps) {
           CHECKOUT
         </h1>
 
-        <div className="mt-[32px] sm:mt-[48px] md:mt-[60px] 2xl:mt-[80px] flex flex-col xl:flex-row justify-center xl:justify-between items-center xl:items-start gap-[24px] md:gap-[36px] lg:gap-[48px] xl:gap-[48px] 3xl:gap-[129px]">
+        <div className="mt-[32px] sm:mt-[48px] md:mt-[60px] 2xl:mt-[80px] flex flex-col-reverse xl:flex-row justify-center xl:justify-between items-center xl:items-start gap-[24px] md:gap-[36px] lg:gap-[48px] xl:gap-[48px] 3xl:gap-[129px]">
           {cartItems.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-16 px-4 text-center font-inter w-full flex-1 max-w-[1038px] border border-light-gray rounded-[16px] bg-white gap-6">
               <h2 className="text-[22px] sm:text-[28px] font-bold text-text-dark">

@@ -36,14 +36,14 @@ export default function TourSection({
   fontSize = "text-[36px] sm:text-[48px] md:text-[72px] lg:text-[96px] 2xl:text-[128px]",
   centerGrid = false,
   linearGradient =
-  "linear-gradient(180deg,rgba(30,54,92,0.94) 0%,rgba(30,54,92,0.85) 22.16%,rgba(30,54,92,0.67) 40.63%,rgba(30,54,92,0.26) 66.16%,rgba(30,54,92,0) 87.56%)",
+  "linear-gradient(180deg, #1E365C 0%, rgba(30,54,92,0.85) 22.16%, rgba(30,54,92,0.67) 40.63%, rgba(30,54,92,0.26) 66.16%, rgba(30,54,92,0) 100%)",
   cardWidth,
 }: TourSectionProps) {
 
   return (
-    <div id={id} className="relative -mt-[1px]">
+    <div id={id} className="relative">
       {showGradient && (
-        <div className="absolute -top-[1px] left-0 right-0 h-[310px] pointer-events-none z-0"
+        <div className="absolute -top-[1px] left-0 right-0 h-[312px] pointer-events-none z-0"
           style={{ background: linearGradient }}
         />
       )}

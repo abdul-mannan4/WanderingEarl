@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import PageMain from "@/components/SharedComponents/MainPicture/bgPicture";
-import Cart from "@/components/Cart/cart";
+import Cart from "@/components/DetailCart/cart";
 import UserLogo from "@/components/SharedComponents/TourSection/TourCard/userLogo";
 import CalendarLogo from "@/components/SharedComponents/TourSection/TourCard/CalendarLogo";
 import LocationLogo from "@/components/SharedComponents/TourSection/TourCard/LocationSvg";

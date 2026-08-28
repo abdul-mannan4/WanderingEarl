@@ -99,13 +99,15 @@ export default function Navbar({
         <div
           className="flex items-center gap-3
         xl:gap-[16px] flex-shrink-0">
-          <div className="flex items-center justify-center">
-            <img
-              src="/images/landingPage/cart.png"
-              alt="Cart Logo"
-              className="w-[25px] h-[25px] lg:w-8 lg:h-8  xl:w-auto xl:h-auto"
-            />
-          </div>
+      <Link href={`/cart`}>
+  <div className="flex items-center justify-center">
+    <img
+      src="/images/landingPage/cart.png"
+      alt="Cart Logo"
+      className="w-[25px] h-[25px] lg:w-8 lg:h-8 xl:w-auto xl:h-auto"
+    />
+  </div>
+</Link>
 
           <button className={`h-[32px] lg:h-[36px] xl:h-[40px]  lg:rounded-[24px] md:rounded-[20px] font-inter font-medium text-[11px] lg:text-[13px] xl:text-[14px] leading-none md:px-4 lg:px-6 xl:px-[30px] cursor-pointer flex items-center justify-center flex-shrink-0 whitespace-nowrap  transition-colors *:
             ${buttonStyles[variant]}

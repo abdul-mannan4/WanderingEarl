@@ -6,12 +6,14 @@ type CounterBtnProps = {
   count?: number;
   onIncrement?: () => void;
   onDecrement?: () => void;
+  className?: string;
 };
 
 export default function CounterBtn({
   count: controlledCount,
   onIncrement,
   onDecrement,
+  className,
 }: CounterBtnProps) {
   const [internalCount, setInternalCount] = useState(1);
 
@@ -35,7 +37,12 @@ export default function CounterBtn({
   }
 
   return (
-    <div className="flex items-center justify-between rounded-full border border-[#D6D6D6] px-3 sm:px-4 2xl:px-5 w-full h-[48px] sm:h-[52px] 2xl:h-[58px]">
+    <div
+      className={
+        className ??
+        "flex items-center justify-between rounded-full border border-[#D6D6D6] px-3 sm:px-4 2xl:px-5 w-full h-[48px] sm:h-[52px] 2xl:h-[58px]"
+      }
+    >
       {/* Minus Button */}
       <button
         type="button"

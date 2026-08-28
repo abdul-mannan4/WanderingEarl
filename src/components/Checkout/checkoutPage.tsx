@@ -4,6 +4,7 @@ import React, { useState, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Tour } from "@/components/data/type";
+import { useCart } from "@/context/CartContext";
 
 // Modular Subcomponents
 import StepIndicator from "./Steps/stepIndicator";
@@ -20,6 +21,7 @@ type CheckoutComponentProps = {
 };
 
 function CheckoutContent({ tour }: CheckoutComponentProps) {
+  const { cartItems } = useCart();
   const searchParams = useSearchParams();
 
   // URL query params from Cart
@@ -200,6 +202,7 @@ function CheckoutContent({ tour }: CheckoutComponentProps) {
               totalTripCost={totalTripCost}
               dueToday={dueToday}
               futurePayments={futurePayments}
+              items={cartItems}
             />
           </div>
         </div>

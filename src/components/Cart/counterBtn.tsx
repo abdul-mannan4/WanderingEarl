@@ -1,16 +1,37 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-export default function CounterBtn() {
-  const [count, setCount] = useState(1)
+type CounterBtnProps = {
+  count?: number;
+  onIncrement?: () => void;
+  onDecrement?: () => void;
+};
+
+export default function CounterBtn({
+  count: controlledCount,
+  onIncrement,
+  onDecrement,
+}: CounterBtnProps) {
+  const [internalCount, setInternalCount] = useState(1);
+
+  const isControlled = controlledCount !== undefined;
+  const count = isControlled ? controlledCount : internalCount;
 
   function handleIncrement() {
-    setCount((prev) => prev + 1)
+    if (onIncrement) {
+      onIncrement();
+    } else {
+      setInternalCount((prev) => prev + 1);
+    }
   }
 
   function handleDecrement() {
-    setCount((prev) => Math.max(0, prev - 1))
+    if (onDecrement) {
+      onDecrement();
+    } else {
+      setInternalCount((prev) => Math.max(1, prev - 1));
+    }
   }
 
   return (
@@ -19,8 +40,11 @@ export default function CounterBtn() {
       <button
         type="button"
         onClick={handleDecrement}
+        disabled={count <= 1}
         aria-label="Decrement"
-        className="flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center transition-opacity hover:opacity-70 shrink-0 cursor-pointer"
+        className={`flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center transition-opacity hover:opacity-70 shrink-0 ${
+          count <= 1 ? "cursor-not-allowed opacity-40" : "cursor-pointer"
+        }`}
       >
         <span className="h-[2px] sm:h-[3px] w-3.5 sm:w-5 rounded-full bg-[#404040]" />
       </button>
@@ -30,7 +54,7 @@ export default function CounterBtn() {
         {count}
       </span>
 
-
+      {/* Plus Button */}
       <button
         type="button"
         onClick={handleIncrement}
@@ -41,6 +65,6 @@ export default function CounterBtn() {
         <span className="absolute h-3.5 sm:h-5 w-[2px] sm:w-[3px] rounded-full bg-[#E9482B]" />
       </button>
     </div>
-  )
+  );
 }
 

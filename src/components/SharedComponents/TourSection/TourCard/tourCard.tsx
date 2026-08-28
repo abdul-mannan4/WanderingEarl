@@ -9,7 +9,7 @@ type BadgeType = "spots-left" | "sold-out" | null;
 type ButtonType = "details" | "waitlist";
 
 interface TourCardProps {
-  id:string
+  id: string
   image: string;
   title: string;
   description: string;
@@ -97,9 +97,9 @@ export default function TourCard({
 
           <div className='mt-auto pt-[4px]'>
             {buttonType === 'details' ? (
-              <Link  
-              href={`/tours/${id}`}
-              className='block px-[16px] sm:px-[24px] 2xl:px-[30px] pt-[9px] pb-[10px] sm:pt-[12px] sm:pb-[13px] 2xl:pt-[15px] 2xl:pb-[16px] w-full rounded-[30px] border-[1px] border-[#D6D6D6] font-inter font-bold text-[13px] sm:text-[15px] 2xl:text-[18px] leading-[21px] text-center text-primary-navy cursor-pointer hover:bg-primary-navy/5 transition-colors'>
+              <Link
+                href={`/tours/${id}`}
+                className='block px-[16px] sm:px-[24px] 2xl:px-[30px] pt-[9px] pb-[10px] sm:pt-[12px] sm:pb-[13px] 2xl:pt-[15px] 2xl:pb-[16px] w-full rounded-[30px] border-[1px] border-[#D6D6D6] font-inter font-bold text-[13px] sm:text-[15px] 2xl:text-[18px] leading-[21px] text-center text-primary-navy cursor-pointer hover:bg-primary-navy/5 transition-colors'>
                 Details
               </Link>
             ) : (

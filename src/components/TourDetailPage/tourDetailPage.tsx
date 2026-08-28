@@ -47,7 +47,7 @@ export default function TourDetailPage({ tour }: TourDetailPageProps) {
 
       <div className="relative z-10 mt-[40px] sm:mt-[60px] md:mt-[80px] lg:mt-[120px] 2xl:mt-[200px] flex flex-col xl:flex-row 
       justify-center xl:justify-between items-center xl:items-start container 2xl:!px-[80px]  gap-[24px] md:gap-[36px] lg:gap-[48px] xl:gap-[48px] 3xl:gap-[129px]">
-        <div className="w-full flex-1 max-w-[1038px] min-w-0">
+        <div className="w-full flex-1 max-w-full xl:max-w-[1038px] min-w-0">
           <TourPageNav activeTab={activeTab} setActiveTab={setActiveTab} />
 
           <div key={activeTab} className="animate-fade-in mt-[20px] sm:mt-[26px] lg:mt-[32px] 3xl:mt-[40px]">
@@ -60,20 +60,15 @@ export default function TourDetailPage({ tour }: TourDetailPageProps) {
           </div>
         </div>
 
-        <div className="w-full max-w-full xl:max-w-[480px] 2xl:max-w-[520px] 3xl:!max-w-[593px] min-[1800px]:!max-w-[593px] flex justify-center shrink-0 xl:sticky xl:top-[30px] 2xl:top-[40px] self-center xl:self-start mx-auto xl:mx-0">
-          <Cart />
+        <div className="w-full max-w-full xl:max-w-[420px] 2xl:max-w-[593px] 3xl:max-w-[593px] flex justify-center shrink-0 xl:sticky xl:top-[30px] 2xl:top-[40px] self-center xl:self-start mx-auto xl:mx-0">
+          <Cart tourId={tour.id} />
         </div>
       </div>
 
       <div className="my-[40px] md:my-[52px] lg:my-[80px] 2xl:mt-[150px] 2xl:mb-[150px]">
 
-        <TourSection
-          title="RELATED TOURS"
-          tours={relatedTours}
-          allTourBtn={true}
-          showGradient={false}
-          gridCols="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-        />
+        <TourSection title="RELATED TOURS" tours={relatedTours} allTourBtn={true} showGradient={false} centerGrid={true}  
+        containerPadding="2xl:!px-[80px]"/>
       </div>
     </div>
   );

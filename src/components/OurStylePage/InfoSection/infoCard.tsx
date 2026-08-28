@@ -13,7 +13,7 @@ interface InfoCardProps {
 
 export default function InfoCard({ image, alt, title, highlightedWord, paragraphs, paddingX, ishide = false }: InfoCardProps) {
   return (
-    <div className="relative w-full min-h-[480px] sm:min-h-[500px] lg:min-h-0 lg:w-1/2 lg:aspect-square overflow-hidden shrink-0 rounded-2xl sm:rounded-3xl lg:rounded-none shadow-lg lg:shadow-none">
+    <div className="relative w-full min-h-[480px] sm:min-h-[500px] lg:min-h-0 lg:w-1/2 lg:aspect-square overflow-hidden shrink-0 rounded-none shadow-lg lg:shadow-none ">
       <Image
         src={image}
         alt={alt}

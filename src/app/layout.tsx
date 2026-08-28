@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import NavBarWrapper from "@/components/Navbar/NavbarWrapper";
-import Footer from "@/components/Footer/footer";
+import FooterWrapper from "@/components/Footer/FooterWrapper";
 
 
 
@@ -50,7 +50,7 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
-        <Footer />
+        <FooterWrapper />
 
       </body>
     </html>

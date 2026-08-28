@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --breakpoint-3xl:1800px;
+  --breakpoint-3xl: 1800px;
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +20,7 @@ html {
   --accent-orange-hover: #d13a1f;
   --text-dark: #1E1E1E;
   --text-muted: #404040;
-  --text-light-gray:#D6D6D6;
+  --text-light-gray: #D6D6D6;
   --border-gray: #D1D5DB;
   --cta-border: #AF8A79;
   --background: #ffffff;
@@ -43,14 +43,11 @@ html {
   --color-accent-orange-hover: var(--accent-orange-hover);
   --color-text-dark: var(--text-dark);
   --color-text-muted: var(--text-muted);
-  --color-dark-gray:var(--text-dark-gray);
-  --color-light-gray:var(--text-light-gray);
-  --color-negative-orange:var(--text-negative-orange);
+  --color-dark-gray: var(--text-dark-gray);
+  --color-light-gray: var(--text-light-gray);
+  --color-negative-orange: var(--text-negative-orange);
   --color-border-gray: var(--border-gray);
   --color-cta-border: var(--cta-border);
-
-
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -104,7 +101,6 @@ body {
     padding-right: 120px;
   }
 }
-
 
 @utility section-title {
   font-family: var(--font-inter);

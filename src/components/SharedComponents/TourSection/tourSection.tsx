@@ -4,7 +4,7 @@ import TourCard from "./TourCard/tourCard";
 import Link from "next/link";
 
 interface TourSectionProps {
-  id?:string
+  id?: string
   year?: string | number | null;
   title?: string;
   tours: Tour[];
@@ -47,7 +47,7 @@ export default function TourSection({
           style={{ background: linearGradient }}
         />
       )}
- 
+
       <div className="relative z-10">
         {/* Header Row */}
         <div

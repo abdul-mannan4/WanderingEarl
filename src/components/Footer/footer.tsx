@@ -52,13 +52,14 @@ export default function Footer() {
       <div className="container flex flex-col justify-between h-full gap-[24px] sm:gap-[32px] md:gap-[50px] 2xl:gap-[106px] relative 2xl:!px-[80px] z-10">
         <div className="2xl:pt-[80px] flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-[24px] lg:gap-[60px] xl:gap-[100px] 2xl:gap-[148px]">
           {/* Logo & Info Block - Centered on Mobile/Tablet */}
-          <div className="flex flex-col items-start md:text-left gap-[12px] sm:gap-[18px] md:gap-[18px] lg:gap-[24px] 2xl:gap-[30px] w-full max-w-[520px] md:w-[220px] lg:w-[340px] xl:w-[380px] 2xl:w-[425px] shrink-0 md:mx-0">
-            <div className="w-[140px] sm:w-[170px] md:w-[160px] lg:w-[200px] 2xl:w-[255px] mx-auto md:mx-0">
+          <div className="flex flex-col items-start md:text-left gap-[12px] sm:gap-[18px] md:gap-[18px] lg:gap-[24px] 2xl:gap-[30px] w-full max-w-full md:w-[220px] lg:w-[340px] xl:w-[380px] 2xl:w-[425px] shrink-0 md:mx-0">
+            <div className="w-[140px] sm:w-[170px] md:w-[160px] lg:w-[200px] 2xl:w-[255px]  md:mx-0">
               <Image
                 src="/images/landingPage/logo.png"
                 alt="logo"
                 width={255}
                 height={84}
+                style={{ width: "100%", height: "auto" }}
                 className="w-full h-auto"
               />
             </div>
@@ -72,19 +73,22 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links Grid - Centered on Mobile/Tablet */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 flex-1 gap-x-8 gap-y-7 sm:gap-4 md:gap-3 lg:gap-8 2xl:gap-0 w-full max-w-[520px] md:max-w-none mx-auto md:mx-0">
+          {/* Links Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 flex-1 gap-x-8 sm:gap-x-12 md:gap-x-4 lg:gap-x-8 2xl:gap-x-0 gap-y-8 sm:gap-y-10 md:gap-y-0 w-full max-w-[520px] md:max-w-none mx-auto md:mx-0">
             {footerLinks.map((section) => (
-              <div key={section.title} className="flex flex-col items-center md:items-start text-center md:text-left gap-[10px] min-[360px]:gap-[12px] sm:gap-[16px] md:gap-[16px] lg:gap-[24px] 2xl:gap-[40px]">
-                <p className="font-inter font-black text-[12px] min-[360px]:text-[13px] sm:text-[14px] md:text-[13px] lg:text-[18px] 2xl:text-[20px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[24px] text-white uppercase tracking-wider sm:tracking-normal">
+              <div
+                key={section.title}
+                className="flex flex-col items-start text-left gap-[12px] sm:gap-[16px] md:gap-[16px] lg:gap-[24px] 2xl:gap-[40px]"
+              >
+                <p className="font-inter font-black text-[13px] sm:text-[14px] md:text-[13px] lg:text-[18px] 2xl:text-[20px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[24px] text-white uppercase tracking-wider sm:tracking-normal">
                   {section.title}
                 </p>
-                <div className="flex flex-col items-center md:items-start text-center md:text-left gap-[6px] min-[360px]:gap-[8px] sm:gap-[12px] md:gap-[10px] lg:gap-[16px] 2xl:gap-[29px]">
+                <div className="flex flex-col items-start text-left gap-[8px] sm:gap-[12px] md:gap-[10px] lg:gap-[16px] 2xl:gap-[29px]">
                   {section.links.map((link) => (
                     <a
                       key={link.label}
                       href={link.href}
-                      className="font-inter font-normal text-[11px] min-[360px]:text-[12px] sm:text-[13px] md:text-[12px] lg:text-[15px] 2xl:text-[16px] leading-[16px] sm:leading-[18px] lg:leading-[19px] text-white/80 hover:text-white transition-colors"
+                      className="font-inter font-normal text-[12px] sm:text-[13px] md:text-[12px] lg:text-[15px] 2xl:text-[16px] leading-[16px] sm:leading-[18px] lg:leading-[19px] text-white/80 hover:text-white transition-colors"
                     >
                       {link.label}
                     </a>

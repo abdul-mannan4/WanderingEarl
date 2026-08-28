@@ -124,7 +124,7 @@ export default function Navbar({
           <img
             src="/images/landingPage/logo.png"
             alt="Wandering Earl Tours Logo"
-            className="object-contain h-11  sm:h-16 w-auto max-w-[180px] sm:max-w-[220px]"
+            className="object-contain h-14  sm:h-16 w-auto max-w-[180px] sm:max-w-[220px]"
           />
         </Link>
 

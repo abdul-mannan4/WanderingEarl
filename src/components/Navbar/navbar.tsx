@@ -223,13 +223,15 @@ export default function Navbar({
 
         {/* Drawer Footer: Cart + Login (always pinned at bottom) */}
         <div className="shrink-0 pt-4 mt-auto border-t border-white/20 flex items-center justify-between gap-3">
-          <button className="flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors cursor-pointer" aria-label="Cart">
-            <img
-              src="/images/landingPage/cart.png"
-              alt="Cart Logo"
-              className="w-7 h-7 object-contain"
-            />
-          </button>
+              <Link href={`/cart`}>
+  <div className="flex items-center justify-center">
+    <img
+      src="/images/landingPage/cart.png"
+      alt="Cart Logo"
+      className="w-7 h-7 lg:w-8 lg:h-8 xl:w-auto xl:h-auto"
+    />
+  </div>
+</Link>
 
           <button className="h-[40px] bg-accent-orange hover:bg-accent-orange-hover active:scale-[0.98] cursor-pointer text-white rounded-[24px] font-inter font-bold text-[14px] px-6 transition-all shadow-md flex items-center justify-center">
             Login

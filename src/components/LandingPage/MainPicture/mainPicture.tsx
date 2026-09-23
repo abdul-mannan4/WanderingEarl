@@ -18,6 +18,7 @@ export default function PageMain() {
           sizes="100vw"
           className="object-cover object-top"
           priority
+          unoptimized
         />
 
         <Overlay >

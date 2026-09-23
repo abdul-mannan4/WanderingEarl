@@ -99,15 +99,13 @@ export default function Navbar({
         <div
           className="flex items-center gap-3
         xl:gap-[16px] flex-shrink-0">
-      <Link href={`/cart`}>
-  <div className="flex items-center justify-center">
-    <img
-      src="/images/landingPage/cart.png"
-      alt="Cart Logo"
-      className="w-[25px] h-[25px] lg:w-8 lg:h-8 xl:w-auto xl:h-auto"
-    />
-  </div>
-</Link>
+          <div className="flex items-center justify-center">
+            <img
+              src="/images/landingPage/cart.png"
+              alt="Cart Logo"
+              className="w-[25px] h-[25px] lg:w-8 lg:h-8  xl:w-auto xl:h-auto"
+            />
+          </div>
 
           <button className={`h-[32px] lg:h-[36px] xl:h-[40px]  lg:rounded-[24px] md:rounded-[20px] font-inter font-medium text-[11px] lg:text-[13px] xl:text-[14px] leading-none md:px-4 lg:px-6 xl:px-[30px] cursor-pointer flex items-center justify-center flex-shrink-0 whitespace-nowrap  transition-colors *:
             ${buttonStyles[variant]}
@@ -126,7 +124,7 @@ export default function Navbar({
           <img
             src="/images/landingPage/logo.png"
             alt="Wandering Earl Tours Logo"
-            className="object-contain h-14  sm:h-16 w-auto max-w-[180px] sm:max-w-[220px]"
+            className="object-contain h-11  sm:h-16 w-auto max-w-[180px] sm:max-w-[220px]"
           />
         </Link>
 
@@ -223,15 +221,13 @@ export default function Navbar({
 
         {/* Drawer Footer: Cart + Login (always pinned at bottom) */}
         <div className="shrink-0 pt-4 mt-auto border-t border-white/20 flex items-center justify-between gap-3">
-              <Link href={`/cart`}>
-  <div className="flex items-center justify-center">
-    <img
-      src="/images/landingPage/cart.png"
-      alt="Cart Logo"
-      className="w-7 h-7 lg:w-8 lg:h-8 xl:w-auto xl:h-auto"
-    />
-  </div>
-</Link>
+          <button className="flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors cursor-pointer" aria-label="Cart">
+            <img
+              src="/images/landingPage/cart.png"
+              alt="Cart Logo"
+              className="w-7 h-7 object-contain"
+            />
+          </button>
 
           <button className="h-[40px] bg-accent-orange hover:bg-accent-orange-hover active:scale-[0.98] cursor-pointer text-white rounded-[24px] font-inter font-bold text-[14px] px-6 transition-all shadow-md flex items-center justify-center">
             Login
@@ -241,3 +237,4 @@ export default function Navbar({
     </nav>
   );
 }
+ 

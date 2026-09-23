@@ -25,6 +25,7 @@ export default function PageMain({
           className="object-cover"
           style={{ objectPosition }}
           priority
+          unoptimized
         />
 
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(30,54,92,0.25)_0%,rgba(30,54,92,0.1)_25%,rgba(30,54,92,0.45)_65%,rgba(30,54,92,0.8)_85%,#1E365C_100%)] flex items-center justify-center">
